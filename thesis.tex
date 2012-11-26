@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%% START WITH LATEX PREAMBLE %%%%%%%%%%%%%%%%%%%%%%
+% reminder: its = possessive
+%           it's = it + is
+
+%use [11pt, draft] for draft markings.
+\documentclass[11pt]{mvlthesis}
+\usepackage[dvipdfm]{graphicx}
+\usepackage{verbatim} %,amssymb,amsmath}
+%\usepackage{afterpage}
+
+
+%%%%%%%%%%%%%%%%%%%%% SET UP ALL THE TITLE PAGE VARIABLES %%%%%%%%%%%%%%%%%%
+
+\title{\scshape \mbox{THESIS OR DISSERTATION TITLE}
+\scshape \mbox{TITLE LINE 2}}
+
+\author{Travis F. Collins}
+\thesis_or_diss{Thesis}
+\degree_type{Master of Science}
+\field{Electrical and Computer Engineering}
+\degreeyear{December 2012}
+\chair{Professor Alexander Wyglinski}
+\chairtitle{Major Advisor}
+\membertwo{Professor Y}
+\memberthree{Professor Z}
+
+%%%%%%%%%%%%%%%%%%%%%% INCLUDE USER DEFINED COMMANDS %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\ii}{\item}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\ie}{\item}
+
+\newcommand{\fig}[5]{
+    \begin{figure}[#1]
+    \begin{center}
+    \includegraphics[#2]{#3}
+    \end{center}
+    \caption{#4}
+    \label{#5}
+    \end{figure}
+}
+
+%\frenchspacing
+
+%%%%%%%%%%%%%% SPECIFY WHICH PARTS OF THE THESIS YOU WANT PRINTED %%%%%%%%%%
+
+\renewcommand{\baselinestretch}{1.5}
+
+\newcommand{\pderiv}[2]{\mbox{$\frac{\displaystyle \partial #1}{\displaystyle \partial #2}$}}
+
+%%%%%%%%%%%%%%%%%%%% Done with setup, document starts here %%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TITLE + ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+\begin{abstract}
+
+\input{abstract.tex}
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%% ACKNOWLEDGMENTS + TABLE OF CONTENTS %%%%%%%%%%%%%%%%%
+
+\begin{frontmatter}
+
+\begin{acknowledgements}
+%\begin{center}
+%\vspace{0.4in}
+%\end{center}
+\end{acknowledgements}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%% INCLUDE THE REST OF THE DOCUMENT %%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Introduction}
+\label{ch:introduction}
+
+%\section{Motivation}
+
+Since the advent of modern digital communications in the 20th century there has been an explosion in the demand for wireless spectrum.  As a result spectrum is becoming an increasingly scare resource(Insert citation).  This demand is a direct result of the availability and relatively inexpensive cost of such wireless device.  Therefore in such envirorments as militaristic theatres the probability of interfering transmissions has steadily grown to a point where techniques need to be consider to combat such occurrences.  More directly, in such situations when interfering signals are partially or completely understood measures can be taken to overcome such difficulties.\\
+
+In military theatres it is extremely common to observe friendly operated high-power broadband jamming signals(citation).  Such devices exists as part of group convoys in several branches of the military and in many other forms in contested territories or war-zones.  Unfortunately such devices block both friendly and hostile communications, and current anti-jamming techniques haven't provided viable solution to this problem.\\
+
+
+\chapter{Background}
+\label{ch:background}
+
+Here is some background you'll need to know about my research.
+
+\section{Background subsection}
+
+%Just a small section for part of the background of my research.~\cite{cyganskialign3d}
+
+
+%\chapter{Conclusions]
+%\label{ch:conclusions}
+
+%This is the end of my paper.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% THE FINISH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\appendix
+
+% BIBLIOGRAPHY STUFF...
+%\nocite{*}
+\bibliographystyle{ieeetr}
+%\bibliography{rfc,std,my}
+\bibliography{thesis}
+\end{document}

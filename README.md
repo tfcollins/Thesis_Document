@@ -1,4 +1,42 @@
 Thesis_Document
 ===============
 
-Actual thesis document
+Author: Travis F. Collins
+
+Outline:
+
+1.) Introduction
+
+-Motivation
+-Current State of the Art
+-Thesis Contributions
+-Thesis Organization
+
+2.) Background
+
+-Software Defined Radio
+-Matlab
+-GNU Radio
+-Receiver Theory
+-Orthonganol Signals
+-MIMO
+-Something more
+-Spectral Subtraction
+-BLISS
+
+3.) Proposed Design and Solution
+
+-Experimental Results
+-Hardware
+-Software
+-Analysis
+
+4.) Conclusion
+
+-Research Achievements
+-Future Work
+
+
+
+
+
