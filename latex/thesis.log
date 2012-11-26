@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 NOV 2012 13:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 NOV 2012 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -144,11 +144,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--60
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./abstract.tex) [1] [3] (./thesis.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 5.
+(Font)              <10.95> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
+(Font)              <6> on input line 4.
 )
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
@@ -182,17 +182,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
 [1
 
-]
+] [2]
 Chapter 2.
-(./thesis.bbl [2
+(./thesis.bbl [3
 
-]) [3
+]) [4
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
  1073 strings out of 493488
  15407 string characters out of 3141326
- 68859 words of memory out of 3000000
+ 69859 words of memory out of 3000000
  4379 multiletter control sequences out of 15000+200000
  9449 words of font info for 33 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -203,11 +203,12 @@ s/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmcsc10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti10.pfb>
-Output written on thesis.pdf (9 pages, 86400 bytes).
+cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti10.pfb>
+Output written on thesis.pdf (10 pages, 98585 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
