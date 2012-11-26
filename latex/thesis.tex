@@ -6,20 +6,21 @@
 \documentclass[11pt]{mvlthesis}
 \usepackage[dvipdfm]{graphicx}
 \usepackage{verbatim} %,amssymb,amsmath}
+\usepackage{epstopdf}
 %\usepackage{afterpage}
 
 
 %%%%%%%%%%%%%%%%%%%%% SET UP ALL THE TITLE PAGE VARIABLES %%%%%%%%%%%%%%%%%%
 
-\title{\scshape \mbox{THESIS OR DISSERTATION TITLE}
+\title{\scshape \mbox{THESIS OR DISSERTATION TITLE}\\
 \scshape \mbox{TITLE LINE 2}}
 
-\author{Travis F. Collins}
+\author{YOUR NAME}
 \thesis_or_diss{Thesis}
 \degree_type{Master of Science}
 \field{Electrical and Computer Engineering}
-\degreeyear{December 2012}
-\chair{Professor Alexander Wyglinski}
+\degreeyear{MONTH YEAR}
+\chair{Professor X}
 \chairtitle{Major Advisor}
 \membertwo{Professor Y}
 \memberthree{Professor Z}
@@ -84,7 +85,6 @@
 \chapter{Introduction}
 \label{ch:introduction}
 
-\section{Motivation}
 
 Since the advent of modern digital communications in the 20th century there has been an explosion in the demand for wireless spectrum.  As a result spectrum is becoming an increasingly scare resource(Insert citation).  This demand is a direct result of the availability and relatively inexpensive cost of such wireless device.  Therefore in such envirorments as militaristic theatres the probability of interfering transmissions has steadily grown to a point where techniques need to be consider to combat such occurrences.  More directly, in such situations when interfering signals are partially or completely understood measures can be taken to overcome such difficulties.\\
 
@@ -98,7 +98,7 @@ Here is some background you'll need to know about my research.
 
 \section{Background subsection}
 
-Just a small section for part of the background of my research.~\cite{cyganskialign3d}
+Just a small section for part of the background of my research. \cite{bibtexcite}
 
 
 %\chapter{Conclusions]
@@ -112,7 +112,26 @@ Just a small section for part of the background of my research.~\cite{cyganskial
 
 % BIBLIOGRAPHY STUFF...
 %\nocite{*}
-\bibliographystyle{ieeetr}
-%\bibliography{rfc,std,my}
-\bibliography{thesis}
+%bibliography stuff
+
+%SEE HERE for BIBTEX styles: http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html
+
+\bibliographystyle{amsplain}
+%\bibliographystyle{plain}
+
+\bibliography{mybib}
+
 \end{document}
+
+
+%useful links:
+%latex VS pdflatex : http://www.andy-roberts.net/misc/latex/pdftutorial.html
+%basic intro to latex: http://www.andy-roberts.net/misc/latex/latextutorial1.html
+%collection of latex links: http://www.andy-roberts.net/misc/index.html
+%collection of math symbols: http://www.comp.leeds.ac.uk/andyr/misc/latex/tutorial9/symbols.pdf
+%latex matrix examples: http://www.physicsforums.com/showthread.php?t=146358
+
+%lgrind binary for Macintosh:
+%https://netfiles.uiuc.edu/galanaki/www/Hints.html
+% (place lgrindef in same directory as *.tex, place lgrind in /usr/local/bin
+

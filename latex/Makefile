@@ -1,18 +1,14 @@
-all: thesis_temp.pdf
+all: thesis.pdf
 
-thesis_temp.pdf: wilab_template.dvi
-	dvipdfm wilab_template
+#remove anything I may not want...
+clean :
+	@rm *.aux *.bbl *.toc *.log *.pdf *.blg *.lof *.lot 
 
-thesis_temp.dvi: thesis_temp.tex my.bib
-	latex thesis_temp
-	bibtex my
-	latex thesis_temp
-	latex thesis_temp
+thesis.pdf: thesis.tex mybib.bib
+	pdflatex thesis
+	bibtex thesis
+	pdflatex thesis
+	pdflatex thesis
 
-announcement.dvi: announcement.tex
-	latex announcement.tex
-
-announcement.pdf: announcement.dvi
-	dvipdfm announcement
 
 #rm *.blg *.aux *.log *.lot *.bbl *.toc *.lof
