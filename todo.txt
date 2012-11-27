@@ -1,0 +1,3 @@
+
+Motivation
+-Need paragraph about repitition in signals
