@@ -7,7 +7,36 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{1}
 
-\bibitem{bibtexcite}
-The Author, \emph{Awesome book}, WPI Press, 2008.
+\bibitem{5}
+Mithun Acharya and David Thuente, \emph{Intelligent jamming attacks,
+  counterattacks and (counter)2 attacks in 802.11b wireless networks},
+  Proceedings of the OPNETWORK Conference, 2005.
+
+\bibitem{2}
+Faraz Ahsan, Ali Zahir, Sajjad Mohsin, and Khalid Hussain, \emph{Survey on
+  survival approaches in wireless network against jamming attack}, Journal of
+  Theoretical and Applied Information Technology \textbf{30} (2011), no.~1,
+  55--67.
+
+\bibitem{3}
+Kwang-Cheng Chen and Ramjee Prasad, \emph{Cognitive radio networks}, John Wiley
+  and Sons, 2009.
+
+\bibitem{4}
+J.~Mitola, \emph{The software radio architecture}, IEEE Communications Magazine
+  (1995).
+
+\bibitem{1}
+Aristides Mpitziopoulos, Damianos Gavalas, Charalampos Konstantopoulos, and
+  Grammati Pantziou, \emph{A survey on jamming attacks and countermeasures in
+  wsns}, IEEE Communications Surveys and Tutorials \textbf{11} (2009), no.~4,
+  42--56.
+
+\bibitem{6}
+Jingpu Shi, Theodoros Salonidis, and Edward~W. Knightly, \emph{Starvation
+  mitigation through multi-channel coordination in csma multi-hop wireless
+  networks}, in CSMA Multi-hop Wireless Networks,” in Proceedings of the
+  International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc),
+  2006, pp.~214--225.
 
 \end{thebibliography}

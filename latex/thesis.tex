@@ -104,11 +104,19 @@ Understanding how to overcome such challenges is a complex task; with vastly dif
 
 \section{State of the Art}
 
-Current implementations in anti-jamming technology lies on the strateling point of hardware and software in the communications world.  This is true because hardware provides the speed and performance needed for digital data transmission, while software provides higher level intelligence and flexibility in such layers as the media access control layer and the network layer of the OSI model (insert citation of OSI model.)\\
+Current implementations in anti-jamming technology lies on the strateling point of hardware and software in the communications world.  This is true because hardware provides the speed and performance needed for digital data transmission, while software provides higher level intelligence and flexibility in such layers as the media access control layer and the network layer of the OSI model (insert citation of OSI model.)  For anti-jamming applications, high intelligence allows for mobility again the jammer.  Therefore a large implementation in software must be considered when investigating anti-jamming technics.\\
 
 Insert figure of OSI model\\
 
+Current anti-jamming technics include channel hopping, spatial retreat, jammed area mapping, node escape, retreat restoration, frame masking, and many more\cite{1}.  All of these techniques use mechanisms of evasion or despection.  These can be quite effective when attacked by generally narrowband, non-dynamic/learning jammers.  In the case of wide and ultra-wide band jammers, they fail miserably.  This wide-band enviorment is the primary situation of interest, and it generally considered a hopeless scenario.  These anti-jam technics are design for specific situations and jammers.\\
 
+Let us first examine these anti-jamming technics which are broken down into three primary categories: Proactive countermeasures, Reactive countermeasures, and Mobile agent-base countermeasures\cite{1}.  Reactive countermeasures relies on a varying array of detection mechanisms first to determine if that node is being jammed.  These detection methods  must be coupled with a countermeasure or the scheme is in operable.  Examples of these detection methods include a transmitter-based approach and a receiver-based detection.  In a transmitter-based approach, such as ad-hoc networks, a decision algorithm is used based on four metrics: PDR (Packet Delivery Ratio), RSSI (Received Signal Strength Indicator), Physical rate, and Noise levels\cite{3}.  In the receiver-based detection additional information must be injected into frames to help the receiver determine the number of frames lost.  Since frames can be easily lost in wireless transmissions, the receiver is handicapped when determining the number of retransmissions that have occurred.  In the transmitter the PDR is deterministicly determined by the data-link layer, sequence numbers must be added to frames for the receiver to accurately calculate the PDR\cite{3}.  Several other detection methods exist including using a detected detector, cooperative detection among nodes in a wireless network, and more sophisticated methods of RF fingerprinting\cite{3}.\\
+
+Once the jammer has been detected the reactive countermeasures come into play.  Many evasion techniques exists to combat narrowband jammers such as: channel hoping, spatial retreat, retreat restoration, hybrid attacks, and many cognitive radio approaches\cite{2}.  Many of these technics utilize the network itself to adapt to the jammer, which is an appropriate assumpt because without a network communications are irrelivant.  Channel hopping is quite simple and can be considered easiet to implement.  If a channel is begining jammed simply \"hop\" to another channel.  This is easily defeated in two cases, the first the jammer follows you or the jammer is simply wideband capable.  The second, spatial retreat, is a mechanism to physically evade the areas being jammed. Based on the detection algorithm all nodes in a network try to estimate the jammed region and flee physically in the direction of safer place. Based on their estimation about the jammed region, nodes will utilize shortest path algorithms to determine location of retreat\cite{5}.  Retreat restoration is focused around how to rebuild a network once the jammer has left.  Retreat restoration can be done by coordinated or uncoordinated communication, and the transmissions are based on a pre planned hop patterns among nodes\cite{6}.
+
+These techniques primarily exploit the dimensionality of their envirmonent by simply avoiding the jammer, and all techniques require intelligent flexible hardware solutions.  Solutions that push more of the radio operations from their original implementations into the more flexible software domain.  The software focused radios, also know as Software defined radio, have provided a solid platform for very adaptive anti-jamming technologies under the name cogntive radios.  These radios have the ability to easily learn and adapt to their envirorment, which is the primary requirement of anti-jamming devices.\\
+
+Software defined radios, defined as the intersection between hardware radios and computer software\cite{4}, provide a platform flexible enough to support highly intelligence operations such that anti-jamming requires.
 
 
 Types of anti-jamming attacks
@@ -126,7 +134,7 @@ Here is some background you'll need to know about my research.
 
 \section{Background subsection}
 
-Just a small section for part of the background of my research. \cite{bibtexcite}
+%Just a small section for part of the background of my research. \cite{bibtexcite}
 
 
 %\chapter{Conclusions]

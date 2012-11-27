@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%% START WITH LATEX PREAMBLE %%%%%%%%%%%%%%%%%%%%%%
+% reminder: its = possessive
+%           it's = it + is
+
+%use [11pt, draft] for draft markings.
+\documentclass[11pt]{mvlthesis}
+\usepackage[dvipdfm]{graphicx}
+\usepackage{verbatim} %,amssymb,amsmath}
+\usepackage{epstopdf}
+%\usepackage{afterpage}
+
+
+%%%%%%%%%%%%%%%%%%%%% SET UP ALL THE TITLE PAGE VARIABLES %%%%%%%%%%%%%%%%%%
+
+\title{\scshape \mbox{THESIS OR DISSERTATION TITLE}\\
+\scshape \mbox{TITLE LINE 2}}
+
+\author{YOUR NAME}
+\thesis_or_diss{Thesis}
+\degree_type{Master of Science}
+\field{Electrical and Computer Engineering}
+\degreeyear{MONTH YEAR}
+\chair{Professor X}
+\chairtitle{Major Advisor}
+\membertwo{Professor Y}
+\memberthree{Professor Z}
+
+%%%%%%%%%%%%%%%%%%%%%% INCLUDE USER DEFINED COMMANDS %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\ii}{\item}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\ie}{\item}
+
+\newcommand{\fig}[5]{
+    \begin{figure}[#1]
+    \begin{center}
+    \includegraphics[#2]{#3}
+    \end{center}
+    \caption{#4}
+    \label{#5}
+    \end{figure}
+}
+
+%\frenchspacing
+
+%%%%%%%%%%%%%% SPECIFY WHICH PARTS OF THE THESIS YOU WANT PRINTED %%%%%%%%%%
+
+\renewcommand{\baselinestretch}{1.5}
+
+\newcommand{\pderiv}[2]{\mbox{$\frac{\displaystyle \partial #1}{\displaystyle \partial #2}$}}
+
+%%%%%%%%%%%%%%%%%%%% Done with setup, document starts here %%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TITLE + ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+\begin{abstract}
+
+\input{abstract.tex}
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%% ACKNOWLEDGMENTS + TABLE OF CONTENTS %%%%%%%%%%%%%%%%%
+
+\begin{frontmatter}
+
+\begin{acknowledgements}
+%\begin{center}
+%\vspace{0.4in}
+%\end{center}
+\end{acknowledgements}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%% INCLUDE THE REST OF THE DOCUMENT %%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Introduction}
+\label{ch:introduction}
+
+This is the introcution to my thesis or dissertation
+
+\chapter{Background}
+\label{ch:background}
+
+Here is some background you'll need to know about my research.
+
+\section{Background subsection}
+
+Just a small section for part of the background of my research. \cite{bibtexcite}
+
+
+%\chapter{Conclusions]
+%\label{ch:conclusions}
+
+%This is the end of my paper.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% THE FINISH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\appendix
+
+% BIBLIOGRAPHY STUFF...
+%\nocite{*}
+%bibliography stuff
+
+%SEE HERE for BIBTEX styles: http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html
+
+\bibliographystyle{amsplain}
+%\bibliographystyle{plain}
+
+\bibliography{mybib}
+
+\end{document}
+
+
+%useful links:
+%latex VS pdflatex : http://www.andy-roberts.net/misc/latex/pdftutorial.html
+%basic intro to latex: http://www.andy-roberts.net/misc/latex/latextutorial1.html
+%collection of latex links: http://www.andy-roberts.net/misc/index.html
+%collection of math symbols: http://www.comp.leeds.ac.uk/andyr/misc/latex/tutorial9/symbols.pdf
+%latex matrix examples: http://www.physicsforums.com/showthread.php?t=146358
+
+%lgrind binary for Macintosh:
+%https://netfiles.uiuc.edu/galanaki/www/Hints.html
+% (place lgrindef in same directory as *.tex, place lgrind in /usr/local/bin
+
