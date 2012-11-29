@@ -1,0 +1,28 @@
+Background Outline:
+
+Communication Systems
+	Overview
+	Transmitter
+	Carrier Recovery
+	Timing Recovery
+	Equalization
+	Signal Processing
+		Spectral Subtracion
+	MIMO
+		Srkant background section insert
+
+Jamming
+	Types/History
+
+Anti-jamming
+	Types/History
+	In Practice
+	Problems
+
+SDR
+	Hardware (USRP)
+	Software
+		GNU-Radio
+		Matlab
+
+Summary
