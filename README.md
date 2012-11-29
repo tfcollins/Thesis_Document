@@ -37,6 +37,10 @@ BLISS
 
 3.) Proposed Design and Solution
 
+Signal estimation technique (LRC)
+
+Signal aquition (Determining what is there)
+
 Experimental Results
 
 Hardware
