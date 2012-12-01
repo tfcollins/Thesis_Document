@@ -1,13 +1,17 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.4)
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: amsplain.bst
 Database file #1: mybib.bib
 Warning--I didn't find a database entry for "11"
+Warning--I didn't find a database entry for "12"
+Warning--I didn't find a database entry for "13"
+Warning--I didn't find a database entry for "14"
 Warning--missing pages in 10
 Warning--missing pages in 4
 You've used 10 entries,
             2213 wiz_defined-function locations,
-            549 strings with 5489 characters,
+            552 strings with 5495 characters,
 and the built_in function-call counts, 3047 in all, are:
 = -- 252
 > -- 159
@@ -46,4 +50,4 @@ warning$ -- 2
 while$ -- 27
 width$ -- 12
 write$ -- 90
-(There were 3 warnings)
+(There were 6 warnings)

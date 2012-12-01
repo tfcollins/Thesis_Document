@@ -158,16 +158,27 @@ INSERT FIGURE OF Modualated and noisy modulated DBPSK Signals\\
 
 \section{Anti-Jamming}
 
-Anti-jamming has been considerably outlined in the introductory chapter, therefore this section will examine more advanced narrowband and wideband techniques.  All of these approaches have various monitary costs, constraints, and power limitations.  First of all narrowband mitigation techniques will be considered.  These include adaptive filtering, time-frequency domain filtering, adaptive antennas and subspace processing.  By combining several of the listed techniques wideband jammers can also be address, under certain conditions.  The table below compares these techniques with various attributes.\\
+Anti-jamming has been considerably outlined in the introductory chapter, therefore this section will examine more advanced narrowband and wideband techniques that involve filtering rather than avoidance.  All of these approaches have various monitary costs, constraints, and power limitations.  First of all narrowband mitigation techniques will be considered.  These include adaptive filtering, time-frequency domain filtering, adaptive antennas and subspace processing.  By combining several of the listed techniques wideband jammers can also be address, under certain conditions.  The table below compares these techniques with various attributes.\\
 
 INSERT TABLE\\
 
-Adaptive filtering is a well defined solution in jammer mitigation, but is considerably the most limited.  Most notably the jammer must be relatively narrowband and the period of the jammer must be relatively short.  An example of an adaptive filtering technique is a suppression filter.  Suppression filters assume statistically the signal is gaussian, which results in the optimal filter being linear.  This filter essentially solves the Wiener equation for an optimal filter, but generally a Least Means Squares (LMS) implementation is used instead of inverting the correlation matrix\cite{11}. The matrix inversion of the correlation matrix is considered a zero forcing equation and is extremely unstable in the presence of small noise.\\
+Adaptive filtering is a well defined solution in jammer mitigation, but is considerably the most limited.  Most notably the jammer must be relatively narrowband and the period of the jammer must be relatively short.  An example of an adaptive filtering technique is a suppression filter.  Suppression filters assume statistically the signal is gaussian, which results in the optimal filter being linear.  This filter essentially solves the Wiener equation for an optimal filter, but generally a Least Means Squares (LMS) implementation is used instead of inverting the correlation matrix\cite{11}. The matrix inversion of the correlation matrix is considered a zero forcing equalizer and is extremely unstable in the presence of small noise.\\
 
 
-Time-frequency domain filtering attempts to represent the transform the received signal in such a way
-that it is possible to easily distinguish the jammer from the data signal.
+Time-frequency domain filtering attempts to represent the transform the received signal in such a way that it is possible to easily distinguish the jammer from the data signal.  A Short-Time Fourier Transform (STFT) can be used to accomplish this goal.  A STFT operates by sliding a window across a signal and taking the fast fourier transform (FFT) of that window.  \cite{12} uses the STFT to break a signal into its frequency components, from this information with a narrowband jammer only a small number of frequency domain bins contain nearly all of the interferer.  Therefore these bins can be simply nulled and an inverse FFT is applied to the signal to regain its time domain version.  This is very effective with the use of spread spectrum signal with a narrowband jammer.\\
 
+Filter banks is a second methodology that can be used to reduce spectral leakage in the frequency domain, which is a large problem with the STFT approach.  Also filter banks don't inject interference when the jammer isn't present, which is a common problem when the jammer turns on and on.  Filter banks provide jammer suppression after their spectral decomposition stage, since at this point sub-band encoding can be accomplished this spectral modification can become excision for the jammer\cite{13}.  A similar decomposition is the wavelet transform.  The wavelet transform is much more flexible than a STFT because STFT has a fixed resolution for a given FFT size unlike the wavelet transform.  Subspace processing can also be applied in this way.  The jammer subspace can be made to orthogonal to the wanted signal subspace, nullifying the jammer's effects\cite{14}.\\
+
+Besides these signal processing methods, physical techniques can be use to do spatial filtering.  These techiques make uses of several antennas, and as an assumption the number of interferers must be equal to or less than the number of antennas.  The first approach is called Null Steering.  Null steering constantly computes the weights in order to minimize the received energy level. In effect, this technique attempts to steer the antenna away from the jammer.  The second approach is called beamforming.  Beam Forming tries to adjust the antenna in order to maximize the SNR. In effect, the antenna beam is steered in the direction of the desired signal.  It is however, possible to end up in situations where the jammer is in the same direction as the signal source. This is a postcorrelation technique since the desired signal has to be correlated in order to obtain the SNR. Also, prior knowledge of the signal direction and the host location is required(insert citation).\\
+
+
+
+
+%\being{equation}
+%
+%\displaystyle\sum_{n=-\infinity}^{\infinity} n^{2}
+%
+%\end{equation}
 
 
 
