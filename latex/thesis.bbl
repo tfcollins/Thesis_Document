@@ -5,7 +5,7 @@
   \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
 }
 \providecommand{\href}[2]{#2}
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{5}
 Mithun Acharya and David Thuente, \emph{Intelligent jamming attacks,
@@ -18,9 +18,18 @@ Faraz Ahsan, Ali Zahir, Sajjad Mohsin, and Khalid Hussain, \emph{Survey on
   Theoretical and Applied Information Technology \textbf{30} (2011), no.~1,
   55--67.
 
+\bibitem{9}
+Jr. C.~Richard~Johnson, William~A. Sethares, and Andrew~G. Klein,
+  \emph{Software receiver design: uild your own digital communications system
+  in five easy steps}, Cambridge University Press, 2011.
+
 \bibitem{3}
 Kwang-Cheng Chen and Ramjee Prasad, \emph{Cognitive radio networks}, John Wiley
   and Sons, 2009.
+
+\bibitem{10}
+Fred~W. Ellersick and Donald~L. Schilling, \emph{Guest editorial scanning the
+  issue}, IEEE Journal on Select Areas in Communications \textbf{3} (1985).
 
 \bibitem{8}
 Karthikeyan Mahadevan, Sojeong Hong, and John Dullum, \emph{Anti-jamming: A

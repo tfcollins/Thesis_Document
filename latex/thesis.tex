@@ -144,6 +144,33 @@ This thesis will be organized into the following chapters.  Chapter 2 provides t
 
 This chapter provides the background information needed to understand the chapters that follow.  It examines the basic outline of a communication system and how non-idealities are compensated for, with addition of multiple input multiple output (MIMO) systems and a unique filtering technique called spectral subtraction.   Secondly this chapter investigates common jammer scenarios and anti-jamming solutions.  Finally it outlines the necessary hardware and software tools used during in the implementation chapter.
 
+\section{Jamming}
+
+In 1899 Guglielmo Marconi successful transmitted radio messages across the English Channel, and nine months later Alexander Bell was discussing how this could be jammed during wartime\cite{10}. Bell stated that such a wireless system can be easily disrupted with simple electromagnetic distrubances.  "Its as easy as cutting the wires".\cite{10}  In the early days of wireless communication, such systems were very fragile but today they have become exponentially more resilient. In the simpliest form radio jamming is defined as the transmission of radio signals that disrupt communications by decreasing the signal to noise ratio (SNR) between the transmitter and receiver(s)(need citation).  This jamming can be either deliberate or unintentional.  A common example of unintentional jamming is a microwave oven ironically.  Microwave oven operate with a wavelength of 122 millimetres which translates to 2.45GHz from the equation shown below.  This directly interferes with channels defined under the IEEE 802.11 standard, also known as Wi-Fi(insert citation).  Deliberate jamming on the otherhand, is generally more saphisticated and takes many different forms.\\
+
+\begin{equation}
+\lambda=v/f
+\end{equation}
+
+Intentional communications jamming is usually aimed at radio signals in a militaristic setting, where consequences are insigificant or out of the relm of the law. In the most rudimentary designs, a jammer will simply tune their own frequency to that of their enemy and with a similar moduation scheme and significant power disrupt the enemies transmissions.  The most common types of this form of signal jamming are random noise, random pulse, stepped tones, warbler, random keyed modulated CW, tone, rotary, pulse, spark, recorded sounds, gulls, and sweep-through(insert citation).  These method obviously or subtly disrupt transmissions by inserting electronmagnetic energy into the transmission space of the receivers.  Mathematically what is occuring is that the jammer is producing randomly chosen data that is non-orthogonal to the data which the friendly transmitter is producing.  Since this jammer's data is pseudo random when his transmissions are added to the enemy's, the result appears to be random as well.  Therefore the signal is unrecoverable.  As mentioned above, the jammer must produce signals that are non-orthogonal to the enemy of his jamming will have no effect.  An example below shows random noise at a significant noise level is added to a previously destinquishable signal.\\
+
+INSERT FIGURE OF Modualated and noisy modulated DBPSK Signals\\
+
+\section{Anti-Jamming}
+
+Anti-jamming has been considerably outlined in the introductory chapter, therefore this section will examine more advanced narrowband and wideband techniques.  All of these approaches have various monitary costs, constraints, and power limitations.  First of all narrowband mitigation techniques will be considered.  These include adaptive filtering, time-frequency domain filtering, adaptive antennas and subspace processing.  By combining several of the listed techniques wideband jammers can also be address, under certain conditions.  The table below compares these techniques with various attributes.\\
+
+INSERT TABLE\\
+
+Adaptive filtering is a well defined solution in jammer mitigation, but is considerably the most limited.  Most notably the jammer must be relatively narrowband and the period of the jammer must be relatively short.  An example of an adaptive filtering technique is a suppression filter.  Suppression filters assume statistically the signal is gaussian, which results in the optimal filter being linear.  This filter essentially solves the Wiener equation for an optimal filter, but generally a Least Means Squares (LMS) implementation is used instead of inverting the correlation matrix\cite{11}. The matrix inversion of the correlation matrix is considered a zero forcing equation and is extremely unstable in the presence of small noise.\\
+
+
+Time-frequency domain filtering attempts to represent the transform the received signal in such a way
+that it is possible to easily distinguish the jammer from the data signal.
+
+
+
+
 \section{Communication Systems}
 
 Modern wireless digital communication systems are based on a rich tradition of analog experimentation and theory.  These technologies surround us on a daily basis from cellphones, car radios, GPS, and many more.  All these of these devices communicate over wireless links and are built upon the same building block of transmission and reception theory.  Many perspective can be taken, but the most generic observation should be taken at the system level.  Depending on the level of saphistication these blocks can expand greatly, but still solve the same issue caused by the wireless transmission of digital access across an envirorment.  Such non-idealities such as frequency offsets, doppler effect, signal echos, phase shifts, and several more.  These must be compensated for to successful receive uncorrupted information.\\ 
