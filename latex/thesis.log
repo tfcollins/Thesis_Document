@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 DEC 2012 18:48
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  4 DEC 2012 15:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,15 +252,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--164
  []
 
 
-LaTeX Warning: Citation `11' on page 9 undefined on input line 165.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
-
-
-LaTeX Warning: Citation `12' on page 9 undefined on input line 168.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 168--169
@@ -268,18 +262,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
  []
 
 
-LaTeX Warning: Citation `13' on page 9 undefined on input line 170.
-
-
-LaTeX Warning: Citation `14' on page 9 undefined on input line 170.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
@@ -289,22 +282,88 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--188
  []
 
 [10]
+
+LaTeX Warning: Reference `fig:Transmitter_System_Diagram' on page 11 undefined 
+on input line 189.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
-(./thesis.bbl [11] [12
 
-]) [13] (./thesis.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+! Undefined control sequence.
+l.193 ... with a sinusoid, seen by equation \eqref
+                                                  {mixing}.  This done becau...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+[11]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.196 
+      
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.196 
+      
+? 
+! You can't use `\eqno' in vertical mode.
+\endequation ->\eqno 
+                     \hbox {\@eqnnum }$$\@ignoretrue 
+l.199 \end{equation}
+                    
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.199 \end{equation}
+                    
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.199 \end{equation}
+                    
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+(./thesis.bbl [13] [14
+
+]) [15] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1089 strings out of 493488
- 15473 string characters out of 3141326
+ 1091 strings out of 493488
+ 15513 string characters out of 3141326
  71859 words of memory out of 3000000
- 4395 multiletter control sequences out of 15000+200000
+ 4397 multiletter control sequences out of 15000+200000
  9756 words of font info for 34 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,6n,21p,1452b,204s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -316,10 +375,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (19 pages, 137873 bytes).
+Output written on thesis.pdf (21 pages, 144864 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

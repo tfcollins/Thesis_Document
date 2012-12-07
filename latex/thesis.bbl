@@ -27,9 +27,27 @@ Jr. C.~Richard~Johnson, William~A. Sethares, and Andrew~G. Klein,
 Kwang-Cheng Chen and Ramjee Prasad, \emph{Cognitive radio networks}, John Wiley
   and Sons, 2009.
 
+\bibitem{12}
+R.C. DiPietro, \emph{An fft based technique for suppressing narrow-band
+  interference in pn spread spectrum communications systems}, Acoustics,
+  Speech, and Signal Processing, 1989. ICASSP-89., 1989 International
+  Conference on, may 1989, pp.~1360 --1363 vol.2.
+
 \bibitem{10}
 Fred~W. Ellersick and Donald~L. Schilling, \emph{Guest editorial scanning the
   issue}, IEEE Journal on Select Areas in Communications \textbf{3} (1985).
+
+\bibitem{11}
+A.~Haimovich and A.~Vadhri, \emph{Rejection of narrow-band interferences in pn
+  spread spectrum systems using an eigenanalysis approach}, Military
+  Communications Conference, 1994. MILCOM '94. Conference Record, 1994 IEEE,
+  oct 1994, pp.~1002 --1006 vol.3.
+
+\bibitem{13}
+W.W. Jones and K.R. Jones, \emph{Narrowband interference suppression using
+  filter-bank analysis/synthesis techniques}, Military Communications
+  Conference, 1992. MILCOM '92, Conference Record. Communications - Fusing
+  Command, Control and Intelligence., IEEE, oct 1992, pp.~898 --902 vol.3.
 
 \bibitem{8}
 Karthikeyan Mahadevan, Sojeong Hong, and John Dullum, \emph{Anti-jamming: A
@@ -56,5 +74,10 @@ Jingpu Shi, Theodoros Salonidis, and Edward~W. Knightly, \emph{Starvation
   networks}, in CSMA Multi-hop Wireless Networks,'' in Proceedings of the
   International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc),
   2006, pp.~214--225.
+
+\bibitem{14}
+Liang Zhao, M.G. Amin, and A.R. Lindsey, \emph{Subspace projection techniques
+  for anti-fm jamming gps receivers}, Statistical Signal and Array Processing,
+  2000. Proceedings of the Tenth IEEE Workshop on, 2000, pp.~529 --533.
 
 \end{thebibliography}

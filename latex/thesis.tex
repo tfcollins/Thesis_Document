@@ -207,7 +207,11 @@ After this point the receiver designs can vary greatly, as the design in this th
 
 
 
-\subsection{}
+\subsection{Superimposed Training Equalizer}
+
+As mentioned in the previous section, many implementations exist for equalizer designs, but this thesis will examine the effectiveness of superimposed training symbols in frequency selective channels.  In traditional equalizers channel estimation is achieved through the use of pilot symbols.  These symbols are both known to the transmitter and receiver, providing the basis for an estimate.  These pilot symbols are specifically placed to maximize their spread across the channel to provide an accurate enough estimate, but unforunately this training comes at a cost of bandwidth\cite{16}.  To combat this effect an alternative approach must be considered, superimposed training.  Superimposed training utilizes hidden pilots added to data instead of utilizing full data symbols themeselves.  To accomidate such pilots energy must be shared among the data and hidden pilots\cite{15}.
+
+
 
 
 %Just a small section for part of the background of my research. \cite{bibtexcite}

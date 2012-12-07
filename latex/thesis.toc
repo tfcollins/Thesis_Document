@@ -8,6 +8,6 @@
 \contentsline {chapter}{\numberline {2}Background}{7}
 \contentsline {section}{\numberline {2.1}Jamming}{7}
 \contentsline {section}{\numberline {2.2}Anti-Jamming}{8}
-\contentsline {section}{\numberline {2.3}Communication Systems}{10}
-\contentsline {subsection}{\numberline {2.3.1}}{11}
-\contentsline {chapter}{Bibliography}{12}
+\contentsline {section}{\numberline {2.3}Communication Systems}{11}
+\contentsline {subsection}{\numberline {2.3.1}Superimposed Training Equalizer}{13}
+\contentsline {chapter}{Bibliography}{14}

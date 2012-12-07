@@ -3,51 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: amsplain.bst
 Database file #1: mybib.bib
-Warning--I didn't find a database entry for "11"
-Warning--I didn't find a database entry for "12"
-Warning--I didn't find a database entry for "13"
-Warning--I didn't find a database entry for "14"
 Warning--missing pages in 10
 Warning--missing pages in 4
-You've used 10 entries,
+You've used 14 entries,
             2213 wiz_defined-function locations,
-            552 strings with 5495 characters,
-and the built_in function-call counts, 3047 in all, are:
-= -- 252
-> -- 159
+            572 strings with 6431 characters,
+and the built_in function-call counts, 5100 in all, are:
+= -- 459
+> -- 210
 < -- 0
-+ -- 65
-- -- 52
-* -- 244
-:= -- 501
-add.period$ -- 10
-call.type$ -- 10
-change.case$ -- 56
++ -- 86
+- -- 68
+* -- 373
+:= -- 765
+add.period$ -- 14
+call.type$ -- 14
+change.case$ -- 76
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 126
-empty$ -- 258
-format.name$ -- 52
-if$ -- 628
+cite$ -- 16
+duplicate$ -- 226
+empty$ -- 450
+format.name$ -- 68
+if$ -- 1122
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 21
-newline$ -- 40
-num.names$ -- 20
-pop$ -- 82
+int.to.str$ -- 14
+missing$ -- 29
+newline$ -- 52
+num.names$ -- 28
+pop$ -- 114
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 62
 quote$ -- 0
-skip$ -- 81
+skip$ -- 189
 stack$ -- 0
-substring$ -- 134
-swap$ -- 20
+substring$ -- 357
+swap$ -- 68
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
+type$ -- 52
 warning$ -- 2
-while$ -- 27
-width$ -- 12
-write$ -- 90
-(There were 6 warnings)
+while$ -- 43
+width$ -- 16
+write$ -- 126
+(There were 2 warnings)
