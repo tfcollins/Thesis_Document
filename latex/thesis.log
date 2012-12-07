@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  4 DEC 2012 15:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 DEC 2012 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -352,33 +352,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-(./thesis.bbl [13] [14
 
-]) [15] (./thesis.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+! Undefined control sequence.
+l.212 ...transmitted data \( \textbf{\^{x}}=y \asp
+                                                   e\).  The figure below ou...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+LaTeX Warning: Citation `16' on page 14 undefined on input line 224.
+
+
+LaTeX Warning: Citation `15' on page 14 undefined on input line 224.
+
+
+LaTeX Warning: Citation `17' on page 14 undefined on input line 224.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+[14]
+
+LaTeX Warning: Citation `17' on page 15 undefined on input line 226.
+
+
+LaTeX Warning: Citation `17' on page 15 undefined on input line 226.
+
+
+LaTeX Warning: Citation `18' on page 15 undefined on input line 226.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+ []
+
+(./thesis.bbl [15] [16
+
+]) [17] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1091 strings out of 493488
- 15513 string characters out of 3141326
+ 1096 strings out of 493488
+ 15537 string characters out of 3141326
  71859 words of memory out of 3000000
- 4397 multiletter control sequences out of 15000+200000
+ 4402 multiletter control sequences out of 15000+200000
  9756 words of font info for 34 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,6n,21p,1452b,204s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (21 pages, 144864 bytes).
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on thesis.pdf (23 pages, 185300 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 126 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

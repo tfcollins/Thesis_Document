@@ -9,5 +9,7 @@
 \contentsline {section}{\numberline {2.1}Jamming}{7}
 \contentsline {section}{\numberline {2.2}Anti-Jamming}{8}
 \contentsline {section}{\numberline {2.3}Communication Systems}{11}
-\contentsline {subsection}{\numberline {2.3.1}Superimposed Training Equalizer}{13}
-\contentsline {chapter}{Bibliography}{14}
+\contentsline {subsection}{\numberline {2.3.1}Equalizers}{13}
+\contentsline {subsection}{\numberline {2.3.2}Superimposed Training Equalizer}{14}
+\contentsline {section}{\numberline {2.4}Software Defined Radio}{15}
+\contentsline {chapter}{Bibliography}{16}
