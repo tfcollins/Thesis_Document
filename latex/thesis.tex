@@ -217,7 +217,20 @@ The Zero Forcing Equalizer (ZFE) uses peak distortion criteria to determine equa
 
 \[ p_{eq}(t) = \displaystyle\sum_{k=-M}^{M} w_{k}p_{r}(t-kT)  \]
 
-Unfortunately the ZFE has a large disadvantage, it cannot compensate for small amounts of noise.  Technically it will amplify all noise of the received signal, and if any elements of the channel matrix are considerable small then the equalizer becomes unstable. Therefore this is generally considered a more theoretical or elementary equalizer formulation.  To overcome this problem the zero ISI condition must be relaxed allowing for noise which if small can easily be overcome by such operations a quantization or decision making.\\ 
+Unfortunately the ZFE has a large disadvantage, it cannot compensate for small amounts of noise.  Technically it will amplify all noise of the received signal, and if any elements of the channel matrix are considerable small then the equalizer becomes unstable. Therefore this is generally considered a more theoretical or elementary equalizer formulation.  To overcome this problem the zero ISI condition must be relaxed allowing for noise which if small can easily be overcome by such operations as quantization or decision making.  The Linear Minimum Mean Squaed Error Filter (LMMSE) takes this relaxation into account.\\ 
+
+The LMMSE assumes that the symbols are uncorrelated with one another and uncorrelated from the noise in the channel.  This approach tries to minimize the mean square error, a common measure of estimator qualities.  The estimator is defined as \( \^{x}_{MMSE}(y)=\e{x|y}  \).  If \(x\) and \(y\) are jointly Gaussian, then the LMMSE will be linear.  This function or equalizer design minimizes the mean square error.  To simplify further an extension to random vectors can be examined.  An estimate can be made for the original vector \(x\) represented by \(\^{x}\), resulting in the linear equation \(\^{x}=Ay+b\).  The LMMSE will minimize the mean square error \(\e{\|x-\^{x}\|^{2}}.\\
+
+Besides these linear equalizers outlined, an adaptive approach can also be considered.  The LMS or Gradiant algorithm utilizes a traditional technique for minimizing the error in a signal.  This method is historically known as the "Method of Steepest Decent" or "Newton's Method". By calculating the error of each received symbol, this can be fed back into the system for future symbols.  This error with shape the equalizer's filter coefficents to match the inverse of the channel.  The equations are outline below:
+
+\[ y[n]=w[n]^{H}F[n]\]
+\[ e[n]=A_{n}-y[n]\]
+\[ w[n+1]=w[n]+\mu[n]F[n]\] 
+
+\mu acts as the algorithm's stepsize determining how quickly it will converge.  It must also be considered that the larger the stepsize the higher the probability it may become unstable.  As long as the channel's effects are slow changing this equalizer can easily maintain up to date estimates while corrupting little of the data as possible.\\  
+
+All of the methods proposed so far require known data to correct against.  This data is called trainging data and generally comes in the form of a preamble in a frame.  The preamble is added to the beginning of each frame so the equalizer can learn from the effects on that specific data.  The preamble is the same for all frames and is always used so the equalizer will always be learning.  But what happens when data is unknown in the frame, for example the data portion of the frame.\\
+
 
 \subsection{Superimposed Training Equalizer}
 
