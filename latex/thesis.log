@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 DEC 2012 16:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 DEC 2012 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -383,42 +383,172 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--221
  []
 
 
-LaTeX Warning: Citation `16' on page 14 undefined on input line 224.
+LaTeX Warning: Command \^ invalid in math mode on input line 222.
 
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.222 ...es.  The estimator is defined as \( \^{x}
+                                                  _{MMSE}(y)=\e{x|y}  \).  I...
 
-LaTeX Warning: Citation `15' on page 14 undefined on input line 224.
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.222 ...es.  The estimator is defined as \( \^{x}
+                                                  _{MMSE}(y)=\e{x|y}  \).  I...
 
+? 
+! Undefined control sequence.
+l.222 ...mator is defined as \( \^{x}_{MMSE}(y)=\e
+                                                  {x|y}  \).  If \(x\) and \...
 
-LaTeX Warning: Citation `17' on page 14 undefined on input line 224.
+? 
+Missing character: There is no è in font cmex10!
 
+LaTeX Warning: Command \^ invalid in math mode on input line 222.
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.222 ...ginal vector \(x\) represented by \(\^{x}
+                                                  \), resulting in the linea...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.222 ...ginal vector \(x\) represented by \(\^{x}
+                                                  \), resulting in the linea...
+
+? 
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 222.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.222 ... resulting in the linear equation \(\^{x}
+                                                  =Ay+b\).  The LMMSE will m...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.222 ... resulting in the linear equation \(\^{x}
+                                                  =Ay+b\).  The LMMSE will m...
+
+? 
+Missing character: There is no è in font cmex10!
+! Undefined control sequence.
+l.222 ... will minimize the mean square error \(\e
+                                                  {\|x-\^{x}\|^{2}}\).\\
+? 
+
+LaTeX Warning: Command \^ invalid in math mode on input line 222.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.222 ...mize the mean square error \(\e{\|x-\^{x}
+                                                  \|^{2}}\).\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.222 ...mize the mean square error \(\e{\|x-\^{x}
+                                                  \|^{2}}\).\\
+? 
+Missing character: There is no è in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 [14]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.230 In these equations \mu
+                             acts as the algorithm's stepsize determining ho...
 
-LaTeX Warning: Citation `17' on page 15 undefined on input line 226.
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.231 
+      
+? 
+
+Overfull \hbox (1143.89825pt too wide) in paragraph at lines 230--231
+[]\OT1/cmr/m/n/10.95 In these equa-tions $\OML/cmm/m/it/10.95 ^^Vactsasthealgor
+ithm[]sstepsizedetermininghowquicklyitwillconverge:Itmustalsobeconsideredthatth
+elargerthestepsizethehighertheprobabilityitmaybecomeunstable:Aslongasthechannel
+[]seffectsareslowchangingthisequalizercaneasilymaintainuptodateestimateswhileco
+rruptinglittleofthedataaspossible:[] 
+ []
 
 
-LaTeX Warning: Citation `17' on page 15 undefined on input line 226.
-
-
-LaTeX Warning: Citation `18' on page 15 undefined on input line 226.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
-(./thesis.bbl [15] [16
+! Undefined control sequence.
+l.236 \[ e = 1/2\e
+                  {(sign(y[k]-y[k])^{2}}\]
+? 
 
-]) [17] (./thesis.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+LaTeX Warning: Citation `16' on page 16 undefined on input line 245.
+
+
+LaTeX Warning: Citation `15' on page 16 undefined on input line 245.
+
+
+LaTeX Warning: Citation `17' on page 16 undefined on input line 245.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+LaTeX Warning: Citation `17' on page 16 undefined on input line 247.
+
+
+LaTeX Warning: Citation `17' on page 16 undefined on input line 247.
+
+
+LaTeX Warning: Citation `18' on page 16 undefined on input line 247.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+(./thesis.bbl [17] [18
+
+]) [19] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -443,10 +573,10 @@ cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (23 pages, 185300 bytes).
+Output written on thesis.pdf (25 pages, 193338 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 133 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
