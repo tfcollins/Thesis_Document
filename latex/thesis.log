@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 DEC 2012 17:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  11 DEC 2012 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -517,7 +517,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--241
 LaTeX Warning: Citation `16' on page 16 undefined on input line 245.
 
 
+LaTeX Warning: Citation `16' on page 16 undefined on input line 245.
+
+
 LaTeX Warning: Citation `15' on page 16 undefined on input line 245.
+
+
+LaTeX Warning: Citation `19' on page 16 undefined on input line 245.
 
 
 LaTeX Warning: Citation `17' on page 16 undefined on input line 245.
@@ -527,37 +533,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
+[16]
 
-LaTeX Warning: Citation `17' on page 16 undefined on input line 247.
-
-
-LaTeX Warning: Citation `17' on page 16 undefined on input line 247.
+LaTeX Warning: Citation `17' on page 17 undefined on input line 247.
 
 
-LaTeX Warning: Citation `18' on page 16 undefined on input line 247.
+LaTeX Warning: Citation `17' on page 17 undefined on input line 247.
+
+
+LaTeX Warning: Citation `18' on page 17 undefined on input line 247.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+LaTeX Warning: Citation `20' on page 17 undefined on input line 253.
+
+
+LaTeX Warning: Citation `16' on page 17 undefined on input line 253.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.253 ...), this scheme is quasi-periodic.  \alpha
+                                                   represents the cluser siz...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.254 
+      
+? 
+
+Overfull \hbox (246.67642pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10.95 periodic. $\OML/cmm/m/it/10.95 representstheclusersizeinthi
+sscenario:Itisalsoimportanttonotethatthisplacementmakessurethatthetrainingisalw
+aysorthogonal:[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
-(./thesis.bbl [17] [18
+[17]
 
-]) [19] (./thesis.aux)
+LaTeX Warning: Citation `15' on page 18 undefined on input line 255.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+ []
+
+(./thesis.bbl [18] [19
+
+]) [20] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1096 strings out of 493488
- 15537 string characters out of 3141326
+ 1098 strings out of 493488
+ 15545 string characters out of 3141326
  71859 words of memory out of 3000000
- 4402 multiletter control sequences out of 15000+200000
+ 4404 multiletter control sequences out of 15000+200000
  9756 words of font info for 34 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,6n,21p,1452b,204s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -573,10 +620,10 @@ cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (25 pages, 193338 bytes).
+Output written on thesis.pdf (26 pages, 200727 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
+ 136 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
