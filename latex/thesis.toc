@@ -11,5 +11,5 @@
 \contentsline {section}{\numberline {2.3}Communication Systems}{11}
 \contentsline {subsection}{\numberline {2.3.1}Equalizers}{13}
 \contentsline {subsection}{\numberline {2.3.2}Superimposed Training Equalizer}{16}
-\contentsline {section}{\numberline {2.4}Software Defined Radio}{18}
-\contentsline {chapter}{Bibliography}{19}
+\contentsline {section}{\numberline {2.4}Software Defined Radio}{19}
+\contentsline {chapter}{Bibliography}{20}
