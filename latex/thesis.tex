@@ -3,7 +3,8 @@
 %           it's = it + is
 
 %use [11pt, draft] for draft markings.
-\documentclass[11pt]{mvlthesis}
+% original\documentclass[11pt]{mvlthesis}
+\documentclass[16pt, draft]{mvlthesis}
 \usepackage[dvipdfm]{graphicx}
 \usepackage{verbatim} %,amssymb,amsmath}
 \usepackage{epstopdf}
@@ -259,7 +260,31 @@ In summary, modern research on superimposed training focuses primarily on the tr
 
 \section{Software Defined Radio}
 
-For the past two decades there has been a peradyme shift is the definition of a radio device.  The conversation has to do with the question of where hardware ends and where software begins.  The term Software Defined Radio, coined by Dr. J. Mitola III,  defined as a set of digital signal processing (DSP) primitives, a metalevel system for combining the primitives into communication system functions (transmitter, channel model, receiver, etc.), and a set of target processors on which the software radio is hosted for real-time communications\cite{21}.  Dr Mitola understood how software provided the flexibility that hardware never could, and as time made it more maliable SDR would become dominant.   
+For the past two decades there has been a peradyme shift is the definition of a radio device.  The conversation has to do with the question of where hardware ends and where software begins.  The term Software Defined Radio, coined by Dr. J. Mitola III,  defined as a set of digital signal processing (DSP) primitives, a metalevel system for combining the primitives into communication system functions (transmitter, channel model, receiver, etc.), and a set of target processors on which the software radio is hosted for real-time communications\cite{21}.  Dr Mitola understood how software provided the flexibility that hardware never could, and as time made it more maliable SDR would become dominant.\\
+
+SDR's can be flexible enough to avoid the "limited spectrum" assumptions of designers of previous kinds of radios, in one or more ways including: ultrawideband transceivers, cognitive radio, dynamic mesh networks, software-defined antenna arrays among others\cite{22}.  One of the first SDR implementations was a project called ``SpeakEasy''.  The original purpose of SpeakEasy was to use programmable processing to emulate more than ten existing military radios, operating in frequency bands between 2 MHz and 2 GHz\cite{23}.  Therefore with this single radio, the operator could talk to ten radios operating under ten different standards.  As simple enough idea, but unforunately the implementation left much to be desired.  For example, physically the device encapsilated the entire back of a common pickup truck\cite{23}.  This might be great for a ground station that doesn't move, but for a mobile unit this was highly impractical.  Secondly in 1992, field programmable gate arrays (FPGA) required significant time, compariatively to reflash or change their operational parameters.  Again this also limited SpeakEasy's flexibility.\\
+
+Today the prime implementations are within cellular basestations and other military applications such as the JTRS project.  The JTRS or  Joint Tactical Radio System, was a program of the US military to produce radios that provide flexible and interoperable communications. Examples of radio terminals that require support include hand-held, vehicular, airborne and dismounted radios, as well as base-stations\cite{24}.  Again this project still has limited results and many setbacks have occured.  Commerically, from a wide spread penetration standpoint, SDR is still many years away.  The two barriers to this are speed and size.  To provide enough data throughput, modern SDR's need to quite large physically, which is a serious drawback in many applications.   Aside from these limitations, SDR's provide excellent flexibolity esspecially in a laboratory and proof of concept envirornmnet.  Rapid protoyping is an obvious place where such radios shine, allowing massive changes without hardware modification.  To support this flexibility several software packages have been constructed around the SDR concept, allowing for aggresive prototyping.  The two examples discussed here were selected because of operability with the selected hardware, which will be discused future in chapter 3.\\
+
+\subsection{GNU Radio}
+
+The first software package to be discussed by this thesis is GNU Radio.  GNU Radio provides the reconfigurable signal processing blocks that are necessary for software defined radios. GNU Radio is an open source project allowing for SDR developers to develop unique signal processing blocks and SDR systems.  GNU Radio was started in 2001, originally forked from the SpectrumWare project developed at the Massachusetts Institute of Technology(INSERT CITATION).  Since 2001 the codebase has undergone massive changes, containing almost no code from the original SpectrumWare project.  Physically the code consist of three languages Python, C++, and SWIG.  Python provides the overarching control of the system or program, while C++ provides the actual signal processing blocks and mathematics.  SWIG is a wrapper for C++ which allows Python to dynamically wrap around C++ and control or compile with it.  A diagram below better illustrates this architecture.  It is also important to mention that there as significant paradyme shifts in the community, pushing more and more code to Python rather than C++, due to its easier programming syntax and structure.\\
+
+INSERT DIAGRAM ABOUT GNU RADIO's CODE STRUCTURE\\
+
+\subsection{MATLAB}
+
+MATLAB is an extremely well known engineering, mathematical, biological, and financial software suite.  MATLAB provide massive data leverage and advanced communication system models and algorithm for significant data processing.  Since 2007, they have also provided hardware compilance with specific SDR platforms through their Simulink platform, and more recently within MATLAB itself(GET LINK FROM MATLAB WEBSITE ON SDRu).  This thesis primarily utilizes the signal processing and communication system aspects of matlab, since MATLAB cannot fully utilize all aspects of the chosen hardware.  It is important to note under alternate constraints, MATLAB can provide adiquate performance directly interfacing with hardware, esspecially when accessing its targeting features seen here(INSERT LINK ABOUT MATLAB TARGETING).  Below shows an example of a common MATLAB SDR model through Simulink.\\
+
+INSERT PICTURE OF SDR Model\\
+
+\subsection{Comparision}
+
+It is important to compare GNU Radio and MATLAB, from a user's perspective they perform quite differently.  Firstly GNU Radio, is extremely fast, will the ability of sustaining the maximum throughput of the selected hardware.  GNU Radio is also multi-threaded, and while mainitaining high throughput and complete background tasks on mutlicore machines quite easily.  This performance has a cost, comparitively GNU Radio has an extremely learning curve and debugging can be challenging.  But if you need the performance GNU Radio is your option, can does provide significantly more advanced hardware support is SDR implementations.  If data analysis is more heavily desired MATLAB is the obvious choice.  MATLAB provides easy and advanced data visualization functionality, and built in tools for analysis.  Since MATLAB doesn't compile itself normally, it can be much easier to debug and solve problems.  MATLAB's syntax provide similar data manipulation, esspecially in communication system primatives.  Therefore it can be a rather simple choice, speed or ease of use.\\ 
+
+\subsection{Summary}
+
+This chapter outlined and examined the topics of jamming and anti-jamming techniques, and provided a foundation in communication system theory and advanced equalizer design.  Secondly it setup an understanding of Software-Defined Radio, the power of such an architecture, and examples of implementations and exisiting software for future designs.  Next this thesis will consider a new anti-jamming technique and design an implementation of such a system.  After the implemenation is investigated, the result of specific experiments on such an implementation will be analysed.\\
 
 
 %Just a small section for part of the background of my research. \cite{bibtexcite}

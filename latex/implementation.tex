@@ -1,0 +1,33 @@
+\section{Overview}
+
+Now that a significant background has been provided, the problem this thesis combats will be futher framed and defined.  This chapter outlines the proposed implementation of a receiver design, for wideband jammer scenarios and low-mobility situations.  An adaptive signal processing software solution for mitigating the effects of both intentional and unintentional jamming (including wideband jamming) through a combination of three techniques.  These include: antenna subset selection, spectral subtraction, and blind source separation (BSS), which work in conjuction with one another to extract specific transmissions from a mixture of intercepted wireless signals. The goal of the proposed solution, called BLInd Spectrum Separation (BLISS), is to enable reliable, high throughput, and robust end-to-end wireless communications, especially high capacity multimedia (voice, data, imagery) transmissions. In particular, the focus of the proposed work is the so-called ``disadvantaged user''.  These users are generally considered limited in transmission and processing power such as small-deck combatants, submarines, unmanned air vehicles (UAVs), dispersed ground units in urban and radio frequency (RF) challenged environments.\\
+
+In previous sections it has been understood that current anti-jamming techniques cannot compensate in deterministic wideband jamming scenarios.  These scenarios must be throughly understood before a practical solution can be provided.  For this thesis, the worst case scenario will be considered for the jamming device.  For simplification a narrowband jammer will be considered as an adversary, and the transceiving devices cannot frequency hop thus remaining on the same frequency as the jammer.  The jammer has an identical modulation scheme as the friendly tranceivers and the constellation is in phase.  Finally the jammer is assumed at a similar distance and transmit power as the friendly tranceiving devices.  Under these conditions the jammer is completely orthogonal and historically impossible to remove.\\
+
+This chapter is broken down into several sections which include a system level overview, the hardware and software choosen, signal removal evaluation, the superimposed equalizer design, and the antenna subset selection work.  Each of the systems that makeup BLISS have different purposes and goals allowing them to tackle different problems that occur.  It is important to note that these systems are at differing stages of development due to the limited time and initial development put into these blocks.\\ 
+
+\section{System}
+
+To provide a more straight forward explaination of the BLISS system it is appropriate to provided a system level overview.  The system's original purpose was to remove the effects of narrow and wideband jamming.  It accomplishes this goal through a series of processing blocks and a selection block.  These blocks include: the antenna subset selection (AntSS) block, spectral subtraction block, and finally the blind source separation block.  The figure below shows the interconnections between these blocks and certain modification were made from the original design of the system due to practical constraints.  These changes will be brought fourth as the blocks themselves are discussed in detail. Since an external research group is responsible to the AntSS block, it will not be throughly discussed by this thesis, but its fundimental purpose will be examined.\\
+
+INSERT BLOCK DIAGRAM OF OVERALL SYSTEM\\
+
+The first step in the BLISS system is to pass through the AntSS block.  Physically this block is equipped with many antenna in groups of 4.  As the block title portrays a subset of these antennas will be selected and they will be passed on to the next block.  Precisely a \(2^_{M}-to-2^_{N}\) downselection from an array of receive antennas to a set of BLISS receiver inputs. Each individual AntSS board provides 4-to-2 antenna downselection through a set of RF switches.  The goal of AntSS is to provide spatial separation through an array of antennas maximizing the SNR of the wanted signal.  It is important to note that the antenna spacing must be adiquet to provide enough separation or independence, depending on the operating frequencies or wavelength of the signals themselves.  Once the appropriate antennas are selected two signals are to the spectral subtraction block.\\
+
+The spectral subtraction block is next, which is used to removal known unwanted signal from the spectrum so the source separation block and work properly.  The original design of the spectral subtraction block is to use an existing audio technique of removing noise or signals in the frequency domain through a subtraction and smoothing technique.  This technique was discussed previously in the background section, therefore its historical literature will not be examined futher.  To enable removal of unwanted signals, the Spectral Subtraction block maintained a database of known power spectral densities (PSD) of common modulation schemes.  A recognition system would be implemented to automatic identification of the interfering signal and the block would simply subtract it out, through its already known estimate from its database.  Next the newly subtracted signal would be passed to the Source Separation System, where the signal would be unmixed.\\
+
+
+\section{Hardware and Software}
+
+\section{Non-orthoganal Signal Removal}
+
+\subsection{Non-deterministic Scenarios}
+Slow fading\\
+auto-regressive\\
+
+\section{Superimposed Equatizer}
+
+
+\section{Antenna Subset Selection}
+
+\section{Summary}

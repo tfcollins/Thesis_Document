@@ -12,4 +12,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Equalizers}{13}
 \contentsline {subsection}{\numberline {2.3.2}Superimposed Training Equalizer}{16}
 \contentsline {section}{\numberline {2.4}Software Defined Radio}{19}
-\contentsline {chapter}{Bibliography}{20}
+\contentsline {subsection}{\numberline {2.4.1}GNU Radio}{20}
+\contentsline {subsection}{\numberline {2.4.2}MATLAB}{21}
+\contentsline {subsection}{\numberline {2.4.3}Comparision}{21}
+\contentsline {subsection}{\numberline {2.4.4}Summary}{22}
