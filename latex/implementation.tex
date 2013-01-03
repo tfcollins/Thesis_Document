@@ -2,6 +2,8 @@
 
 Now that a significant background has been provided, the problem this thesis combats will be futher framed and defined.  This chapter outlines the proposed implementation of a receiver design, for wideband jammer scenarios and low-mobility situations.  An adaptive signal processing software solution for mitigating the effects of both intentional and unintentional jamming (including wideband jamming) through a combination of three techniques.  These include: antenna subset selection, spectral subtraction, and blind source separation (BSS), which work in conjuction with one another to extract specific transmissions from a mixture of intercepted wireless signals. The goal of the proposed solution, called BLInd Spectrum Separation (BLISS), is to enable reliable, high throughput, and robust end-to-end wireless communications, especially high capacity multimedia (voice, data, imagery) transmissions. In particular, the focus of the proposed work is the so-called ``disadvantaged user''.  These users are generally considered limited in transmission and processing power such as small-deck combatants, submarines, unmanned air vehicles (UAVs), dispersed ground units in urban and radio frequency (RF) challenged environments.\\
 
+The BLISS solution integrates three well-known adaptive signal processing algorithms found in the open literature: antenna subset selection, spectral subtraction, and blind source separation. Each of these algorithms is employed within the BLISS framework in order to enable the process of extracting individual transmissions intercepted from several mixtures of wireless signals. Although blind source separation can readily extract transmissions under ideal conditions, the BLISS system is aimed at harsh spectral envirnorments consisting of many users and in some cases jamming devices. Therefore BSS will not provide adiquate signal separation for robust throughput.  Hence, the other two algorithms, spectral subtractions and antenna subset selection will aid in this effort.\\
+
 In previous sections it has been understood that current anti-jamming techniques cannot compensate in deterministic wideband jamming scenarios.  These scenarios must be throughly understood before a practical solution can be provided.  For this thesis, the worst case scenario will be considered for the jamming device.  For simplification a narrowband jammer will be considered as an adversary, and the transceiving devices cannot frequency hop thus remaining on the same frequency as the jammer.  The jammer has an identical modulation scheme as the friendly tranceivers and the constellation is in phase.  Finally the jammer is assumed at a similar distance and transmit power as the friendly tranceiving devices.  Under these conditions the jammer is completely orthogonal and historically impossible to remove.\\
 
 This chapter is broken down into several sections which include a system level overview, the hardware and software choosen, signal removal evaluation, the superimposed equalizer design, and the antenna subset selection work.  Each of the systems that makeup BLISS have different purposes and goals allowing them to tackle different problems that occur.  It is important to note that these systems are at differing stages of development due to the limited time and initial development put into these blocks.\\ 
@@ -16,10 +18,35 @@ The first step in the BLISS system is to pass through the AntSS block.  Physical
 
 The spectral subtraction block is next, which is used to removal known unwanted signal from the spectrum so the source separation block and work properly.  The original design of the spectral subtraction block is to use an existing audio technique of removing noise or signals in the frequency domain through a subtraction and smoothing technique.  This technique was discussed previously in the background section, therefore its historical literature will not be examined futher.  To enable removal of unwanted signals, the Spectral Subtraction block maintained a database of known power spectral densities (PSD) of common modulation schemes.  A recognition system would be implemented to automatic identification of the interfering signal and the block would simply subtract it out, through its already known estimate from its database.  Next the newly subtracted signal would be passed to the Source Separation System, where the signal would be unmixed.\\
 
+The source separation block separates signals when only their mixtures are observed.  The operation is called blind, since the signal sources and mixing procedure are unknown to the receiver.  Under some conditions this constraint cannot be completely upheld.  This is true because the solutions needed to solve such an event become generally intractable.  An initial approach in this project was to use a technique called AMUSE (Algorithm for Multiple Unknown Signals Extraction)\cite{amuse}.  AMUSE works by first collecting an estimate of the covariance matrix of the received signal, computing the singular value decomposition of that covariance matrix, then performing several transforms on the received signal once the number of mixed received signals is known.  Then a covariance is calculated from these transformed received signals which are offset by some instance \tau, and a eigenvalue decomposition is done upon these covariances.  From this decomposition the singular values are used with the transform matrix and the received signal to provide an estimate of the wanted source signal.\\
 
-\section{Hardware and Software}
+\[ R_{y}=E[yy^{t}]\]
+\[ z=Cy\]
+\[ R_{z}=E[z(\tau)z(t-\tau)^{t}\]
+\[\^{x}=V^{t}Cy\]
 
-\section{Non-orthoganal Signal Removal}
+It is important to note that for simplicity the mixing matrix for the original proposed solution involving AMUSE is generally constructed as a linear time invariant (LTI) system.  There is some activity occuring with nonlinear mixing, but that was considered outside of the scope of this problem.\\
+
+\section{Spectral Subtraction}
+
+Now that the a formal system level approach has been presented, a more detailed understanding of the blocks themselves can be examined.  The goal of the spectral subtraction block is to removal signals to allow the blind source separation block to work properly.  As discussed previously signals would first need to be identified and then removed based on information supplied in a precompiled database of known signals.  The technique to remove such signals is called spectral subtraction, which primarily takes place in the frequency domain.  This approach only relys on known PSD's of the interfering signal.  Initially this technique seemed quite sound, but futher investigation proved otherwise.\\
+
+Initial simulations were created to examine this spectral estimation technique at RF frequencies rather than the standard audio frequencies for which Spectral Subtraction is formally used.  Only two signals were used in these simulations, both utilized the same modulation scheme and pulseshaping filters.  The signals were chosen to be non-orthoganal, since when they are orthogonal The frequency of the interfering signal was varied, and so were the oversubtraction parameter \alpha and quantization floor \beta.  Through experimentation \alpha worked best at a value greater than 10, and \beta worked best between 0.05 and 0.2.  The graph below show the bit error rate (BER) as the interferer is shifted across the wanted signal in frequency.\\
+
+INSERT GRAPH\\
+
+As you can see this spectral subtraction technique operates extremely poor when the signal are overlapping at all.  The reason system performs well at large frequency shifts is due to the bandpass filter which is used before the signal is quantized.  The reason the result is poor is because the estimate is largely incorrect.  Since the subtraction only utilzes the PSD's of the signals, half of the information is completely ignored.  This results in a completely inaccurate estimate.  The problem with traditional Spectral Subtraction is that its results are subjectively evaluated, which isn't accurate enough in a digital communication system.  NEED MORE CITATION ABOUT SPECTRAL SUBTRACTION SUBJECTIVE TESTING\\
+
+Since the initial simulations for traditional Spectral Subtraction proved inadiquated other optioned needed to be explored.  First though, the problem needed to be an analyzed further for better understanding, then the appropriate solution could be formulated.  
+Since the interfering signal and the wanted signal are non-orthoganal to one another they will share dimensional space, in this case the signals are inphase with one another.  Therefore both planes real and imaginary must be considered.  Non-orthoganal signal removal is a common task in communication system, which is done primarily by equalizers.  Therefore an equalizer approach was considered next.\\
+
+\subsection{Equalizer Approach}
+
+The equalizer approach used in this Spectral Subtraction approach is a Least Means Square (LMS) equalizer, utilizing training data used in the front portion of each transmitted frame.  This a common equalizer used in practice, allowing for future translation into a realized implementation.  The LMS equalizer was also chosen for it robustness no noise, which is a weakness of such equalizers as the zero-forcing equalizer and requires no matrix inversion such as the Least Square (LS) equalizer.  For proof of concept the entire datastream is used as training data, which provides the best results of any given channel for an adaptive equalizer, since the maximum knowledge is gained about the channel for each frame received.  The results below show the BER as the signals pass over one another in frequency, similar to the previous evaluation using traditional Spectral Subtraction.\\
+  
+INSERT FIGURE OF LMS EQUALIZER APPROACH\\
+
+
 
 \subsection{Non-deterministic Scenarios}
 Slow fading\\
@@ -29,5 +56,7 @@ auto-regressive\\
 
 
 \section{Antenna Subset Selection}
+
+\section{Hardware and Software}
 
 \section{Summary}
