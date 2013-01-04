@@ -52,7 +52,16 @@ INSERT FIGURE OF SMALL SEQUENCE OVERCOME BY EQUALIZER\\
 
 The important conclusion drawn from the previous experiment is that the when signals are orthogonal the receiver needs to be able to predict what data or energy is being transmismitted at a given time.  Therefore the jammer problem must be constained future.  As a result two jammer scenarios will be defined.  The first scenarios is that the jammer's modulated data or energy is completely known to the receiver and the second is that the data sequence repeats with period being small.  The larger the period the more resources the receiver will need to devote to its determination and evaluation.  The sequence being completely known to the jammer is a reasonable assumption; primarily if the jammer is friendly, as discussed previously in this thesis, then that knowledge can be readily available.\\
 
-Now that the jammer scenarios have been defined further they can be evaluated.  The first will be when the data sequence of the jammer is completely known to the receiver.
+Now that the jammer scenarios have been defined further they can be evaluated.  The first will be when the data sequence of the jammer is completely known to the receiver.  The approach here will be to synchronize with the interfering signal, so the interferer will simply be subtracted off.  To synchronize the signals a mathematical tool called correlation will be used.  Correlation is a common tool used in synchronization in communication systems when looking for known symbols in a stream of data.  The equation for correlation, shown below, simply passes signals over one another, the resulting sequence creates peaks where the data is most correlated.\\
+
+\[ (f\star g)[n] = summation f^{\star}[m]g[n+m]\] NEED CITATION\\
+
+An example of two sequences being cross-correlated with one another can be seen below, with the peak being where the signal line up of share the most mutual information with one another.  Therefore from this data the location of the start of the interfers data can easily be located and removed.  A simulation was created with this design in mind, with a unique result.  Since the signals are frequency shifted over one another, when there frequencies match, it produces the best result, but as soon as they are offset, errors start to occur.  This can easily be compensated for using a complex exponential multiplied by either the received or catalogued waveform.  This will enduce a frequency shift cancelling out the shifting signal.\\
+
+INSERT FIGURE OF known signal remove\\
+
+This simulation was also repeated but this time was subtracted in the frequency domain.  The result produced near identical results.  Since using this approach requires two fourier transforms, into and out of the frequency domain, computationally it is much more involved and requires many more resources than the time domain approach.  If the data was already the frequency domain from some other process or signal processing technique then the frequency subtraction would be a viable option.\\
+
 
 
 \subsection{Non-deterministic Scenarios}
