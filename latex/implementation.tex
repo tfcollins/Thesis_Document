@@ -82,7 +82,12 @@ GNU RADIO RECEIVE MODEL from GRC\\
 
 \subsection{Non-deterministic Scenarios}
 
-For completeness unknown signals were studied 
+For completeness it is important to discuss the scenarios when the interferer's modulated data is unknown but repetative with a small period.  The approach to estimating short sequences is a rather obvious one, an autoregressive algorithm is used to predict samples.  The simulation here, which was just used for proof of concept, uses a linear predictive filter.  The filter determines coefficients of a forward linear predictor by minimizing the prediction error in the least squares sense\cite{lpcfilter}.  It finds the coefficients of a pth-order linear predictor (FIR filter) that predicts the current value of the real-valued time series x based on past samples.
+
+\[ \^{x}[n]=-a(2)x(n-1)-a(3)x(n-2)-...-a(p+1)x(n-p)\]
+
+For the linear predictive filter to operate efficently the number of filter taps must be equal to or greater than the period of the repeated sequence.  If the number of taps is smaller it cannot capture the randomness the in the interferer's data.\\
+
 Slow fading\\
 auto-regressive\\
 
