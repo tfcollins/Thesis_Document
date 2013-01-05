@@ -27,6 +27,8 @@ The source separation block separates signals when only their mixtures are obser
 
 It is important to note that for simplicity the mixing matrix for the original proposed solution involving AMUSE is generally constructed as a linear time invariant (LTI) system.  There is some activity occuring with nonlinear mixing, but that was considered outside of the scope of this problem.\\
 
+\section{Hardware and Software Platforms}
+
 \section{Spectral Subtraction}
 
 Now that the a formal system level approach has been presented, a more detailed understanding of the blocks themselves can be examined.  The goal of the spectral subtraction block is to removal signals to allow the blind source separation block to work properly.  As discussed previously signals would first need to be identified and then removed based on information supplied in a precompiled database of known signals.  The technique to remove such signals is called spectral subtraction, which primarily takes place in the frequency domain.  This approach only relys on known PSD's of the interfering signal.  Initially this technique seemed quite sound, but futher investigation proved otherwise.\\
@@ -62,9 +64,25 @@ INSERT FIGURE OF known signal remove\\
 
 This simulation was also repeated but this time was subtracted in the frequency domain.  The result produced near identical results.  Since using this approach requires two fourier transforms, into and out of the frequency domain, computationally it is much more involved and requires many more resources than the time domain approach.  If the data was already the frequency domain from some other process or signal processing technique then the frequency subtraction would be a viable option.\\
 
+Now that a viable subtraction technique has been determined, the final implementation for the Spectral Subtraction block can be realized.  As discussed in the Hardware and Software Platform section of this thesis, GNU Radio was the first to be examined because of its realtime attributes.  This was quite an involved process requiring many weeks of trial and error.  The first implementation was entirely written in C++, which is the recommended language for signal processing blocks in GNU Radio.\\  
 
+Since C++ within GNU differs from many modern programming styles a code implementation or route was taken to ensure accuracy and speed up development.  Therefore all coding was done with C++ itself, using no GNU Radio built-in libraries\cite{gnuradioCPP}.  To allow for matrix operations the Aramdillo C++ Library\cite{armadillo} was imported and provided needed vector operations such as correlation and faster mathematical functions instead of having to rewrite common search operations.  This library would also be needed for the Signal Separation block, therefore coding with Armadillo would provide the knowledge for future implementations needed in that block.  From the standard C++ implementation results were compared with Matlab, and the code was ported into GNU Radio.\\
+
+Standard C++ -> GNU Radio Simulations -> GNU Radio Hardware Final\\
+
+GNU Radio C++ are basically written by first creating test cases and writing your code until they are solved.  This is a common practice among the programming community and provides a definitive endpoint to the code itself.  The code was written and compiled successfully but unforunately the python wrapper called SWIG\cite{swig}, which GNU Radio uses to interact with the C++ block through python, was unable to export the library.  This is an undocumented problem within GNU Radio and was only identified through discussions directly with the GNU Radio core development team.  Therefore another approach had to be considered.\\
+
+The next option was to use python itself for signal processing.  This is approach was primarily developed by Josh Blum, one of the core developer of GNU Radio.  It isn't recommended due to speed issue, but it is quite easier to implement and debug for those familiar with python.  As a result the previously C++ code was ported to python standards libraries and then to GNU Radio.  The NumPy libraries were used within python.  NumPy is the fundimental package for scientific computing in Python\cite{numpy}.  It like the armadillo library provides matrix operations such as correlation.  Again under the Python standard libraries with NumPy the results were varified with MATLAB.  Then the code was port to GNU Radio.\\
+
+Again more problems occured, stonewalling all progress.  The signal processing block was written as a subprocess using the queuing system built into GNU Radio.  Queueing provides barriers between the connected blocks; therefore they can run freely, limiting bottlenecks. The system built would operate correctly for several hundred samples but would eventually segmentation fault.  Several attempts to fix this error with even architectural changes to the code.  Finally the lead developer of GNU Radio was consulted, Tom Rondeau \cite{tomrondeau}, but he was also unable to determine a solution.  The assumed problem was a type casting occuring within the queue itself, that would eventually accumulate and cause a segmentation fault.\\
+
+With these setbacks, I became necessary to look beyond GNU Radio and just utilize MATLAB for signal processing.  Therefore the decision to load captured signals from GNU Radio and process them in MATLAB.  It is nowhere near realtime, but it will process the data appropriately.  The simple GNU Radio needs frontend is important because it allows tight synchronization between multiple receive antenna, which is a require of the original design of the system.  The GNU Radio model can be seen in the figure below.\\
+
+GNU RADIO RECEIVE MODEL from GRC\\
 
 \subsection{Non-deterministic Scenarios}
+
+For completeness unknown signals were studied 
 Slow fading\\
 auto-regressive\\
 
@@ -73,6 +91,5 @@ auto-regressive\\
 
 \section{Antenna Subset Selection}
 
-\section{Hardware and Software}
 
 \section{Summary}
