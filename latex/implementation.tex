@@ -88,11 +88,11 @@ For completeness it is important to discuss the scenarios when the interferer's 
 
 For the linear predictive filter to operate efficently the number of filter taps must be equal to or greater than the period of the repeated sequence.  If the number of taps is smaller it cannot capture the randomness the in the interferer's data.\\
 
-Slow fading\\
-auto-regressive\\
-
 \section{Superimposed Equatizer}
 
+Moving on, the next block to discuss is the signal separation block.  The development of this block is very staggered and due to time requirements shortcuts needed to be made.  The original desired result was to use a blind source separation technique outlined here \cite{AMUSE}, which is able to separate multiple signals from one another under specific constraints.  For this process to work efficently an appropriate channel model needs to be created.  Since the goal of this system is to be very robust an estimator for very frequency selective channel is desired.  The progession of the signal separation block will be examined in this sections and the limitations will be discussed.\\
+
+The first objective is to examine the channel mixing model which assumes a single-input multiple-antenna broadcast channel.  A J -channel FIR system excited by K transmit antennas is considered. A quasi time-invariant multipath channel is assumed which remains constant during the transmission of a set of consecutive symbols, which is called a slot. These slot are assumed independent from one another.  The channel estimation is performed over each slot. Each symbol inside a slot is assumed to be the result of a known redundant precoder acting on an input transmit symbol vector drawn from an M-PSK constellation. Therefore the receiver receives signals not only from the intended transmitter but also from Q other interferers. The interferers are assumed to employ the same redundant precoder as the desired signal\cite{skrkantPHD}.
 
 \section{Antenna Subset Selection}
 
