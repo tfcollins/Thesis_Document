@@ -29,6 +29,11 @@ It is important to note that for simplicity the mixing matrix for the original p
 
 \section{Hardware and Software Platforms}
 
+Before any implementation was considered a platform needed to be choosen for the end result.  This selection provided the work flowpath for the implementation, eliminating many options.  As discussed in previous chapters, the end result wants to leverage the power of Software-Defined radios (SDR).  The hardware platform chosen was the USRP2 designed and built by Ettus Research\cite{ettus}.  These radios are readily available in the Wireless Innovation Laboratory and since the number of radios required for the design was still unknown, it was an obvious choice.  There are several software packages that support the USRP2 hardware and several will be examined in this chapter.\\
+
+The USRP2 or Universal Software Radio Peripheral are intended to be a comparatively inexpensive hardware platform for software radio, and is commonly used by research labs, universities, and hobbyists\cite{http://www.wired.com/science/discoveries/news/2006/06/70933}.  The USRP2 connects directly to a host computer through a Gigabit Ethernet link
+
+
 \section{Spectral Subtraction}
 
 Now that the a formal system level approach has been presented, a more detailed understanding of the blocks themselves can be examined.  The goal of the spectral subtraction block is to removal signals to allow the blind source separation block to work properly.  As discussed previously signals would first need to be identified and then removed based on information supplied in a precompiled database of known signals.  The technique to remove such signals is called spectral subtraction, which primarily takes place in the frequency domain.  This approach only relys on known PSD's of the interfering signal.  Initially this technique seemed quite sound, but futher investigation proved otherwise.\\
@@ -76,7 +81,7 @@ The next option was to use python itself for signal processing.  This is approac
 
 Again more problems occured, stonewalling all progress.  The signal processing block was written as a subprocess using the queuing system built into GNU Radio.  Queueing provides barriers between the connected blocks; therefore they can run freely, limiting bottlenecks. The system built would operate correctly for several hundred samples but would eventually segmentation fault.  Several attempts to fix this error with even architectural changes to the code.  Finally the lead developer of GNU Radio was consulted, Tom Rondeau \cite{tomrondeau}, but he was also unable to determine a solution.  The assumed problem was a type casting occuring within the queue itself, that would eventually accumulate and cause a segmentation fault.\\
 
-With these setbacks, I became necessary to look beyond GNU Radio and just utilize MATLAB for signal processing.  Therefore the decision to load captured signals from GNU Radio and process them in MATLAB.  It is nowhere near realtime, but it will process the data appropriately.  The simple GNU Radio needs frontend is important because it allows tight synchronization between multiple receive antenna, which is a require of the original design of the system.  The GNU Radio model can be seen in the figure below.\\
+With these setbacks, it became necessary to look beyond GNU Radio and just utilize MATLAB for signal processing.  Therefore the decision to load captured signals from GNU Radio and process them in MATLAB.  It is nowhere near realtime, but it will process the data appropriately.  The simple GNU Radio needs frontend is important because it allows tight synchronization between multiple receive antenna, which is a require of the original design of the system.  The GNU Radio model can be seen in the figure below.\\
 
 GNU RADIO RECEIVE MODEL from GRC\\
 
@@ -87,6 +92,17 @@ For completeness it is important to discuss the scenarios when the interferer's 
 \[ \^{x}[n]=-a(2)x(n-1)-a(3)x(n-2)-...-a(p+1)x(n-p)\]
 
 For the linear predictive filter to operate efficently the number of filter taps must be equal to or greater than the period of the repeated sequence.  If the number of taps is smaller it cannot capture the randomness the in the interferer's data.\\
+
+\subsection{Over the Air Implementation Considerations}
+
+When moving towards a real implementation of the Spectral Subtraction block, the non-idealities introduced by the envirorment needed to be considered.  These include frequency and phase shifts, as well as timing offsets.  Certain considerations needed to be made as well, since instanteous changes occur when signals overlap.  Therefore a more advanced control scheme needed to be constructed around the common signal compensation or correction.  The basic idea used here is a receiver within a receiver, one for each signal received.  This will be discussed in detail.\\
+
+The system assumes that the jammer is always present within the envirorment therefore it was concluded that the jamming signal should synchronize with first, be removed and then all that remains should be the wanted signal.  There is were the receiver within a receiver design comes in, since first the interferer will be synchronized to, utilizing phase and frequency recovery and then timing recovery.  Unforunately such an implementation isnt as straight forward as expected.  Since when both signal are present in the spectrum it is impossible for these algorithm to operate correctly, therefore modifications need to made, which is where a controlling mechanism comes into play.\\
+
+When multiple signals are in the envirorment the compensation algorithm learn incorrectly; as a result, a decision was made to pause these algorithm when both signals were present and continue when the signal interferer was only present.  This operation relys on two assumptions, the first is that both signals are present for short periods of time which can be controlled.  The second is that the calculated offsets of cause by the envirorment don't rapidly vary during the periods of time for which the two signals are visible.  This assumption is quite reasonable especially with non-mobile transceivers.  CONSIDER ADDING A SOURCE FOR EXAMPLE.\\
+
+To accomplish this algorithm holding mechanism, energy detection was chosen to be uses for its simplicity.  Below you can see an image of the jammer signal by itself and the combined signals.  A large increase in energy or step can be seen, which can easily numerically detected.  Energy is calculated using the following equation: \(E_{s}=\newcommand{\inftyint}{\int_{-\infty}^{+\infty}}|x(t)|^{2}dt\).  This was implemented with a moving average filter with a small window to reduce sperious changes due to signals gaps or outliers.  In practice the average peak energy level of the interferer is first calculated, then when it increase to a level roughly 1.5x that level the compensation algorithm are trigured.  A simple technqiue technique, which is commonly uses but in the inverse fashion.  The final results of the Spectral Subtraction block are examined in the next chapter.\\
+
 
 \section{Superimposed Equatizer}
 
@@ -110,6 +126,15 @@ INSERT Figure of SNR and channel estimate for Superimpose equalizer\\
 
 INSERT Figure with comparision of superimposed equalizer vs. traditional linear equalizer\\
 
+From the comparision of the figure above you can see in a frequency selective fading channel the traditional LMS equalizer operates poorly.  These simulations provide the necessary foundation to push towards the final implementation of the signal separation block.  Due to time constraints the certain decisions needed to be made about this block and future work will be need to complete the overall goal and desired performance of the block.  With that in mind the primary goal for the signal separation block in this thesis is to provide an accurate channel estimate.  The unmixing model requires this knowledge to work appropriately.  Therefore instead of the proposed AMUSE\cite{AMUSE} technique, another MIMO cross-channel technique called Maxmimal Ratio Combining (MRC).  This decision was made with both project managers.\\
+
+Maximal Ratio Combining is a method of diversity combining in which the signal add first weighted and then added together.  These weights or gains are made proportional to the RMS signal level and are inversely proportional to the mean square noise level in that channel, and the same proportionality constant is used for all channels\cite{http://www.its.bldrdoc.gov/fs-1037/fs-1037c.htm}.  Therefore the channel with the best SNR provides the greatest impact on the resulting sequence.  This process needs to explain more throughly.  Assuming the received signal is an array of samples received the individual antennas \(\textbf{x}(t)=\textbf{h}(t)u(t)+\textbf{n}(t)\) and the individual channels \(\textbf{h}=[h_{0},h_{1},...,h_{N-1}]^{T}\), and the additive noise \(\textbf{n}=[n_{0},n_{1},...,n_{N-1}^{T}\).  The equalized symbol \(\^{x}=x+(h^{H}n)/(h^{H}h) \) \cite{http://www.comm.utoronto.ca/~rsadve/Notes/DiversityReceive.pdf}.
+
+A simple evaluation of MRC was done to prove its capabilities, which is based on the simulations here \cite{http://images.dsplog.com/db-install/wp-content/uploads/2008/09/script_maximal_ratio_combining_effective_snr.m}.
+
+INSERT MRC PLOT OF INCREASING ANTENNAs\\
+
+As you can see as you increase the number of antennas in a frequency selective channel the better the result.  Therefore MRC was introduce into the framework of the signal separation block, and the new model for this block can be seen below.  This block first utlizes the superimposed equalizer on the channels individually then uses MRC to combine there results maximizing the SNR of the desired signal.  MRC was combined with the channel estimate approach using superimposed equalizers.  From the knowledge learned in the previous with the implementation involving GNU Radio, the signal separation block was created entirely in MATLAB.  The results of this operation will be discussed in the final chapter of the thesis.\\
 
 \section{Antenna Subset Selection}
 
