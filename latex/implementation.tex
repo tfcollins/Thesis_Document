@@ -31,7 +31,15 @@ It is important to note that for simplicity the mixing matrix for the original p
 
 Before any implementation was considered a platform needed to be choosen for the end result.  This selection provided the work flowpath for the implementation, eliminating many options.  As discussed in previous chapters, the end result wants to leverage the power of Software-Defined radios (SDR).  The hardware platform chosen was the USRP2 designed and built by Ettus Research\cite{ettus}.  These radios are readily available in the Wireless Innovation Laboratory and since the number of radios required for the design was still unknown, it was an obvious choice.  There are several software packages that support the USRP2 hardware and several will be examined in this chapter.\\
 
-The USRP2 or Universal Software Radio Peripheral are intended to be a comparatively inexpensive hardware platform for software radio, and is commonly used by research labs, universities, and hobbyists\cite{http://www.wired.com/science/discoveries/news/2006/06/70933}.  The USRP2 connects directly to a host computer through a Gigabit Ethernet link
+The USRP2 or Universal Software Radio Peripheral are intended to be a comparatively inexpensive hardware platform for software radio, and is commonly used by research labs, universities, and hobbyists\cite{http://www.wired.com/science/discoveries/news/2006/06/70933}.  The USRP2 connects directly to a host computer through a Gigabit Ethernet link, which relays baseband sample that have been receiver or tobe translated.   The motherboard provides the following subsystems: clock generation and synchronization, FPGA, ADCs, DACs, host processor interface, and power regulation. Several of these component are seen in the image below.  These are the basic components that are required for baseband processing of signals. A modular front-end, called a daughterboard, is used for analog operations such as up and down conversion, filtering, and other signal conditioning. By replacing this RF daughtercard many different frequency ranges can be examined.\\
+
+IMAGE OF USRP2 MAINBOARD\\
+
+The information flow is important to understand within the phyiscal radio.  This SDR block diagram shown below, outlines the common tasks done by the: daughtercard, FPGA, DAC/ADC, and host computer.  Since the FPGA is programmable the operations can change if desire, but the three dominating software packages that utlize the USRP2 flow this structure.  Beginning on the far left of the diagram and continuing to the right, at the daughtercard are RF emitions are received and transmitted.  The daughter also contain mixers that translate the signal to an intermediate frequency.  Next come the dual 100 MS/s 14-bit ADCs, dual 400 MS/s 16-bit DACs, two digital down-converters with programmable decimation rates, and two digital up-converters with programmable interpolation rates\cite{USPR2Stats}.  These are located on the mainboard of the USRP2 itself.  The FPGA
+
+SEE http://confluence.qu.edu.qa/display/NPRPRESEARCH/USRP2+Testbed for image\\
+
+The data itself constain several pieces of metadata in a frame\cite{}.
 
 
 \section{Spectral Subtraction}
