@@ -16,3 +16,13 @@
 \contentsline {subsection}{\numberline {2.4.2}MATLAB}{21}
 \contentsline {subsection}{\numberline {2.4.3}Comparision}{21}
 \contentsline {subsection}{\numberline {2.4.4}Summary}{22}
+\contentsline {section}{\numberline {2.5}Overview}{23}
+\contentsline {section}{\numberline {2.6}System}{24}
+\contentsline {section}{\numberline {2.7}Hardware and Software Platforms}{26}
+\contentsline {section}{\numberline {2.8}Spectral Subtraction}{29}
+\contentsline {subsection}{\numberline {2.8.1}Equalizer Approach}{30}
+\contentsline {subsection}{\numberline {2.8.2}Non-deterministic Scenarios}{34}
+\contentsline {subsection}{\numberline {2.8.3}Over the Air Implementation Considerations}{35}
+\contentsline {section}{\numberline {2.9}Superimposed Equalizer}{36}
+\contentsline {section}{\numberline {2.10}Antenna Subset Selection}{39}
+\contentsline {section}{\numberline {2.11}Summary}{39}
