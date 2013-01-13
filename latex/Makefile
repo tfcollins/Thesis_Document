@@ -9,6 +9,6 @@ thesis.pdf: thesis.tex mybib.bib
 	bibtex thesis
 	pdflatex thesis
 	pdflatex thesis
-
+	pdflatex thesis
 
 #rm *.blg *.aux *.log *.lot *.bbl *.toc *.lof
