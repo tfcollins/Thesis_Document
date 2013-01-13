@@ -1,3 +1,5 @@
+\chapter{Background}
+\label{ch:background}
 
 This chapter provides the background information needed to understand the chapters that follow.  It examines the basic outline of a communication system and how non-idealities are compensated for, with addition of multiple input multiple output (MIMO) systems and a unique filtering technique called spectral subtraction.   Secondly this chapter investigates common jammer scenarios and anti-jamming solutions.  Finally it outlines the necessary hardware and software tools used during in the implementation chapter.
 
@@ -113,6 +115,10 @@ Another consideration that must be considered is how these training symbols inte
 
 
 In summary, modern research on superimposed training focuses primarily on the training symbol generation for a certain type of communication sytems design from single transmission to MIMO.  Unfortunately little to no physical implementations exists for such system.  This is true because of the sychronization issue that exist when using superimposed training symbols.  Since they are directly placed with transmittion data it can be difficult to determine their locations in a sequence blindly, which is done in real world systems.  This problem must be considered when phyiscal implementations are proposed.\\
+
+\section{Spectral Subtraction}
+
+New signal processing techniques are devised and evaluated in academica at an accelerated rate(CONSIDER SOURCE).  In this thesis a new application for a relatively standard technique was examined, called Spectral Subtraction (SS).  The SS technique was first published in 1979 by Steven Boll\cite{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1170696}. SS is formally used to reduce ambient noise in audiable sources, improving the overall quality and intelligability of digitized speech.  It is a dominant speech processing algorithm and many extension including \cite{SSEXAMPLE}, \cite{SSEXAMPLE2}, and \cite{SSEXAMPLE3}.\\ 
 
 \section{Software Defined Radio}
 

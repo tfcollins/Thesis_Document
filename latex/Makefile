@@ -5,10 +5,10 @@ clean :
 	@rm *.aux *.bbl *.toc *.log *.pdf *.blg *.lof *.lot 
 
 thesis.pdf: thesis.tex mybib.bib
-	pdflatex thesis
+	pdflatex -aux-directory=build -output-directory=build thesis 
 	bibtex thesis
-	pdflatex thesis
-	pdflatex thesis
-	pdflatex thesis
+	pdflatex -aux-directory=build -output-directory=build thesis
+	pdflatex -aux-directory=build -output-directory=build thesis
+	pdflatex -aux-directory=build -output-directory=build thesis
 
 #rm *.blg *.aux *.log *.lot *.bbl *.toc *.lof

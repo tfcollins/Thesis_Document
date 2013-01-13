@@ -1,0 +1,1254 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  13 JAN 2013 18:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis
+(./thesis.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(./mvlthesis.cls
+Document Class: mvlthesis 1996/05/20 v1.0 WPI Machine Vision Laboratory Thesis 
+Class
+\hour=\count79
+\minute=\count80
+\dow=\count81
+\leap=\count82
+\x=\count83
+\y=\count84
+(./mvlt11.clo)
+\descriptionmargin=\dimen102
+\c@part=\count85
+\c@chapter=\count86
+\c@section=\count87
+\c@subsection=\count88
+\c@subsubsection=\count89
+\c@paragraph=\count90
+\c@subparagraph=\count91
+\c@figure=\count92
+\c@table=\count93
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvipdfm.def on input line 91.
+
+(/usr/local/texlive/2012/texmf/tex/latex/dvipdfm/dvipdfm.def
+File: dvipdfm.def 1999/9/6 vx.x Driver-dependant file
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks15
+\verbatim@line=\toks16
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+
+Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
+
+))
+
+LaTeX Warning: Unused global option(s):
+    [16pt].
+
+(build/thesis.aux (build/introduction.aux) (build/background.aux)
+(build/implementation.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+
+ []
+
+[1
+
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./abstract.tex) [1] [3] (build/thesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+)
+\tf@toc=\write3
+\openout3 = `thesis.toc'.
+
+ [4
+
+] (build/thesis.lof)
+\tf@lof=\write4
+\openout4 = `thesis.lof'.
+
+ [5
+
+]
+(build/thesis.lot)
+\tf@lot=\write5
+\openout5 = `thesis.lot'.
+
+ [6
+
+]
+Chapter 1.
+[1
+
+]
+\openout2 = `introduction.aux'.
+
+ (./introduction.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+[2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+LaTeX Warning: Citation `1' on page 3 undefined on input line 25.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+LaTeX Warning: Citation `1' on page 3 undefined on input line 27.
+
+
+LaTeX Warning: Citation `3' on page 3 undefined on input line 27.
+
+
+LaTeX Warning: Citation `3' on page 3 undefined on input line 27.
+
+
+LaTeX Warning: Citation `3' on page 3 undefined on input line 27.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+[3]
+
+LaTeX Warning: Citation `2' on page 4 undefined on input line 29.
+
+
+LaTeX Warning: Citation `5' on page 4 undefined on input line 29.
+
+
+LaTeX Warning: Citation `6' on page 4 undefined on input line 29.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+LaTeX Warning: Citation `7' on page 4 undefined on input line 31.
+
+
+LaTeX Warning: Citation `8' on page 4 undefined on input line 31.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+LaTeX Warning: Citation `4' on page 5 undefined on input line 39.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+[5]) [6]
+\openout2 = `background.aux'.
+
+ (./background.tex
+Chapter 2.
+
+LaTeX Warning: Citation `10' on page 7 undefined on input line 8.
+
+
+LaTeX Warning: Citation `10' on page 7 undefined on input line 8.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[7
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+LaTeX Warning: Citation `11' on page 9 undefined on input line 24.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+LaTeX Warning: Citation `12' on page 9 undefined on input line 27.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+LaTeX Warning: Citation `13' on page 9 undefined on input line 35.
+
+
+LaTeX Warning: Citation `14' on page 9 undefined on input line 35.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+[10]
+
+LaTeX Warning: Reference `fig:Transmitter_System_Diagram' on page 11 undefined 
+on input line 48.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+! Undefined control sequence.
+l.52 ...l with a sinusoid, seen by equation \eqref
+                                                  {mixing}.  This done becau...
+
+? 
+
+LaTeX Warning: Citation `9' on page 11 undefined on input line 52.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[11]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.55 
+     
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.55 
+     
+? 
+! You can't use `\eqno' in vertical mode.
+\endequation ->\eqno 
+                     \hbox {\@eqnnum }$$\@ignoretrue 
+l.58 \end{equation}
+                   
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.58 \end{equation}
+                   
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.58 \end{equation}
+                   
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+! Undefined control sequence.
+l.71 ... transmitted data \( \textbf{\^{x}}=y \asp
+                                                   e\).  The figure below ou...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 81.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.81 ...ies.  The estimator is defined as \( \^{x}
+                                                  _{MMSE}(y)=\e{x|y}  \).  I...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.81 ...ies.  The estimator is defined as \( \^{x}
+                                                  _{MMSE}(y)=\e{x|y}  \).  I...
+
+? 
+! Undefined control sequence.
+l.81 ...imator is defined as \( \^{x}_{MMSE}(y)=\e
+                                                  {x|y}  \).  If \(x\) and \...
+
+? 
+Missing character: There is no Ë in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 81.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.81 ...iginal vector \(x\) represented by \(\^{x}
+                                                  \), resulting in the linea...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.81 ...iginal vector \(x\) represented by \(\^{x}
+                                                  \), resulting in the linea...
+
+? 
+Missing character: There is no Ë in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 81.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.81 ..., resulting in the linear equation \(\^{x}
+                                                  =Ay+b\).  The LMMSE will m...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.81 ..., resulting in the linear equation \(\^{x}
+                                                  =Ay+b\).  The LMMSE will m...
+
+? 
+Missing character: There is no Ë in font cmex10!
+! Undefined control sequence.
+l.81 ...E will minimize the mean square error \(\e
+                                                  {\|x-\^{x}\|^{2}}\).\\
+? 
+
+LaTeX Warning: Command \^ invalid in math mode on input line 81.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.81 ...imize the mean square error \(\e{\|x-\^{x}
+                                                  \|^{2}}\).\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.81 ...imize the mean square error \(\e{\|x-\^{x}
+                                                  \|^{2}}\).\\
+? 
+Missing character: There is no Ë in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+! Undefined control sequence.
+l.95 \[ e = 1/2\e
+                 {(sign(y[k]-y[k])^{2}}\]
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+
+LaTeX Warning: Citation `16' on page 16 undefined on input line 104.
+
+
+LaTeX Warning: Citation `16' on page 16 undefined on input line 104.
+
+
+LaTeX Warning: Citation `15' on page 16 undefined on input line 104.
+
+
+LaTeX Warning: Citation `19' on page 16 undefined on input line 104.
+
+[16]
+
+LaTeX Warning: Citation `17' on page 17 undefined on input line 104.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
+LaTeX Warning: Citation `17' on page 17 undefined on input line 106.
+
+
+LaTeX Warning: Citation `17' on page 17 undefined on input line 106.
+
+
+LaTeX Warning: Citation `18' on page 17 undefined on input line 106.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+[17]
+
+LaTeX Warning: Citation `20' on page 18 undefined on input line 112.
+
+
+LaTeX Warning: Citation `16' on page 18 undefined on input line 112.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+
+LaTeX Warning: Citation `15' on page 18 undefined on input line 114.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+[18]
+
+LaTeX Warning: Citation `21' on page 19 undefined on input line 121.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+
+LaTeX Warning: Citation `22' on page 19 undefined on input line 123.
+
+
+LaTeX Warning: Citation `23' on page 19 undefined on input line 123.
+
+
+LaTeX Warning: Citation `23' on page 19 undefined on input line 123.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+LaTeX Warning: Citation `24' on page 19 undefined on input line 125.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+[21])
+Underfull \hbox (badness 10000) in paragraph at lines 145--91
+
+ []
+
+[22]
+\openout2 = `implementation.aux'.
+
+ (./implementation.tex
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[23
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.20 ...d on to the next block.  Precisely a \(2^_
+                                                  {M}-to-2^_{N}\) downselect...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   _
+l.20 ...e next block.  Precisely a \(2^_{M}-to-2^_
+                                                  {N}\) downselection from a...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.20 ...t block.  Precisely a \(2^_{M}-to-2^_{N}\)
+                                                   downselection from an arr...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.20 ...t block.  Precisely a \(2^_{M}-to-2^_{N}\)
+                                                   downselection from an arr...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+[25]
+
+LaTeX Warning: Citation `amuse' on page 26 undefined on input line 24.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.24 ...als which are offset by some instance \tau
+                                                  , and a eigenvalue decompo...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 
+     
+? 
+
+Overfull \hbox (567.09706pt too wide) in paragraph at lines 24--25
+\OML/cmm/m/it/10.95 ^^\; andaeigenvaluedecompositionisdoneuponthesecovariances:
+Fromthisdecompositionthesingularvaluesareusedwiththetransformmatrixandthereceiv
+edsignaltoprovideanestimateofthewantedsourcesignal:[] |
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 29.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.29 \[\^{x}
+            =V^{t}Cy\]
+? 
+! You can't use `\spacefactor' in display math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.29 \[\^{x}
+            =V^{t}Cy\]
+? 
+Missing character: There is no Ë in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+LaTeX Warning: Citation `ettus' on page 26 undefined on input line 35.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+[26]
+
+LaTeX Warning: Citation `http://www.wired.com/science/discoveries/news/2006/06/
+70933' on page 27 undefined on input line 37.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+LaTeX Warning: Citation `USPR2Stats' on page 27 undefined on input line 41.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+LaTeX Warning: Citation `http://files.ettus.com/uhd_docs/doxygen/html/structuhd
+_1_1rx__metadata__t.html' on page 28 undefined on input line 45.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+LaTeX Warning: Citation `http://sdrblog.wordpress.com/2009/03/16/timestamp-data
+-from-the-usrp/' on page 28 undefined on input line 45.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+LaTeX Warning: Citation `http://gnuradio.org/redmine/projects/gnuradio/wiki/Mul
+tiUsrp' on page 28 undefined on input line 47.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.56 ... were the oversubtraction parameter \alpha
+                                                   and quantization floor \b...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.57 
+     
+? 
+
+Overfull \hbox (800.04272pt too wide) in paragraph at lines 56--57
+\OT1/cmr/m/n/10.95 over-sub-trac-tion pa-ram-e-ter $\OML/cmm/m/it/10.95 andqua
+ntizationfloor^^L:Throughexperimentationworkedbestatavaluegreaterthan\OT1/cmr/
+m/n/10.95 10\OML/cmm/m/it/10.95 ; and^^Lworkedbestbetween\OT1/cmr/m/n/10.95 0\O
+ML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 05\OML/cmm/m/it/10.95 and\OT1/cmr/m/n/10.
+95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 :Thegraphbelow
+showthebiterrorrate\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 BER\OT1/cmr/m/n/10.9
+5 )\OML/cmm/m/it/10.95 astheinterfererisshiftedacrossthewantedsignalinfrequency
+:[] |
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+LaTeX Warning: Citation `gnuradioCPP' on page 33 undefined on input line 89.
+
+
+LaTeX Warning: Citation `armadillo' on page 33 undefined on input line 89.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+LaTeX Warning: Citation `swig' on page 33 undefined on input line 93.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+[33]
+
+LaTeX Warning: Citation `numpy' on page 34 undefined on input line 95.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+LaTeX Warning: Citation `tomrondeau' on page 34 undefined on input line 97.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+LaTeX Warning: Citation `lpcfilter' on page 34 undefined on input line 105.
+
+[34]
+
+LaTeX Warning: Command \^ invalid in math mode on input line 107.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.107 \[ \^{x}
+              [n]=-a(2)x(n-1)-a(3)x(n-2)-...-a(p+1)x(n-p)\]
+? 
+! You can't use `\spacefactor' in display math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.107 \[ \^{x}
+              [n]=-a(2)x(n-1)-a(3)x(n-2)-...-a(p+1)x(n-p)\]
+? 
+Missing character: There is no Ë in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+LaTeX Warning: Citation `AMUSE' on page 36 undefined on input line 124.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+[36]
+
+LaTeX Warning: Citation `skrkantPHD' on page 37 undefined on input line 126.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+LaTeX Warning: Citation `midterm_report' on page 37 undefined on input line 128
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.130 1. The data sequence x_
+                             {d} is an i.i.d. sequence such that \(x_{d}~CN(...
+
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 ... x_{d} is an i.i.d. sequence such that \(
+                                                  x_{d}~CN(0,\sigma_{d}^{2}\)
+? 
+
+LaTeX Warning: Citation `Ghogho' on page 37 undefined on input line 136.
+
+
+LaTeX Warning: Citation `Ghogho' on page 37 undefined on input line 136.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+LaTeX Warning: Citation `AMUSE' on page 38 undefined on input line 144.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+[38]
+
+LaTeX Warning: Citation `http://www.its.bldrdoc.gov/fs-1037/fs-1037c.htm' on pa
+ge 39 undefined on input line 146.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 146.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.146 ...N-1}^{T}\).  The equalized symbol \(\^{x}
+                                                  =x+(h^{H}n)/(h^{H}h) \) \c...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.146 ...N-1}^{T}\).  The equalized symbol \(\^{x}
+                                                  =x+(h^{H}n)/(h^{H}h) \) \c...
+
+? 
+Missing character: There is no Ë in font cmex10!
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.146 ...to.ca/~rsadve/Notes/DiversityReceive.pdf}
+                                                  .
+? 
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.146 ...to.ca/~rsadve/Notes/DiversityReceive.pdf}
+                                                  .
+? 
+
+LaTeX Warning: Citation `http://www.comm.utoronto.ca/\unhbox\voidb@x \penalty \
+@M \ {}rsadve/Notes/DiversityReceive.pdf' on page 39 undefined on input line 14
+6.
+
+
+LaTeX Warning: Citation `http://images.dsplog.com/db-install/wp-content/uploads
+/2008/09/script_maximal_ratio_combining_effective_snr.m' on page 39 undefined o
+n input line 148.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+) [39] [40]
+No file thesis.bbl.
+(build/thesis.aux (build/introduction.aux) (build/background.aux)
+(build/implementation.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1145 strings out of 493488
+ 16678 string characters out of 3141326
+ 71880 words of memory out of 3000000
+ 4431 multiletter control sequences out of 15000+200000
+ 10102 words of font info for 35 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 42i,6n,21p,1476b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on build/thesis.pdf (46 pages, 252571 bytes).
+PDF statistics:
+ 206 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

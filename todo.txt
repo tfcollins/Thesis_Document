@@ -1,3 +1,12 @@
 
 Motivation
 -Need paragraph about repitition in signals
+
+Background
+-NEED TO FINISH SS SECTION
+
+Implementation
+-Need to talk about receiver within a receiver Idea in SS
+-
+
+
