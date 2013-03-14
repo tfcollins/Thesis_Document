@@ -1,5 +1,5 @@
-\contentsline {chapter}{List of Figures}{v}
-\contentsline {chapter}{List of Tables}{vi}
+\contentsline {chapter}{List of Figures}{vi}
+\contentsline {chapter}{List of Tables}{vii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{2}
 \contentsline {section}{\numberline {1.2}State of the Art}{3}
@@ -18,4 +18,15 @@
 \contentsline {subsection}{\numberline {2.5.2}MATLAB}{26}
 \contentsline {subsection}{\numberline {2.5.3}Comparision}{27}
 \contentsline {subsection}{\numberline {2.5.4}Summary}{28}
-\contentsline {chapter}{Bibliography}{29}
+\contentsline {chapter}{\numberline {3}Implementation}{29}
+\contentsline {section}{\numberline {3.1}Overview}{29}
+\contentsline {section}{\numberline {3.2}System}{31}
+\contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{33}
+\contentsline {section}{\numberline {3.4}Spectral Subtraction}{36}
+\contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{40}
+\contentsline {subsection}{\numberline {3.4.2}Non-deterministic Scenarios}{48}
+\contentsline {subsection}{\numberline {3.4.3}Over the Air Implementation Considerations}{50}
+\contentsline {section}{\numberline {3.5}Superimposed Equalizer}{52}
+\contentsline {section}{\numberline {3.6}Antenna Subset Selection}{58}
+\contentsline {section}{\numberline {3.7}Summary}{59}
+\contentsline {chapter}{Bibliography}{63}
