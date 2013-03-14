@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  14 MAR 2013 12:55
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  14 MAR 2013 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -67,53 +67,129 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks16
 \verbatim@in@stream=\read1
 )
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
 
-LaTeX Warning: Unused global option(s):
-    [16pt].
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip41
 
-(./thesis.aux (./introduction.aux))
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen105
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
+\dotsspace@=\muskip10
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks19
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks20
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks21
+\multlinegap=\skip42
+\multlinetaggap=\skip43
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks23
+\float@box=\box28
+\@float@everytoks=\toks24
+\@floatcapt=\box29
+) (./thesis.aux
+(./introduction.aux) (./background.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
  []
 
 [1
 
 ] (./abstract.tex) [1] [3] (./thesis.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+))
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
  [4
 
-] (./thesis.lof)
+]
+(./thesis.lof)
 \tf@lof=\write4
 \openout4 = `thesis.lof'.
 
  [5
 
-]
-(./thesis.lot)
+] (./thesis.lot)
 \tf@lot=\write5
 \openout5 = `thesis.lot'.
 
@@ -144,11 +220,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-
+File: OSI_model.eps Graphic file (type eps)
+ <OSI_model.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
@@ -158,18 +231,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
@@ -178,17 +251,275 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-[6]) [7] (./thesis.bbl [8
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+[6]) [7]
+\openout2 = `background.aux'.
+
+ (./background.tex
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[8
 
 
-]) [9] (./thesis.aux (./introduction.aux)) ) 
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+File: images/DBPSK_nojam.eps Graphic file (type eps)
+<images/DBPSK_nojam.eps>
+File: images/DBPSK_jam.eps Graphic file (type eps)
+ <images/DBPSK_jam.eps>
+Underfull \hbox (badness 1325) in paragraph at lines 27--27
+[]\OT1/cmr/m/n/10.95 Figure 2.2: DBPSK sig-nal cor-rupted by
+ []
+
+
+Overfull \hbox (19.09303pt too wide) in paragraph at lines 17--30
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+File: images/Transmitter.eps Graphic file (type eps)
+<images/Transmitter.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+File: images/Receiver.eps Graphic file (type eps)
+<images/Receiver.eps>
+Overfull \hbox (18.47072pt too wide) in paragraph at lines 96--97
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+[15]
+File: images/FIR_filter.eps Graphic file (type eps)
+ <images/FIR_filter.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+File: images/eye_clean.eps Graphic file (type eps)
+<images/eye_clean.eps>
+File: images/eye_closed.eps Graphic file (type eps)
+ <images/eye_closed.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+[18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+[21]
+
+LaTeX Warning: Citation `TBD' on page 22 undefined on input line 179.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+[25]
+File: images/gnr_outline.eps Graphic file (type eps)
+ <images/gnr_outline.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 224--93
+
+ []
+
+[27] [28] (./thesis.bbl [29
+
+
+]
+Underfull \hbox (badness 6675) in paragraph at lines 71--74
+[]\OT1/cmr/m/n/10.95 B. Farhang-Boroujeny, \OT1/cmr/m/it/10.95 Ex-per-i-men-tal
+ study of semi-blind chan-nel iden-ti-fi-ca-
+ []
+
+[30] [31] [32]) [33] (./thesis.aux (./introduction.aux) (./background.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 644 strings out of 493489
- 7528 string characters out of 3141349
- 60135 words of memory out of 3000000
- 3979 multiletter control sequences out of 15000+200000
- 9963 words of font info for 35 fonts, out of 3000000 for 9000
+ 1672 strings out of 493489
+ 19215 string characters out of 3141349
+ 75680 words of memory out of 3000000
+ 4943 multiletter control sequences out of 15000+200000
+ 14828 words of font info for 53 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 25i,5n,21p,1465b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,24p,1473b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.dvi (15 pages, 24684 bytes).
+Output written on thesis.dvi (39 pages, 92596 bytes).

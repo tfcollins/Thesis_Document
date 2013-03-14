@@ -13,7 +13,7 @@ In 1899 Guglielmo Marconi successful transmitted radio messages across the Engli
 
 Intentional communications jamming is usually aimed at radio signals in a militaristic setting, where consequences are insigificant or out of the relm of the law. In the most rudimentary designs, a jammer will simply tune their own frequency to that of their enemy and with a similar moduation scheme (and significant power) disrupt the enemies transmissions.  The most common types of this form of signal jamming are: random pulses, stepped tones, warbler, tones, rotary, pulses, sparks, recorded sounds, gulls, sweep-through, and random noise\cite{sterling}.  These method obviously (or subtly) disrupt transmissions by inserting electronmagnetic energy into the transmission space of the receiver.  In more technical terms, the jammer is producing randomly chosen data that is non-orthogonal to the data which the friendly transmitter is producing.  Since this jammer's data is pseudo random when his transmissions are added to the `enemy's', the result appears to be random as well.  Therefore the signal is unrecoverable.  As mentioned above, the jammer must produce signals that are non-orthogonal to the enemy of his jamming will have no effect.  An example below shows random noise at a significant noise level is added to a previously destinquishable signal.\\
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \begin{minipage}[b]{0.5\linewidth}
     \centering
     \includegraphics[width=\linewidth]{DBPSK_nojam.eps}
@@ -33,21 +33,25 @@ Intentional communications jamming is usually aimed at radio signals in a milita
 
 Anti-jamming has been considerably outlined in the introductory chapter, therefore this section will examine more advanced narrowband and wideband techniques that involve filtering rather than avoidance.  All of these approaches have various monitary costs, constraints, and power limitations.  First narrowband mitigation techniques will be considered.  These include adaptive filtering, time-frequency domain filtering, adaptive antennas and subspace processing.  By combining several of the listed techniques, wideband jammers can also be address, under certain conditions.  Table \ref{antitable} compares these techniques with various attributes.\\
 
-\begin{table}\label{antitable}
+\begin{table}[H]\label{antitable}
+\centering
+\resizebox{\columnwidth}{!}{
     \begin{tabular}{|l|l|l|l|l|l|}
         \hline
-        Technique                       & Cost & Size  & Flexibility                              & Complexity & ~ \\ \hline
-        Adaptive Filtering              & low  & small & ~                                        & ~          & ~ \\ 
-        Time-Frequency Domain Filtering & ~    & ~     & ~                                        & ~          & ~ \\ 
-        STFT                            & low  & small & Environment Specific                     & low        & ~ \\ 
-        Filter Banks                    & low  & small & Environment Specific                     & low        & ~ \\ 
-        Wavelet Transform               & low  & small & Environment Specific/Resolution Required & low        & ~ \\ 
-        Subspace Processing             & low  & small & ~                                        & ~          & ~ \\ 
-        Adaptive Antennas               & ~    & ~     & ~                                        & ~          & ~ \\ 
-        Null Steering                   & high & large & ~                                        & high       & ~ \\ 
-        Beam Forming                    & high & large & ~                                        & high       & ~ \\
+        Technique                       & Cost & Size  & Flexibility                              & Complexity  \\ \hline
+        Adaptive Filtering              & low  & small & ~                                        & ~           \\ 
+        Time-Frequency Domain Filtering & ~    & ~     & ~                                        & ~           \\ 
+        STFT                            & low  & small & Environment Specific                     & low         \\ 
+        Filter Banks                    & low  & small & Environment Specific                     & low         \\ 
+        Wavelet Transform               & low  & small & Environment Specific/Resolution Required & low         \\ 
+        Subspace Processing             & low  & small & ~                                        & ~           \\ 
+        Adaptive Antennas               & ~    & ~     & ~                                        & ~           \\ 
+        Null Steering                   & high & large & ~                                        & high        \\ 
+        Beam Forming                    & high & large & ~                                        & high        \\
         \hline
     \end{tabular}
+}
+\caption{Comparision of Anti-Jamming Techniques}
 \end{table}
 
 Adaptive filtering is a well defined solution in jammer mitigation, but it is to date the most limited.  Most notably, the jammer must be a relatively narrowband and the period of the jammer must be relatively short.  An example of an adaptive filtering technique is a suppression filter.  Suppression filters assume statistically the signal is gaussian, which results in the optimal filter being linear.  This filter essentially solves the Wiener equation for an optimal filter, but generally a Least Means Squares (LMS) implementation is used instead of just inversing the channel estimate\cite{11}. The technique of inverting the channel estimate or correlation matrix is traditionally called a zero forcing equalizer and is extremely unstable in the presence of small noise.\\
@@ -75,9 +79,10 @@ Modern wireless digital communication systems are based on a rich tradition of a
 
 Let us examine the transmitter first since it is less complicated than the receiver.  The transmitter's primary goal is to send data in a resilient form, or structure, to create a more managable signal for the receiver.  This is accomplished in several steps, and the function, or purpose, of the overall system determines the sophistication of the design.  Figure ~\ref{fig:Transmitter_System_Diagram} outlines the major building blocks of the transmitter; consisting of the coder, pulse-shape filter, and frequency translator.  A filter is added after the coding block in some implementations to provide such effect as predistortion.\\
 
-\begin{figure}\label{Transmitter_System_Diagram}
-\includegraphics{Transmitter.eps}
-\end
+\begin{figure}\label{fig:Transmitter_System_Diagram}
+\includegraphics[scale=0.8]{Transmitter.eps}
+\caption{Basic Transmitter Outline}
+\end{figure}
 
 The transmitter's sole purpose is the send data that is convient for the receiver to understand, and allow others to use the transmission medium as well.  The coding phase of the transmitter can have many features and purposes, but simply it will encode data into a symbol with a form of redudancy or scheme that will help the receiver reconstructed the information more easily.  Next the pulse-shape filter is used to help separate data and help maximize the SNR at the receiver.  This filtering can be done with an asortment of filter shapes, but the most popular is the raised square-root cosine filter.  After pulse-shaping, the signal is translated into frequency information and upconverted to a high RF with a carrier signal.  The translation is done with a modulation scheme such a binary phase-shift keying (BPSK) or pulse amplitude modulation (PAM).  The is upconverted by mixing the signal with a sinusoid, seen by equation \eqref{mixing}.  This done because low-frequency signals such as speech, music, or digital data can be much more efficiently transmitted at higher frequencies\cite{9}.\\
 
@@ -87,9 +92,10 @@ cos(x)cos(y)=1/2(cos(x+y)+cosine(x-y))
 
 Now let us discuss the receiver.  At the system level, a modern digital receiver can be broken down into a small set of distinct categories or operations: carrier sychronization, timing synchronization, equalization, and frame synchronization; outlined in Figure \ref{Receiver_Blocks}.  These sections work together in series to provide smooth transmission of data, and many techniques exist within theses categories to accomplish its goal.  In most communication systems, after the radio frequency (RF) front-end, the first operation done on the received signal is frequency compensation and down conversion.  This compensation needs to accomplished because non-idealities and differences exist between the transmitter's and receiver's oscillator.  Therefore this is continually compensated for and corrected.  Carrier recovery can be accomplished using several methods that include but are not limited to: squared difference loops, phase-locked loops, costas loops, and decision-directed phase tracking\cite{9}.\\
 
-\begin{figure}\label{Receiver_Block_Diagram}
-\includegraphics{Receiver.eps}
-\end
+\begin{figure}\label{Receiver_Blocks}
+\includegraphics[scale=0.8]{Receiver.eps}
+\caption{Basic Receiver Outline}
+\end{figure}
 
 After carrier recovery, the signal is pulse-shaped with the same filter shape used at the transmitter.  This technique will help to maximize the SNR of the signal.  Then the signal must be corrected again for timing.  The purpose of timing recovery is to choose the instants at which to sample the incoming signal.  This is generally done through a interpolation mechanism of the transmitted signal.  Since at the transmitter the signal is upsampled to symbols, a single data point or bit is represented by several received data points.  Therefore these points can be interpolated together for a more accurate estimate of the original data.  Timing recovery also can be done with one of several methods including: output power maximization, Mueller-Muller method, or decision-directed.  Generally they utlizie their own interpolation algorithm, such as sinc interpolation.\\
 
@@ -99,11 +105,12 @@ After this point the receiver designs can vary greatly, as the design in this th
 
 Equalizers can be considered the most complicated design of an entire communication system since they combat a series of distortions.  The primary result of these distortions is called intersymbol interference (ISI).  ISI simply means that symbols interact with one another in the channel space and cannot be considered independent from one another.  Since this interference is generally considered a frequency selective disruption or disperation a filter needs to be employed to reverse such effects.  This filter must be adaptable because the channel distortion cannot be know prior to transmission.\\  
 
-As listed in the previous section, many equalizers exists and operate under specific conditions.  Here several linear equalizers will be discussed in detail including maximum-likelihood sequence detection, adaptively trained equalizer, and decision-directed linear equalization.  The goal of all of these equalizers is to find a Finite Impulse Response (FIR) filter that when convolved with the received signal producing the original transmitted data \( \textbf{\^{X}}=Y \asp E\).  Figure \ref{FIR_filter} outlines a typical FIR structure for which the equalizer will create the appropriate coefficents \(b_{0},b_{1},..., b_{n} \).  These equalizers also examine the condition of an Additive White Gaussian Noise (AWGN) channel, and uncorrelated or independent interferers.\\
+As listed in the previous section, many equalizers exists and operate under specific conditions.  Here several linear equalizers will be discussed in detail including maximum-likelihood sequence detection, adaptively trained equalizer, and decision-directed linear equalization.  The goal of all of these equalizers is to find a Finite Impulse Response (FIR) filter that when convolved with the received signal producing the original transmitted data $$ \boldsymbol{\hat{X}}=Y * F $$.  Figure \ref{FIR_filter} outlines a typical FIR structure for which the equalizer will create the appropriate coefficents \(b_{0},b_{1},..., b_{n} \).  These equalizers also examine the condition of an Additive White Gaussian Noise (AWGN) channel, and uncorrelated or independent interferers.\\
 
 \begin{figure}\label{FIR_filter}
-\includegraphics{FIR_filter.eps}
-\end
+\includegraphics[scale=0.8]{FIR_filter.eps}
+\caption{FIR Filter Structure}
+\end{figure}
 
 The Zero Forcing Equalizer (ZFE) uses peak distortion criteria to determine equalizer coefficents.  If \(H_{c}(f)\) is assumed to be the effects of the channel, the ideal equalizer would be \( H_{eq}(f)=\frac{1}{H_{c}(f)}\).  This can also be consider the inverse of the channel.  The filter coefficents are modeled as weighted pulses convolved with the channel show be the equation below.\\
 
@@ -113,7 +120,7 @@ p_{eq}(t) = \displaystyle\sum_{k=-M}^{M} w_{k}p_{r}(t-kT)
 
 Unfortunately the ZFE has a large disadvantage, it cannot compensate for small amounts of noise.  Technically, the ZFE will amplify all noise of the received signal, and if any elements of the channel matrix are considerably small, then the equalizer becomes unstable. Therefore this is generally considered a more theoretical or elementary equalizer formulation.  To overcome this problem the zero ISI condition must be relaxed allowing for noise which if small can easily be overcome by such operations as quantization or decision making.  The Linear Minimum Mean Squaed Error Filter (LMMSE) takes this relaxation into account.\\ 
 
-The LMMSE assumes that the symbols are uncorrelated with one another and uncorrelated from the noise in the channel.  This approach tries to minimize the mean square error, a common measure of estimator qualities.  The estimator is defined as \( \^{x}_{MMSE}(y)=\e{x|y}  \).  If \(x\) and \(y\) are jointly Gaussian, then the LMMSE will be linear.  This function or equalizer design minimizes the mean square error.  To simplify further an extension to random vectors can be examined.  An estimate can be made for the original vector \(x\) represented by \(\^{x}\), resulting in the linear equation \(\^{x}=Ay+b\).  The LMMSE will minimize the mean square error \(\e{\|x-\^{x}\|^{2}}\).\\
+The LMMSE assumes that the symbols are uncorrelated with one another and uncorrelated from the noise in the channel.  This approach tries to minimize the mean square error, a common measure of estimator qualities.  The estimator is defined as $$ \hat{x}_{MMSE}(y)=\exp{x|y}  $$.  If \(x\) and \(y\) are jointly Gaussian, then the LMMSE will be linear.  This function or equalizer design minimizes the mean square error.  To simplify further an extension to random vectors can be examined.  An estimate can be made for the original vector \(x\) represented by \(\hat{x}\), resulting in the linear equation \(\hat{x}=Ay+b\).  The LMMSE will minimize the mean square error \(\|x-\hat{x}\|^{2}\).\\
 
 Besides these linear equalizers outlined, an adaptive approach can also be considered.  The Least Mean Squares (LMS) or Gradiant algorithm utilizes a traditional technique for minimizing the error in a signal.  This method is historically known as the "Method of Steepest Decent" or "Newton's Method". By calculating the error of each received symbol, this can be fed back into the system for future symbols.  This error will shape the equalizer's filter coefficents to match the inverse of the channel.  The equations \ref{lms_eq} are outlined here:\\
 
@@ -130,17 +137,21 @@ All of the methods proposed so far require \textit{known} data to correct agains
 Several blind equalizers exist but an extension of the LMS equalizer for blind situations will be examined here called the decision-direct equalizer.  For a blind equalizer to operate an error generation mechanism must be evaluated, but since the data symbols are unknown, a decision device must be used inplace.  This decision device is a quantization method and error is generated from this quantization.  This error generation is extrapolated from the equation \ref{dd_eq}.
 
 \begin{equation}\label{dd_eq}
-e = \frac{1}{2}\e{(sign(y[k]-y[k])^{2}}
+e = \frac{1}{2}\exp{(sign(y[k]-y[k])^{2}}
 \end{equation}
 
 This is quite similar to the original LMS implementation except instead of a known symbol the data is quantized using the sign function.  This type of quantization using the sign function is only applicable with binary modulation schemes such as BPSK.  This equalizer method is usually combined with a training equalizer method in practice; since if a nearly closed eye is observed, when using an eye diagram, this equalizer cannot open it by itself.  An example of such an eye diagram is shown in figure \ref{eye_closed}, and clean/open eye diagram can be seen in figure \ref{eye_clean}.\\
 
 \begin{figure}\label{eye_clean}
-\includegraphics{eye_clean.eps}
+\centering
+\includegraphics[scale=0.8]{eye_clean.eps}
+\caption{Good timing recovery produces open eye}
 \end{figure}
 
 \begin{figure}\label{eye_closed}
-\includegraphics{eye_closed.eps}
+\centering
+\includegraphics[scale=0.8]{eye_closed.eps}
+\caption{Poor timing recovery produces closed eye}
 \end{figure}
 
 In this section we have examined several equalizer technics while outlining their advantages and disadvantages.  Most techniques require some training mechanisms to operate under heavy channel distortion, and blind techiques such as decision-directed equalization will fail under these conditions.  Unforunately such training data can take considerable resources, and lower overall data throughput.  In practice as much as 20\% of frame information is training, therefore other techniques must be considered to help overcome this obsticle.\\
@@ -165,11 +176,11 @@ In summary, modern research on superimposed training focuses primarily on the tr
 
 \section{Spectral Subtraction}
 
-New signal processing techniques are devised and evaluated in academica at an accelerated rate(CONSIDER SOURCE).  In this thesis a new application for a relatively standard technique was examined, called Spectral Subtraction (SS).  The SS technique was first published in 1979 by Steven Boll\cite{boll}. SS is formally used to reduce ambient noise in audiable sources, improving the overall quality and intelligability of digitized speech.  It is a dominant speech processing algorithm and many extension including \cite{SSEXAMPLE}, \cite{SSEXAMPLE2}, \cite{SSEXAMPLE3}, and many more improvements can be seen in the literature.  Due to the large amount of litereature and investigation into the SS process it was assumed to be a solid option for removing unwanted signals in the spectrum.\\
+New signal processing techniques are devised and evaluated in academica at an accelerated rate\cite{TBD}.  In this thesis a new application for a relatively standard technique was examined, called Spectral Subtraction (SS).  The SS technique was first published in 1979 by Steven Boll\cite{boll}. SS is formally used to reduce ambient noise in audiable sources, improving the overall quality and intelligability of digitized speech.  It is a dominant speech processing algorithm and many extension including \cite{SSEXAMPLE}, \cite{SSEXAMPLE2}, \cite{SSEXAMPLE3}, and many more improvements can be seen in the literature.  Due to the large amount of litereature and investigation into the SS process it was assumed to be a solid option for removing unwanted signals in the spectrum.\\
 
 SS primarily was designed for audio signal processing, small bandwidth signals roughly from 20Hz to 20,000Hz.  Many forms of SS exists, but the approach examined here is Magnitude Spectral Subtraction (MSS).  It works by first generating an estimate of the noise in the signal itself, which is usually attained at the first first few seconds of the signal itself.  This noise is then subtracted, as the name suggests, from the rest of the signal.  Mathematically let this be explained further.  The received signal is assumed to be a combination of two signals, the transmitted and the noise itself \[y(t) = x(t) + n(t)\].  Next the power spectral densities (PSD) are calculated for these components \[ E\{|Y(e^{jw}|^{2}\}= E\{|X(e^{jw}|^{2}\} + E\{|N(e^{jw}|^{2}\} + 2E\{|X(e^{jw}|^{2}\}\{|N(e^{jw}|^{2}\}\]
 \[ E\{|Y(e^{jw}|^{2}\}= E\{|X(e^{jw}|\} + E\{|N(e^{jw}|\}  \]  
-Since at points when the desired is in present in the sprectum, a silent period, the measurement for \(N\) is taken and then subtracted from the entire received signal \(E\{|X(e^{jw}|\}= E\{|Y(e^{jw}|\} - E\{|N(e^{jw}|\}\).  The is noise is amused to be quite stationary during the signal period, therefore the original estimate \(\^{N}\) can be quite accurate.\\
+Since at points when the desired is in present in the sprectum, a silent period, the measurement for \(N\) is taken and then subtracted from the entire received signal \(E\{|X(\exp{jw}|\}= E\{|Y(\exp{jw}|\} - E\{|N(\exp{jw}|\}\).  The is noise is amused to be quite stationary during the signal period, therefore the original estimate \(\hat{N}\) can be quite accurate.\\
 
 \subsection{Residual Noise}
 
@@ -177,7 +188,7 @@ As a result of the changes over time in the noise spectrum (whether power or mag
 
 A close examination of musical noise, shows that peaks and valleys exist in the short—term power spectrum of white noise; these frequency locations for one frame are random and they vary randomly in frequency and amplitude from frame to frame. When a smoothed estimate of the noise spectrum is subtracted from the actual noise spectrum, all spectral peaks are shifted down while the valleys are set to zero. Therefore, after this subtraction sharp peaks reamin in the noise spectrum and pre-existing ones can be shapened. The wide peaks are generally estimated as time varying broadband noise. The narrower peaks, which are relatively large spectral distances because of the deep valleys that define them, are perceived as time varying tones which are generally referred to as musical noise\cite{berouti}.
 
-Therefore \cite{boll} continues by introducing a `smoothing` technique before the signal is convert back into the frequency domain.  Two additional parameters are introduced: \alpha the oversubtraction coefficent, and \beta the noise floor lower bound.  \alpha is used to provide a more aggresive subtraction to the signal, attacking high peaks which are generally a result of high noise and an inaccurate initial estimate.  The second parameter \beta is used to fill in the valleys of the signal.  Since if an oversubtraction takes too much signal it can cause valleys in the spectrum below or above the zero threshold.  This value is used to simply quantize values within its +/- limits.  As a result these operations together produce a smoother signal removing much of the residual noise from just a plain subtraction.  \cite{boll} provides several results examining the benefits of such a technique.\\  
+Therefore \cite{boll} continues by introducing a `smoothing` technique before the signal is convert back into the frequency domain.  Two additional parameters are introduced: \( \alpha \) the oversubtraction coefficent, and \(\beta\) the noise floor lower bound.  \(\alpha\) is used to provide a more aggresive subtraction to the signal, attacking high peaks which are generally a result of high noise and an inaccurate initial estimate.  The second parameter \(\beta\) is used to fill in the valleys of the signal.  Since if an oversubtraction takes too much signal it can cause valleys in the spectrum below or above the zero threshold.  This value is used to simply quantize values within its +/- limits.  As a result these operations together produce a smoother signal removing much of the residual noise from just a plain subtraction.  \cite{boll} provides several results examining the benefits of such a technique.\\  
 
 
 \section{Software Defined Radio}
@@ -193,8 +204,10 @@ Today the prime implementations are within cellular basestations and other milit
 The first software package to be discussed by this thesis is GNU Radio.  GNU Radio provides the reconfigurable signal processing blocks that are necessary for software defined radios. GNU Radio is an open source project allowing for SDR developers to develop unique signal processing blocks and SDR systems.  GNU Radio was started in 2001, originally forked from the SpectrumWare project developed at the Massachusetts Institute of Technology\cite{spectrumware}.  Since 2001 the codebase has undergone massive changes, containing almost no code from the original SpectrumWare project.  Physically the code consist of three languages Python, C++, and SWIG.  Python provides the overarching control of the system or program, while C++ provides the actual signal processing blocks and mathematics.  SWIG is a wrapper for C++ which allows Python to dynamically wrap around C++ and control or compile with it.  A diagram below better illustrates this architecture.  It is also important to mention that there as significant paradyme shifts in the community, pushing more and more code to Python rather than C++, due to its easier programming syntax and structure.\\
 
 \begin{figure}\label{gnr_struct}
-\includegraphic{gnr_outline.eps}
-\end
+\centering
+\includegraphics[scale=0.8]{gnr_outline.eps}
+\caption{GNU Radio Code Structure}
+\end{figure}
 
 \subsection{MATLAB}
 

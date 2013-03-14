@@ -2,46 +2,50 @@ This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: background.aux
 The style file: amsplain.bst
 Database file #1: mybib.bib
-You've used 12 entries,
+Warning--I didn't find a database entry for "TBD"
+Warning--missing pages in spectrumware
+You've used 39 entries,
             2213 wiz_defined-function locations,
-            563 strings with 5612 characters,
-and the built_in function-call counts, 3528 in all, are:
-= -- 296
-> -- 162
-< -- 0
-+ -- 67
-- -- 52
-* -- 266
-:= -- 575
-add.period$ -- 12
-call.type$ -- 12
-change.case$ -- 61
+            710 strings with 10157 characters,
+and the built_in function-call counts, 13281 in all, are:
+= -- 1193
+> -- 536
+< -- 2
++ -- 220
+- -- 173
+* -- 990
+:= -- 2022
+add.period$ -- 39
+call.type$ -- 39
+change.case$ -- 202
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 148
-empty$ -- 321
-format.name$ -- 52
-if$ -- 741
+cite$ -- 40
+duplicate$ -- 569
+empty$ -- 1199
+format.name$ -- 173
+if$ -- 2912
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 25
-newline$ -- 46
-num.names$ -- 24
-pop$ -- 98
+int.to.str$ -- 39
+missing$ -- 75
+newline$ -- 127
+num.names$ -- 77
+pop$ -- 313
 preamble$ -- 1
-purify$ -- 50
+purify$ -- 165
 quote$ -- 0
-skip$ -- 94
+skip$ -- 432
 stack$ -- 0
-substring$ -- 186
-swap$ -- 19
-text.length$ -- 0
+substring$ -- 962
+swap$ -- 142
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 42
-warning$ -- 0
-while$ -- 33
-width$ -- 14
-write$ -- 107
+type$ -- 146
+warning$ -- 1
+while$ -- 113
+width$ -- 41
+write$ -- 336
+(There were 2 warnings)

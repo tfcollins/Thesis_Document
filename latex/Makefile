@@ -15,6 +15,7 @@ local: thesis.tex mybib.bib
 	latex thesis.tex
 	bibtex thesis
 	latex thesis.tex 
+	latex thesis.tex 
 	dvips -Ppdf thesis.dvi
 	ps2pdf thesis.ps
 

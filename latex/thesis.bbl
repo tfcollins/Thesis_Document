@@ -12,23 +12,126 @@ Mithun Acharya and David Thuente, \emph{Intelligent jamming attacks,
   counterattacks and (counter)2 attacks in 802.11b wireless networks},
   Proceedings of the OPNETWORK Conference, 2005.
 
+\bibitem{16}
+S.~Adireddy, Lang Tong, and H.~Viswanathan, \emph{Optimal placement of training
+  for frequency-selective block-fading channels}, Information Theory, IEEE
+  Transactions on \textbf{48} (2002), no.~8, 2338 -- 2353.
+
+\bibitem{20}
+Srihari Adireddy and Lang Tong, \emph{Optimal placement of known symbols for
+  nonergodic broadcast channels}, IEEE Trans. Info. Theory \textbf{2192}
+  (2002), http://www.ece.corne.
+
 \bibitem{2}
 Faraz Ahsan, Ali Zahir, Sajjad Mohsin, and Khalid Hussain, \emph{Survey on
   survival approaches in wireless network against jamming attack}, Journal of
   Theoretical and Applied Information Technology \textbf{30} (2011), no.~1,
   55--67.
 
+\bibitem{berouti}
+M.~Berouti, R.~Schwartz, and J.~Makhoul, \emph{Enhancement of speech corrupted
+  by acoustic noise}, Acoustics, Speech, and Signal Processing, IEEE
+  International Conference on ICASSP '79., vol.~4, apr 1979, pp.~208 -- 211.
+
+\bibitem{boll}
+Steven~F. Boll, \emph{A spectral subtraction algorithm for suppression of
+  acoustic noise in speech}, Acoustics, Speech, and Signal Processing, IEEE
+  International Conference on ICASSP '79 \textbf{4} (1979), 200--203.
+
+\bibitem{spectrumware}
+V.~Bose, M.~Ismert, M.~Welborn, and J.~Guttag, \emph{Virtual radios}, Special
+  Issue on Software Radios (1999).
+
+\bibitem{9}
+Jr. C.~Richard~Johnson, William~A. Sethares, and Andrew~G. Klein,
+  \emph{Software receiver design: uild your own digital communications system
+  in five easy steps}, Cambridge University Press, 2011.
+
 \bibitem{3}
 Kwang-Cheng Chen and Ramjee Prasad, \emph{Cognitive radio networks}, John Wiley
   and Sons, 2009.
+
+\bibitem{12}
+R.C. DiPietro, \emph{An fft based technique for suppressing narrow-band
+  interference in pn spread spectrum communications systems}, Acoustics,
+  Speech, and Signal Processing, 1989. ICASSP-89., 1989 International
+  Conference on, may 1989, pp.~1360 --1363 vol.2.
+
+\bibitem{ghost}
+Electus Distribution, \emph{Solving tv reception problems}, 2002.
+
+\bibitem{10}
+F.W. Ellersick, D.L. Schilling, IEEE~Communications Society, Institute
+  of~Electrical, Electronics Engineers, and IEEE Xplore~(Online service),
+  \emph{Special issue on progress in military communications}, IEEE journal on
+  selected areas in communications : a publication of the IEEE Communications
+  Society, IEEE, 1985.
+
+\bibitem{19}
+B.~Farhang-Boroujeny, \emph{Experimental study of semi-blind channel
+  identification/equalization through pilot signals}, Signal Processing, 1996.,
+  3rd International Conference on, vol.~1, oct 1996, pp.~618 --621 vol.1.
 
 \bibitem{frater}
 Michael~R. Frater and Michael Ryan, \emph{Electronic warfare for the digitized
   battlefield}, Artech Print on Demand, 2001.
 
+\bibitem{15}
+M.~Ghogho, D.~McLernon, E.~Alameda-Hernandez, and A.~Swami, \emph{Channel
+  estimation and symbol detection for block transmission using data-dependent
+  superimposed training}, Signal Processing Letters, IEEE \textbf{12} (2005),
+  no.~3, 226 -- 229.
+
+\bibitem{SSEXAMPLE3}
+Wang Guang-Yan, Zhao Xiao-Qun, and Wang Xia, \emph{Musical noise reduction
+  based on spectral subtraction combined with wiener filtering for speech
+  communication}, Wireless Mobile and Computing (CCWMC 2009), IET International
+  Communication Conference on, Dec., pp.~726--729.
+
+\bibitem{11}
+A.~Haimovich and A.~Vadhri, \emph{Rejection of narrow-band interferences in pn
+  spread spectrum systems using an eigenanalysis approach}, Military
+  Communications Conference, 1994. MILCOM '94. Conference Record, 1994 IEEE,
+  oct 1994, pp.~1002 --1006 vol.3.
+
+\bibitem{matlabsdru}
+Mathworks Inc., 2013.
+
+\bibitem{matlabtargeting}
+\bysame, January 2013.
+
+\bibitem{13}
+W.W. Jones and K.R. Jones, \emph{Narrowband interference suppression using
+  filter-bank analysis/synthesis techniques}, Military Communications
+  Conference, 1992. MILCOM '92, Conference Record. Communications - Fusing
+  Command, Control and Intelligence., IEEE, oct 1992, pp.~898 --902 vol.3.
+
+\bibitem{kandangath}
+Anil Kandangath, \emph{Jamming mitigation techniques for spread spectrum
+  communication systems}, Tech. report, University of Arizona, 2003.
+
+\bibitem{SSEXAMPLE}
+Wooil Kim, Sunmee Kang, and Hanseok Ko, \emph{Spectral subtraction based on
+  phonetic dependency and masking effects}, Vision, Image and Signal
+  Processing, IEE Proceedings - \textbf{147} (Oct), no.~5, 423--427.
+
+\bibitem{24}
+E.~Koski and C.~Linn, \emph{The jtrs program: software-defined radios as a
+  software product line}, Software Product Line Conference, 2006 10th
+  International, 0-0 2006, pp.~10 pp. --191.
+
+\bibitem{23}
+R.I. Lackey and D.W. Upmal, \emph{Speakeasy: the military software radio},
+  Communications Magazine, IEEE \textbf{33} (1995), no.~5, 56 --61.
+
 \bibitem{8}
 Karthikeyan Mahadevan, Sojeong Hong, and John Dullum, \emph{Anti-jamming: A
   study}, December 2005.
+
+\bibitem{21}
+III Mitola, J., \emph{Software radios: Survey, critical evaluation and future
+  directions}, Aerospace and Electronic Systems Magazine, IEEE \textbf{8}
+  (1993), no.~4, 25 --36.
 
 \bibitem{4}
 J.~Mitola, \emph{The software radio architecture}, IEEE Communications Magazine
@@ -39,6 +142,11 @@ Aristides Mpitziopoulos, Damianos Gavalas, Charalampos Konstantopoulos, and
   Grammati Pantziou, \emph{A survey on jamming attacks and countermeasures in
   wsns}, IEEE Communications Surveys and Tutorials \textbf{11} (2009), no.~4,
   42--56.
+
+\bibitem{18}
+A.G. Orozco-Lugo, M.M. Lara, and D.C. McLernon, \emph{Channel estimation using
+  implicit training}, Signal Processing, IEEE Transactions on \textbf{52}
+  (2004), no.~1, 240 -- 254.
 
 \bibitem{scarcity}
 Kathy Pretz, August 2012.
@@ -55,9 +163,34 @@ Jingpu Shi, Theodoros Salonidis, and Edward~W. Knightly, \emph{Starvation
   International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc),
   2006, pp.~214--225.
 
+\bibitem{ieee80211}
+IEEE~Computer Society, \emph{Part 11: Wireless lan medium access control (mac)
+  and physical layer (phy) specifications part 11: Wireless lan medium access
+  control (mac) and physical layer (phy) specifications}, Tech. report, IEEE,
+  2012.
+
+\bibitem{22}
+Regory Staple and Kevin Werbach, march 2004.
+
 \bibitem{sterling}
 Christopher~H. Sterling, \emph{Military communications: From ancient times to
   the 21st century}, ABC-CLIO, 2007.
+
+\bibitem{SSEXAMPLE2}
+N.~Upadhyay and A.~Karmakar, \emph{A perceptually motivated multi-band spectral
+  subtraction algorithm for enhancement of degraded speech}, Computer and
+  Communication Technology (ICCCT), 2012 Third International Conference on,
+  Nov., pp.~340--345.
+
+\bibitem{14}
+Liang Zhao, M.G. Amin, and A.R. Lindsey, \emph{Subspace projection techniques
+  for anti-fm jamming gps receivers}, Statistical Signal and Array Processing,
+  2000. Proceedings of the Tenth IEEE Workshop on, 2000, pp.~529 --533.
+
+\bibitem{17}
+G.T. Zhou, M.~Viberg, and T.~McKelvey, \emph{A first-order statistical method
+  for channel estimation}, Signal Processing Letters, IEEE \textbf{10} (2003),
+  no.~3, 57 --60.
 
 \bibitem{Zimmermann}
 H.~Zimmermann, \emph{Osi reference model--the iso model of architecture for

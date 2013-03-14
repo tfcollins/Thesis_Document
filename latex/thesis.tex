@@ -3,13 +3,14 @@
 %           it's = it + is
 
 %use [11pt, draft] for draft markings.
-% original\documentclass[11pt]{mvlthesis}
-\documentclass[16pt, draft]{mvlthesis}
+\documentclass[11pt]{mvlthesis}
+%\documentclass[16pt, draft]{mvlthesis}
 \usepackage[dvipdfm]{graphicx}
-\usepackage{verbatim} %,amssymb,amsmath}
+\usepackage{verbatim,amssymb,amsmath}
+\usepackage{float}
 %\usepackage{epstopdf}
 %\usepackage{afterpage}
-%\graphicspath{ {images/} }
+\graphicspath{ {images/} }
 
 %%%%%%%%%%%%%%%%%%%%% SET UP ALL THE TITLE PAGE VARIABLES %%%%%%%%%%%%%%%%%%
 
@@ -88,7 +89,8 @@
 \include{introduction}
 %\input{introduction}
 
-%\include{background}
+%% Background Section
+\include{background}
 %\input{background}
 
 %% Implementation Section
