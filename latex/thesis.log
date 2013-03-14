@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  14 MAR 2013 15:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  14 MAR 2013 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -485,21 +485,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-
+File: images/sdru_example.eps Graphic file (type eps)
+ <images/sdru_example.eps>
+Overfull \hbox (156.58723pt too wide) in paragraph at lines 218--219
+ [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 224--93
+[27])
+Underfull \hbox (badness 10000) in paragraph at lines 228--93
 
  []
 
-[27] [28] (./thesis.bbl [29
+[28] (./thesis.bbl [29
 
 
 ]
@@ -514,12 +516,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1672 strings out of 493489
- 19215 string characters out of 3141349
- 75680 words of memory out of 3000000
- 4943 multiletter control sequences out of 15000+200000
+ 1675 strings out of 493489
+ 19268 string characters out of 3141349
+ 75693 words of memory out of 3000000
+ 4945 multiletter control sequences out of 15000+200000
  14828 words of font info for 53 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  27i,8n,24p,1473b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.dvi (39 pages, 92596 bytes).
+Output written on thesis.dvi (39 pages, 93036 bytes).
