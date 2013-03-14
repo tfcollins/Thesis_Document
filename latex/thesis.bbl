@@ -18,36 +18,13 @@ Faraz Ahsan, Ali Zahir, Sajjad Mohsin, and Khalid Hussain, \emph{Survey on
   Theoretical and Applied Information Technology \textbf{30} (2011), no.~1,
   55--67.
 
-\bibitem{9}
-Jr. C.~Richard~Johnson, William~A. Sethares, and Andrew~G. Klein,
-  \emph{Software receiver design: uild your own digital communications system
-  in five easy steps}, Cambridge University Press, 2011.
-
 \bibitem{3}
 Kwang-Cheng Chen and Ramjee Prasad, \emph{Cognitive radio networks}, John Wiley
   and Sons, 2009.
 
-\bibitem{12}
-R.C. DiPietro, \emph{An fft based technique for suppressing narrow-band
-  interference in pn spread spectrum communications systems}, Acoustics,
-  Speech, and Signal Processing, 1989. ICASSP-89., 1989 International
-  Conference on, may 1989, pp.~1360 --1363 vol.2.
-
-\bibitem{10}
-Fred~W. Ellersick and Donald~L. Schilling, \emph{Guest editorial scanning the
-  issue}, IEEE Journal on Select Areas in Communications \textbf{3} (1985).
-
-\bibitem{11}
-A.~Haimovich and A.~Vadhri, \emph{Rejection of narrow-band interferences in pn
-  spread spectrum systems using an eigenanalysis approach}, Military
-  Communications Conference, 1994. MILCOM '94. Conference Record, 1994 IEEE,
-  oct 1994, pp.~1002 --1006 vol.3.
-
-\bibitem{13}
-W.W. Jones and K.R. Jones, \emph{Narrowband interference suppression using
-  filter-bank analysis/synthesis techniques}, Military Communications
-  Conference, 1992. MILCOM '92, Conference Record. Communications - Fusing
-  Command, Control and Intelligence., IEEE, oct 1992, pp.~898 --902 vol.3.
+\bibitem{frater}
+Michael~R. Frater and Michael Ryan, \emph{Electronic warfare for the digitized
+  battlefield}, Artech Print on Demand, 2001.
 
 \bibitem{8}
 Karthikeyan Mahadevan, Sojeong Hong, and John Dullum, \emph{Anti-jamming: A
@@ -55,13 +32,16 @@ Karthikeyan Mahadevan, Sojeong Hong, and John Dullum, \emph{Anti-jamming: A
 
 \bibitem{4}
 J.~Mitola, \emph{The software radio architecture}, IEEE Communications Magazine
-  (1995).
+  (1995), 26--38.
 
 \bibitem{1}
 Aristides Mpitziopoulos, Damianos Gavalas, Charalampos Konstantopoulos, and
   Grammati Pantziou, \emph{A survey on jamming attacks and countermeasures in
   wsns}, IEEE Communications Surveys and Tutorials \textbf{11} (2009), no.~4,
   42--56.
+
+\bibitem{scarcity}
+Kathy Pretz, August 2012.
 
 \bibitem{7}
 Kristopher~W. Reese and Ahmed Salem, \emph{A survey on jamming avoidance in
@@ -75,9 +55,13 @@ Jingpu Shi, Theodoros Salonidis, and Edward~W. Knightly, \emph{Starvation
   International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc),
   2006, pp.~214--225.
 
-\bibitem{14}
-Liang Zhao, M.G. Amin, and A.R. Lindsey, \emph{Subspace projection techniques
-  for anti-fm jamming gps receivers}, Statistical Signal and Array Processing,
-  2000. Proceedings of the Tenth IEEE Workshop on, 2000, pp.~529 --533.
+\bibitem{sterling}
+Christopher~H. Sterling, \emph{Military communications: From ancient times to
+  the 21st century}, ABC-CLIO, 2007.
+
+\bibitem{Zimmermann}
+H.~Zimmermann, \emph{Osi reference model--the iso model of architecture for
+  open systems interconnection}, Communications, IEEE Transactions on
+  \textbf{28} (1980), no.~4, 425 -- 432.
 
 \end{thebibliography}

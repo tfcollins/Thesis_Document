@@ -1,49 +1,47 @@
 This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: introduction.aux
 The style file: amsplain.bst
 Database file #1: mybib.bib
-Warning--missing pages in 10
-Warning--missing pages in 4
-You've used 14 entries,
+You've used 12 entries,
             2213 wiz_defined-function locations,
-            572 strings with 6431 characters,
-and the built_in function-call counts, 5100 in all, are:
-= -- 459
-> -- 210
+            563 strings with 5612 characters,
+and the built_in function-call counts, 3528 in all, are:
+= -- 296
+> -- 162
 < -- 0
-+ -- 86
-- -- 68
-* -- 373
-:= -- 765
-add.period$ -- 14
-call.type$ -- 14
-change.case$ -- 76
++ -- 67
+- -- 52
+* -- 266
+:= -- 575
+add.period$ -- 12
+call.type$ -- 12
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 226
-empty$ -- 450
-format.name$ -- 68
-if$ -- 1122
+cite$ -- 12
+duplicate$ -- 148
+empty$ -- 321
+format.name$ -- 52
+if$ -- 741
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 29
-newline$ -- 52
-num.names$ -- 28
-pop$ -- 114
+int.to.str$ -- 12
+missing$ -- 25
+newline$ -- 46
+num.names$ -- 24
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 50
 quote$ -- 0
-skip$ -- 189
+skip$ -- 94
 stack$ -- 0
-substring$ -- 357
-swap$ -- 68
+substring$ -- 186
+swap$ -- 19
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 52
-warning$ -- 2
-while$ -- 43
-width$ -- 16
-write$ -- 126
-(There were 2 warnings)
+type$ -- 42
+warning$ -- 0
+while$ -- 33
+width$ -- 14
+write$ -- 107

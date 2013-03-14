@@ -4,26 +4,5 @@
 \contentsline {section}{\numberline {1.1}Motivation}{2}
 \contentsline {section}{\numberline {1.2}State of the Art}{3}
 \contentsline {section}{\numberline {1.3}Thesis Contributions}{6}
-\contentsline {section}{\numberline {1.4}Thesis Organization}{6}
-\contentsline {chapter}{\numberline {2}Background}{7}
-\contentsline {section}{\numberline {2.1}Jamming}{8}
-\contentsline {section}{\numberline {2.2}Anti-Jamming}{9}
-\contentsline {section}{\numberline {2.3}Communication Systems}{11}
-\contentsline {subsection}{\numberline {2.3.1}Equalizers}{14}
-\contentsline {subsection}{\numberline {2.3.2}Superimposed Training Equalizer}{17}
-\contentsline {section}{\numberline {2.4}Software Defined Radio}{19}
-\contentsline {subsection}{\numberline {2.4.1}GNU Radio}{21}
-\contentsline {subsection}{\numberline {2.4.2}MATLAB}{21}
-\contentsline {subsection}{\numberline {2.4.3}Comparision}{22}
-\contentsline {subsection}{\numberline {2.4.4}Summary}{22}
-\contentsline {chapter}{\numberline {3}Implementation}{24}
-\contentsline {section}{\numberline {3.1}Overview}{24}
-\contentsline {section}{\numberline {3.2}System}{26}
-\contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{28}
-\contentsline {section}{\numberline {3.4}Spectral Subtraction}{30}
-\contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{31}
-\contentsline {subsection}{\numberline {3.4.2}Non-deterministic Scenarios}{36}
-\contentsline {subsection}{\numberline {3.4.3}Over the Air Implementation Considerations}{36}
-\contentsline {section}{\numberline {3.5}Superimposed Equalizer}{37}
-\contentsline {section}{\numberline {3.6}Antenna Subset Selection}{41}
-\contentsline {section}{\numberline {3.7}Summary}{41}
+\contentsline {section}{\numberline {1.4}Thesis Organization}{7}
+\contentsline {chapter}{Bibliography}{8}

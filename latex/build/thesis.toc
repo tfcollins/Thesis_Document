@@ -4,5 +4,5 @@
 \contentsline {section}{\numberline {1.1}Motivation}{2}
 \contentsline {section}{\numberline {1.2}State of the Art}{3}
 \contentsline {section}{\numberline {1.3}Thesis Contributions}{6}
-\contentsline {section}{\numberline {1.4}Thesis Organization}{6}
-\contentsline {chapter}{Bibliography}{7}
+\contentsline {section}{\numberline {1.4}Thesis Organization}{7}
+\contentsline {chapter}{Bibliography}{8}

@@ -169,8 +169,8 @@ When multiple signals are in the envirorment the compensation algorithm learn in
 To accomplish this algorithm holding mechanism, energy detection was chosen to be uses for its simplicity.  Below you can see an image of the jammer signal by itself and the combined signals.  A large increase in energy or step can be seen, which can easily numerically detected.  Energy is calculated using the following equation: \(E_{s}=\newcommand{\inftyint}{\int_{-\infty}^{+\infty}}|x(t)|^{2}dt\).  This was implemented with a moving average filter with a small window to reduce sperious changes due to signals gaps or outliers.  In practice the average peak energy level of the interferer is first calculated, then when the power in the spectrum increases to a level roughly 1.5x of the original level, the compensation algorithms are halted.  A simple technqiue technique, which is commonly uses but in the inverse fashion.  An example of the combined and signals can be seen in figure \ref{combo_signal_time}.  The final results of the Spectral Subtraction block are examined in the next chapter.\\
 
 
-\begin{figure}
-%Combined signals \includegraphics{combo_signal_time.eps}
+\begin{figure}\label{combo_signal_time}
+\includegraphics{combo_signal_time.eps}
 \end
 
 \section{Superimposed Equalizer}
@@ -191,13 +191,22 @@ With this model, \cite{midterm_report} shows that no assumptions are necessary r
 
 With these assumptions the mixing process can be undone but the channel estimation needs to be calculated first.  Since this is a MIMO channel, frequency selective fading will need to be captured to providing appropriate channel knowledge.  To accomplish this, the original research decided to utlize superimposed equalization, whose operation was heavily discussed in the background section of this thesis.  In summary, \cite{Ghogho} uses a superimposed symbol transmission scheme to estimate frequency-selective channels. Several points of the DFT of the data are set to known values. This operation can be easily implemented in the time domain when these DFT points are equispaced. The channel is estimated using the DFT of the received signal at these selected DFT points. The detection itself is done using an iterative method across these points.  Unlike traditional equalizers, the proposed method does not require bandwidth for training.  It instead trades spectral power for those symbols themselves, spreading its energy over the entire bandwidth capturing the entire spectrum space.   \cite{Ghogho} also proves that by placing the training symbols in quasi-periodic position they will not interfer with the data itself.  It is important to note that this research discusses no sychronization mechanism, and now with the training data spread throughout the signal is very complex.  This addition complexity was factored into the design decisions of the implementation, which is discussed later in this section.\\
 
-With our channel estimation method chosen, a simulation was created to prove the effectiveness of such a scheme.  The result of this implementation were directly compared with the results of the paper to prove correctness, and compared with traditional equalizer performance.  The results of this simulation are seen below.  It examines a random frequency selective channel, with very high suppression with a across a number of SNR values.  As expected there is a linear relationship between SNR.  For completeness a comparision was done with a traditional LMS equalizer to show the effectiveness of the superimpose equalizer.\\
+With our channel estimation method chosen, a simulation was created to prove the effectiveness of such a scheme.  The result of this implementation were directly compared with the results of the paper to prove correctness.% and compared with traditional equalizer performance&
+The results of this simulation are seen in figure \ref{sie}.  It examines a random frequency selective channel, with very high suppression with a across a number of SNR values.  As expected there is a linear relationship between SNR and Error.\\  %For completeness a comparision was done with a traditional LMS equalizer to show the effectiveness of the superimpose equalizer.\\
+
+\begin{figure}\label{sie}
+\includegraphics{sie_SNR.eps}
+\end
+
+\begin{figure}\label{sie_freq}
+\includegraphics{freq_response_sie.eps}
+\end
 
 %INSERT Figure of SNR and channel estimate for Superimpose equalizer\\
 %
 %INSERT Figure with comparision of superimposed equalizer vs. traditional linear equalizer\\
 
-From the comparision of the figure above you can see in a frequency selective fading channel the traditional LMS equalizer operates poorly.  This was exactly the result that was desired, but symbol recovery after equalization still needed to be examined. This be to note the drawback of this formulation.  The first is the condition if the mixing matrix $$H$$ is rank deficient, the channel become inestimiable,  since there become an infinite amount of solutions to the actual unmixing process.  The second is the equalizer, which is numerically intensive, and the alternative has limiting conditions \cite{Ghogho}.  This conclusion, which isn't discussed in \cite{Ghogho}, is when the equalized signal is very suppressed due to the incomplete channel estimate.  The quantization feedback method overcome the previously received frame and dominated all future frames, essentually neglecting any information they have.  Again this only in very suppresive channels.  With these results the superimposed equalizer started to become less desirable due to it's complexity, but evaluations continued due to the amount of time invested into the topic already.\\
+From figure \ref{sie_freq} you can see in a frequency selective fading channel is very well estimated by the superimposed equalizer.  This was exactly the result that was desired, but symbol recovery after equalization still needed to be examined. This unfortunately is the drawback of this formulation.  The first is the condition if the mixing matrix $$H$$ is rank deficient, the channel become inestimiable,  since there become an infinite amount of solutions to the actual unmixing process.  The second is the equalizer, which is numerically intensive, and the alternative has limiting conditions \cite{Ghogho}.  This conclusion, which isn't discussed in \cite{Ghogho}, is when the equalized signal is very suppressed due to the incomplete channel estimate.  The quantization feedback method overcome the previously received frame and dominated all future frames, essentually neglecting any information they have.  Again this only in very suppresive channels.  With these results the superimposed equalizer started to become less desirable due to it's complexity, but evaluations continued due to the amount of time invested into the topic already.\\
 
 %NEED MORE MATHEMATICAL EXPLAINATION 
 
@@ -218,9 +227,9 @@ A simple evaluation of MRC was done to prove its capabilities, which is based on
 
 As you can see as you increase the number of antennas in a frequency selective channel the better the result.  Therefore MRC was introduce into the framework of the signal separation block, and the new model for this block can be seen in figure \ref{mrc_sys}.  This block first utlizes adaptive equalizers on the channels individually then uses MRC to combine there results maximizing the SNR of the desired signal.  MRC was combined with the channel estimate approach using adaptive equalizers due to there known feasibility.  From the knowledge learned in the previous with the implementation involving GNU Radio, the signal separation block was created entirely in MATLAB.  The results of this operation will be discussed in the final chapter of the thesis.\\
 
-%\begin{figure}\label{mrc_sys}
-%\includegraphics{mrc_sys.eps}
-%\end
+\begin{figure}\label{mrc_sys}
+\includegraphics{mrc_sys.eps}
+\end
 
 \section{Antenna Subset Selection}
 
