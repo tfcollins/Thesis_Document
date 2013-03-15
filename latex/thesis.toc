@@ -22,11 +22,11 @@
 \contentsline {section}{\numberline {3.1}Overview}{29}
 \contentsline {section}{\numberline {3.2}System}{31}
 \contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{33}
-\contentsline {section}{\numberline {3.4}Spectral Subtraction}{36}
+\contentsline {section}{\numberline {3.4}Spectral Subtraction}{37}
 \contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{40}
-\contentsline {subsection}{\numberline {3.4.2}Non-deterministic Scenarios}{48}
-\contentsline {subsection}{\numberline {3.4.3}Over the Air Implementation Considerations}{50}
-\contentsline {section}{\numberline {3.5}Superimposed Equalizer}{52}
-\contentsline {section}{\numberline {3.6}Antenna Subset Selection}{58}
-\contentsline {section}{\numberline {3.7}Summary}{59}
-\contentsline {chapter}{Bibliography}{63}
+\contentsline {subsection}{\numberline {3.4.2}Non-deterministic Scenarios}{47}
+\contentsline {subsection}{\numberline {3.4.3}Over the Air Implementation Considerations}{47}
+\contentsline {section}{\numberline {3.5}Superimposed Equalizer}{49}
+\contentsline {section}{\numberline {3.6}Antenna Subset Selection}{54}
+\contentsline {section}{\numberline {3.7}Summary}{56}
+\contentsline {chapter}{Bibliography}{58}

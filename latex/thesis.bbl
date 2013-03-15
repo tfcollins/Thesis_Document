@@ -7,6 +7,15 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{10}
 
+\bibitem{sdr_blocks}
+March 2013.
+
+\bibitem{sdr_blog}
+March 2013.
+
+\bibitem{mimo_cable}
+March 2013.
+
 \bibitem{5}
 Mithun Acharya and David Thuente, \emph{Intelligent jamming attacks,
   counterattacks and (counter)2 attacks in 802.11b wireless networks},
@@ -22,16 +31,32 @@ Srihari Adireddy and Lang Tong, \emph{Optimal placement of known symbols for
   nonergodic broadcast channels}, IEEE Trans. Info. Theory \textbf{2192}
   (2002), http://www.ece.corne.
 
+\bibitem{diversity}
+Raviraj Adve, \emph{Receive diversity}.
+
 \bibitem{2}
 Faraz Ahsan, Ali Zahir, Sajjad Mohsin, and Khalid Hussain, \emph{Survey on
   survival approaches in wireless network against jamming attack}, Journal of
   Theoretical and Applied Information Technology \textbf{30} (2011), no.~1,
   55--67.
 
+\bibitem{ss_subjective2}
+B.~BabaAli, H.~Sameti, and M.~Safayani, \emph{Spectral subtraction in model
+  distance maximizing framework for robust speech recognition}, Signal
+  Processing, 2008. ICSP 2008. 9th International Conference on, Oct.,
+  pp.~627--630.
+
+\bibitem{swig}
+Dave Beazley, \emph{Swig (simplified wrapper and interface generator)}, 1996--.
+
 \bibitem{berouti}
 M.~Berouti, R.~Schwartz, and J.~Makhoul, \emph{Enhancement of speech corrupted
   by acoustic noise}, Acoustics, Speech, and Signal Processing, IEEE
   International Conference on ICASSP '79., vol.~4, apr 1979, pp.~208 -- 211.
+
+\bibitem{tomrondeau}
+Eric Blossom, \emph{[discuss-gnuradio] s/eric/tom/g}, TheMailArchive, September
+  2010.
 
 \bibitem{boll}
 Steven~F. Boll, \emph{A spectral subtraction algorithm for suppression of
@@ -67,16 +92,22 @@ F.W. Ellersick, D.L. Schilling, IEEE~Communications Society, Institute
   selected areas in communications : a publication of the IEEE Communications
   Society, IEEE, 1985.
 
+\bibitem{metadata}
+Ettus Research, \emph{Uhd documentation}.
+
 \bibitem{19}
 B.~Farhang-Boroujeny, \emph{Experimental study of semi-blind channel
   identification/equalization through pilot signals}, Signal Processing, 1996.,
   3rd International Conference on, vol.~1, oct 1996, pp.~618 --621 vol.1.
 
+\bibitem{fs1037c}
+Institute for Telecommunication~Sciences, \emph{Federal standard 1037c}.
+
 \bibitem{frater}
 Michael~R. Frater and Michael Ryan, \emph{Electronic warfare for the digitized
   battlefield}, Artech Print on Demand, 2001.
 
-\bibitem{15}
+\bibitem{Ghogho}
 M.~Ghogho, D.~McLernon, E.~Alameda-Hernandez, and A.~Swami, \emph{Channel
   estimation and symbol detection for block transmission using data-dependent
   superimposed training}, Signal Processing Letters, IEEE \textbf{12} (2005),
@@ -88,17 +119,28 @@ Wang Guang-Yan, Zhao Xiao-Qun, and Wang Xia, \emph{Musical noise reduction
   communication}, Wireless Mobile and Computing (CCWMC 2009), IET International
   Communication Conference on, Dec., pp.~726--729.
 
+\bibitem{gubner}
+John~A. Gubner, \emph{Probability and random processes for electrical
+  engineers}, Cambridge University Press, 2010.
+
 \bibitem{11}
 A.~Haimovich and A.~Vadhri, \emph{Rejection of narrow-band interferences in pn
   spread spectrum systems using an eigenanalysis approach}, Military
   Communications Conference, 1994. MILCOM '94. Conference Record, 1994 IEEE,
   oct 1994, pp.~1002 --1006 vol.3.
 
+\bibitem{lpcfilter}
+Simon Haykin, \emph{Adaptive filter theory}, 4 ed., Prentice Hall, 2002.
+
 \bibitem{matlabsdru}
 Mathworks Inc., 2013.
 
 \bibitem{matlabtargeting}
 \bysame, January 2013.
+
+\bibitem{numpy}
+Eric Jones, Travis Oliphant, Pearu Peterson, et~al., \emph{{SciPy}: Open source
+  scientific tools for {Python}}, 2001--.
 
 \bibitem{13}
 W.W. Jones and K.R. Jones, \emph{Narrowband interference suppression using
@@ -124,6 +166,11 @@ E.~Koski and C.~Linn, \emph{The jtrs program: software-defined radios as a
 R.I. Lackey and D.W. Upmal, \emph{Speakeasy: the military software radio},
   Communications Magazine, IEEE \textbf{33} (1995), no.~5, 56 --61.
 
+\bibitem{AMUSE}
+Rui Li and Fasong Wang, \emph{Adaptive semiblind signal separation approach
+  using temporal structure of sources}, Anti-counterfeiting, Security,
+  Identification, 2007 IEEE International Workshop on, April, pp.~315--318.
+
 \bibitem{8}
 Karthikeyan Mahadevan, Sojeong Hong, and John Dullum, \emph{Anti-jamming: A
   study}, December 2005.
@@ -143,18 +190,46 @@ Aristides Mpitziopoulos, Damianos Gavalas, Charalampos Konstantopoulos, and
   wsns}, IEEE Communications Surveys and Tutorials \textbf{11} (2009), no.~4,
   42--56.
 
+\bibitem{wired}
+Quinn Norton, \emph{Gnu radio opens an unseen world}.
+
 \bibitem{18}
 A.G. Orozco-Lugo, M.M. Lara, and D.C. McLernon, \emph{Channel estimation using
   implicit training}, Signal Processing, IEEE Transactions on \textbf{52}
   (2004), no.~1, 240 -- 254.
 
+\bibitem{skrkantPHD}
+Srikanth Pagadarai, \emph{Wireless communications and spectrum characterization
+  in impaired channel environments}, Ph.D. thesis, Worcester Polytechnic
+  Institute, 2012.
+
+\bibitem{mrc_m}
+Krishna Sankar~Madhavan Pillai, \emph{Maximal ratio combining effective snr},
+  apr 2009.
+
 \bibitem{scarcity}
 Kathy Pretz, August 2012.
+
+\bibitem{gnuradioCPP}
+The GNU~Radio Project, \emph{Gnu radio 3.6.4 c++ api documentation}.
 
 \bibitem{7}
 Kristopher~W. Reese and Ahmed Salem, \emph{A survey on jamming avoidance in
   ad-hoc sensory networks}, J. Comput. Sci. Coll. \textbf{24} (2009), no.~3,
   93--98.
+
+\bibitem{USRP2Stats}
+Ettus Research, \emph{Usrp2 the next generation of software radio systems},
+  1043 North Shoreline Blvd, September 2010.
+
+\bibitem{n210spec}
+\bysame, \emph{Usrp n200/210 networked series}, 1043 North Shoreline Blvd,
+  September 2012.
+
+\bibitem{armadillo}
+Conrad Sanderson, \emph{Armadillo: An open source c++ linear algebra library
+  for fast prototyping and computationally intensive experiments}, Tech.
+  report, NICTA, 2010.
 
 \bibitem{6}
 Jingpu Shi, Theodoros Salonidis, and Edward~W. Knightly, \emph{Starvation
@@ -176,11 +251,23 @@ Regory Staple and Kevin Werbach, march 2004.
 Christopher~H. Sterling, \emph{Military communications: From ancient times to
   the 21st century}, ABC-CLIO, 2007.
 
+\bibitem{ss_subjective1}
+R.M. Udrea and S.~Ciochina, \emph{Speech enhancement using spectral
+  over-subtraction and residual noise reduction}, Signals, Circuits and
+  Systems, 2003. SCS 2003. International Symposium on, vol.~1, 0-0,
+  pp.~165--168 vol.1.
+
 \bibitem{SSEXAMPLE2}
 N.~Upadhyay and A.~Karmakar, \emph{A perceptually motivated multi-band spectral
   subtraction algorithm for enhancement of degraded speech}, Computer and
   Communication Technology (ICCCT), 2012 Third International Conference on,
   Nov., pp.~340--345.
+
+\bibitem{midterm_report}
+Alexander Wyglinski, Christopher Anderson, and Srikanth Pagadarai,
+  \emph{Semi-blind estimation of correlated mimo channels using optimal
+  training design in multiuser environments}, Tech. report, Office of Naval
+  Research, 2011.
 
 \bibitem{14}
 Liang Zhao, M.G. Amin, and A.R. Lindsey, \emph{Subspace projection techniques

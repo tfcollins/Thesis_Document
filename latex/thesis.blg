@@ -3,49 +3,66 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: background.aux
+A level-1 auxiliary file: implementation.aux
 The style file: amsplain.bst
 Database file #1: mybib.bib
+Warning--entry type for "gnuradioCPP" isn't style-file defined
+--line 71 of file mybib.bib
+Warning--entry type for "fs1037c" isn't style-file defined
+--line 100 of file mybib.bib
+Warning--entry type for "mimo_cable" isn't style-file defined
+--line 168 of file mybib.bib
+Warning--entry type for "sdr_blog" isn't style-file defined
+--line 177 of file mybib.bib
+Warning--entry type for "sdr_blocks" isn't style-file defined
+--line 186 of file mybib.bib
+Warning--entry type for "wired" isn't style-file defined
+--line 234 of file mybib.bib
 Warning--I didn't find a database entry for "TBD"
+Warning--to sort, need author or key in sdr_blocks
+Warning--to sort, need author or key in sdr_blog
+Warning--to sort, need author or key in mimo_cable
 Warning--missing pages in spectrumware
-You've used 39 entries,
+Warning--can't use both author and editor fields in gubner
+You've used 61 entries,
             2213 wiz_defined-function locations,
-            710 strings with 10157 characters,
-and the built_in function-call counts, 13281 in all, are:
-= -- 1193
-> -- 536
-< -- 2
-+ -- 220
-- -- 173
-* -- 990
-:= -- 2022
-add.period$ -- 39
-call.type$ -- 39
-change.case$ -- 202
+            790 strings with 12232 characters,
+and the built_in function-call counts, 18470 in all, are:
+= -- 1627
+> -- 713
+< -- 3
++ -- 295
+- -- 226
+* -- 1282
+:= -- 2807
+add.period$ -- 61
+call.type$ -- 61
+change.case$ -- 295
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 569
-empty$ -- 1199
-format.name$ -- 173
-if$ -- 2912
+cite$ -- 66
+duplicate$ -- 844
+empty$ -- 1748
+format.name$ -- 226
+if$ -- 4061
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 75
-newline$ -- 127
-num.names$ -- 77
-pop$ -- 313
+int.to.str$ -- 61
+missing$ -- 104
+newline$ -- 193
+num.names$ -- 112
+pop$ -- 510
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 236
 quote$ -- 0
-skip$ -- 432
+skip$ -- 623
 stack$ -- 0
-substring$ -- 962
-swap$ -- 142
-text.length$ -- 2
+substring$ -- 1175
+swap$ -- 187
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 146
-warning$ -- 1
-while$ -- 113
-width$ -- 41
-write$ -- 336
-(There were 2 warnings)
+type$ -- 230
+warning$ -- 5
+while$ -- 154
+width$ -- 63
+write$ -- 498
+(There were 12 warnings)

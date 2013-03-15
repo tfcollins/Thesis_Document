@@ -15,15 +15,17 @@ This chapter is broken down into several sections which include a system level o
 
 To provide a more straight forward explaination of the BLISS system it is appropriate to provided a system level overview.  The system's original purpose was to remove the effects of narrow and wideband jamming.  It accomplishes this goal through a series of processing blocks and a selection block.  These blocks include: the antenna subset selection (AntSS) block, spectral subtraction block, and finally the blind source separation block.  The figure below shows the interconnections between these blocks and certain modification were made from the original design of the system due to practical constraints.  These changes will be brought fourth as the blocks themselves are discussed in detail. Since an external research group is responsible to the AntSS block, it will not be throughly discussed by this thesis, but its fundimental purpose will be examined.\\
 
-\begin{figure}\label{bliss_system}
-\includegraphics{bliss_system.eps}
+\begin{figure}[!ht]\label{bliss_system}
+\centering
+\includegraphics[scale=0.5]{bliss_system.eps}
+\caption{Overview of BLISS System }
 \end{figure}
 
 The first step in the BLISS system is to pass through the AntSS block.  Physically this block is equipped with many antenna in groups of 4.  As the block title portrays a subset of these antennas will be selected and they will be passed on to the next block.  Precisely a \(2^{M}-to-2^{N}\) downselection from an array of receive antennas to a set of BLISS receiver inputs. Each individual AntSS board provides 4-to-2 antenna downselection through a set of RF switches.  The goal of AntSS is to provide spatial separation through an array of antennas maximizing the SNR of the wanted signal.  It is important to note that the antenna spacing must be adiquet to provide enough separation or independence, depending on the operating frequencies or wavelength of the signals themselves.  Once the appropriate antennas are selected two signals are to the spectral subtraction block.\\
 
 The spectral subtraction block is next, which is used to removal known unwanted signal from the spectrum so the source separation block and work properly.  The original design of the spectral subtraction block is to use an existing audio technique of removing noise or signals in the frequency domain through a subtraction and smoothing technique.  This technique was discussed previously in the background section, therefore its historical literature will not be examined futher.  To enable removal of unwanted signals, the Spectral Subtraction block maintained a database of known power spectral densities (PSD) of common modulation schemes.  A recognition system would be implemented to automatic identification of the interfering signal and the block would simply subtract it out, through its already known estimate from its database.  Next the newly subtracted signal would be passed to the Source Separation System, where the signal would be unmixed.\\
 
-The source separation block separates signals when only their mixtures are observed.  The operation is called blind, since the signal sources and mixing procedure are unknown to the receiver.  Under some conditions this constraint cannot be completely upheld.  This is true because the solutions needed to solve such an event become generally intractable.  An initial approach in this project was to use a technique called AMUSE (Algorithm for Multiple Unknown Signals Extraction)\cite{amuse}.  AMUSE works by first collecting an estimate of the covariance matrix of the received signal, computing the singular value decomposition of that covariance matrix, then performing several transforms on the received signal once the number of mixed received signals is known.  Then a covariance is calculated from these transformed received signals which are offset by some instance \(\tau\), and a eigenvalue decomposition is done upon these covariances.  From this decomposition the singular values are used with the transform matrix and the received signal to provide an estimate of the wanted source signal.\\
+The source separation block separates signals when only their mixtures are observed.  The operation is called blind, since the signal sources and mixing procedure are unknown to the receiver.  Under some conditions this constraint cannot be completely upheld.  This is true because the solutions needed to solve such an event become generally intractable.  An initial approach in this project was to use a technique called AMUSE (Algorithm for Multiple Unknown Signals Extraction)\cite{AMUSE}.  AMUSE works by first collecting an estimate of the covariance matrix of the received signal, computing the singular value decomposition of that covariance matrix, then performing several transforms on the received signal once the number of mixed received signals is known.  Then a covariance is calculated from these transformed received signals which are offset by some instance \(\tau\), and a eigenvalue decomposition is done upon these covariances.  From this decomposition the singular values are used with the transform matrix and the received signal to provide an estimate of the wanted source signal.\\
 
 \begin{equation}\label{}
 R_{y}=E[yy^{t}]
@@ -36,33 +38,45 @@ It is important to note that for simplicity the mixing matrix for the original p
 
 \section{Hardware and Software Platforms}
 
-Before any implementation was considered a platform needed to be choosen for the end result.  This selection provided the work flowpath for the implementation, eliminating many options.  As discussed in previous chapters, the end result wants to leverage the power of Software-Defined radios (SDR).  The hardware platform chosen was the USRP2 designed and built by Ettus Research\cite{ettus}.  These radios are readily available in the Wireless Innovation Laboratory and since the number of radios required for the design was still unknown, it was an obvious choice.  There are several software packages that support the USRP2 hardware and several will be examined in this chapter.\\
+Before any implementation was considered a platform needed to be choosen for the end result.  This selection provided the work flowpath for the implementation, eliminating many options.  As discussed in previous chapters, the end result wants to leverage the power of Software-Defined radios (SDR).  The hardware platform chosen was the USRP2 designed and built by Ettus Research\cite{USRP2Stats}.  These radios are readily available in the Wireless Innovation Laboratory and since the number of radios required for the design was still unknown, it was an obvious choice.  There are several software packages that support the USRP2 hardware and several will be examined in this chapter.\\
 
 The USRP2 or Universal Software Radio Peripheral are intended to be a comparatively inexpensive hardware platform for software radio, and is commonly used by research labs, universities, and hobbyists\cite{wired}.  The USRP2 connects directly to a host computer through a Gigabit Ethernet link, which relays baseband sample that have been receiver or tobe translated.   The motherboard provides the following subsystems: clock generation and synchronization, FPGA, ADCs, DACs, host processor interface, and power regulation. Several of these component are seen in the image below.  These are the basic components that are required for baseband processing of signals. A modular front-end, called a daughterboard, is used for analog operations such as up and down conversion, filtering, and other signal conditioning. By replacing this RF daughtercard many different frequency ranges can be examined.\\
 
-\begin{figure}
-\includegraphics[scale=0.75]{usrp2_overview.eps}
-\includegraphics[scale=0.75]{usrp2_mainboard.eps}
+\begin{figure}\label{usrp2_full_hardware}
+\centering
+\includegraphics[scale=0.2]{usrp2_overview.eps}
+\caption{Full USRP2 Hardware with Daughtercard}
+\end{figure}
+
+\begin{figure}\label{usrp2_mainboard}
+\centering
+\includegraphics[scale=0.2]{usrp2_mainboard.eps}
+\caption{USRP2 Mainboard}
 \end{figure}
 
 
-The information flow is important to understand within the phyiscal radio.  This SDR block diagram shown below, outlines the common tasks done by the: daughtercard, FPGA, DAC/ADC, and host computer.  Since the FPGA is programmable the operations can change if desire, but the three dominating software packages that utlize the USRP2 flow this structure.  Beginning on the far left of the diagram and continuing to the right, at the daughtercard are RF emitions are received and transmitted.  The daughter also contain mixers that translate the signal to an intermediate frequency.  Next come the dual 100 MS/s 14-bit ADCs, dual 400 MS/s 16-bit DACs, two digital down-converters with programmable decimation rates, and two digital up-converters with programmable interpolation rates\cite{USPR2Stats}.  These are located on the mainboard of the USRP2 itself.  The FPGA is a Xilinx Spartan 3 XC3S2000, which with the current FPGA software is 59\% free in general logic but only 3\% free in memory.  The FPGA also does not have any DSP resources.  The limited memory left in the USRP2 FPGA severely limited any additional development.  As a result on newer models, such as the N210, the FPGA has been upgrade.\cite{n210spec}\\
+The information flow is important to understand within the phyiscal radio.  This SDR block diagram shown below, outlines the common tasks done by the: daughtercard, FPGA, DAC/ADC, and host computer.  Since the FPGA is programmable the operations can change if desire, but the three dominating software packages that utlize the USRP2 flow this structure.  Beginning on the far left of the diagram and continuing to the right, at the daughtercard are RF emitions are received and transmitted.  The daughter also contain mixers that translate the signal to an intermediate frequency.  Next come the dual 100 MS/s 14-bit ADCs, dual 400 MS/s 16-bit DACs, two digital down-converters with programmable decimation rates, and two digital up-converters with programmable interpolation rates\cite{USRP2Stats}.  These are located on the mainboard of the USRP2 itself.  The FPGA is a Xilinx Spartan 3 XC3S2000, which with the current FPGA software is 59\% free in general logic but only 3\% free in memory.  The FPGA also does not have any DSP resources.  The limited memory left in the USRP2 FPGA severely limited any additional development.  As a result on newer models, such as the N210, the FPGA has been upgrade.\cite{n210spec}\\
 
-\begin{figure}
-\includegraphics[scale=0.75]{sdr_block_diagram.eps}
-\cite{sdr_blocks}
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.5]{sdr_block_d.eps}
+\caption{USRP System Block Diagram\cite{sdr_blocks}}
 \end{figure}
 
 The data itself constain several pieces of metadata in a frame.  RX metadata structure for describing sent IF data includes time specification, fragmentation flags, burst flags, and error codes. The receive routines convert IF data headers into metadata\cite{metadata}.  Such metadata can be used to indicate the position and FPGA timestamp associated with the sample that corresponds to the start of the underlying frame. By default, existing blocks will transparently propagate any attributes contained on their input streams to their output streams. Blocks that use the attributes can query their input streams to locate all (key, value, offset) tuples in the region of the stream that they are currently working on in their “work” method. Likewise, blocks can copy, add or delete attributes on their output streams\cite{sdr_blog}.  This knowledge is extremely useful when doing multiple receive antenna arrays when alignment is necessary, or in any situation where fine timing information is required.\\
 
 With the USRP hardware several software options are available including: GNU Radio, MATLAB, LabVIEW, and several custom packages.  MATLAB and GNU Radio have already been discussed, therefore the selection between them shall be discussed.  Since this system is a MIMO implementation signal alignment is a requirement.  MATLAB doesn't support sample alignment in a multiple USRP system.  The sample alignment is possible through either external means through an external clock or through the option choosen here the MIMO cable.  The MIMO cable, a picture of it can be seen in figure \ref{mimo}, is a standard 16-pole flatcable to connect tvrx, basic-rx or dbsrx boards.  Of this 16pin flatcable only two pins are used (io15 and ground)\cite{mimo_cable}.  An image also of the combined dual radio source block can be seen in figure \ref{mimo_grc} from GNU Radio.  With this requirement GNU Radio must be used for direct access with the USRP2.  Aswell full implementation of the systems blocks were first attempted with GNU Radio.  Fortunately, if necessary, data can be passed to MATLAB for signal processing from GNU Radio through the use of the file blocks and a script located in Appendix A.\\
 
-\begin{figure}\label{mimo}
-\includegraphics{mimo.eps}%taken on iphone
+\begin{figure}[!ht]\label{mimo}
+\centering
+\includegraphics[scale=0.1]{mimo.eps}%taken on iphone
+\caption{USRP2 MIMO Cable}
 \end{figure} 
 
-\begin{figure}\label{mimo_grc}
-\includegraphics{mimo_grc.eps}
+\begin{figure}[!ht]\label{mimo_grc}
+\centering
+\includegraphics[scale=0.6]{mimo_grc.eps}
+\caption{GNU-Radio MIMO Enable Source Block}
 \end{figure} 
 
 
@@ -73,7 +87,9 @@ Now that the a formal system level approach has been presented and hardware setu
 Initial simulations were created to examine this spectral estimation technique at RF frequencies rather than the standard audio frequencies for which Spectral Subtraction is formally used.  Only two signals were used in these simulations, both utilized the same modulation scheme and pulseshaping filters.  The signals were chosen to be non-orthoganal, since when they are orthogonal The frequency of the interfering signal was varied, and so were the oversubtraction parameter \(\alpha\) and quantization floor \(\beta\).  Through experimentation \(\alpha\) worked best at a value greater than 10, and \(\beta\) worked best between 0.05 and 0.2.  The graph in figure \ref{SS_basic} shows the bit error rate (BER) as the interferer is shifted across the wanted signal in frequency.\\
 
 \begin{figure}\label{SS_basic}
-\includegraphics{SS_basic.eps}
+\centering
+\includegraphics[scale=0.5]{SS_basic.eps}
+\caption{Original Spectral Subtraction Technique Results}
 \end{figure} 
 
 As you can see this spectral subtraction technique operates extremely poor when the signal are overlapping at all.  The reason system performs well at large frequency shifts is due to the bandpass filter which is used before the signal is quantized.  The reason the result is poor is because the estimate is largely incorrect.  Since the subtraction only utilzes the PSD's of the signals, half of the information is completely ignored.  This results in a completely inaccurate estimate.  The problem with traditional Spectral Subtraction is that its results are subjectively evaluated or done, which isn't accurate enough in a digital communication system.  Other evaluations uses such metrics as SNR, which can be quite deceptive esspecially in digital communications.  Such examples can be seen here: \cite{ss_subjective1}, \cite{ss_subjective2} \\
@@ -84,15 +100,17 @@ Since the initial simulations for traditional Spectral Subtraction proved inadiq
 
 The equalizer approach used in this Spectral Subtraction approach is a Least Means Square (LMS) equalizer, utilizing training data used in the front portion of each transmitted frame.  This a common equalizer used in practice, allowing for future translation into a realized implementation.  The LMS equalizer was also chosen for it robustness no noise, which is a weakness of such equalizers as the zero-forcing equalizer and requires no matrix inversion such as the Least Square (LS) equalizer.  For proof of concept the entire datastream is used as training data, which provides the best results of any given channel for an adaptive equalizer, since the maximum knowledge is gained about the channel for each frame received.  The results below show the BER as the signals pass over one another in frequency, similar to the previous evaluation using traditional Spectral Subtraction.\\
   
-\begin{figure}\label{SS_equalizer}
-\includegraphics{SS_Equalizer_sim.eps}
+\begin{figure}[!ht]\label{SS_equalizer}
+\centering
+\includegraphics[scale=0.4]{SS_Equalizer_sim.eps}
+\caption{Spectral Subtraction Equalizer Test}
 \end{figure} 
 
 As you can see the figure above, the equalizer approach doesn't provide any improve beyond the traditional Spectral Subtraction approach.  The problem with using traditional adaptive equalizers is that they can only be used with a comparative slowly fading channel.  Since knowledge learned from the training data can be applied at the earliest to the next frame, if the interference changes enough it can render the equalizer useless.  This rapidly changing spectrum or energy within the spectrum is unforunately a common characteristic of jammers.  Even though this approach failed it provided an important observation and incite into the requirements and scenarios in which jammers can be overcome.  For the sake of completeness an additional test was done with a small repeating sequence, smaller than the equalizer tap size, and as aspected the equalizer was able to overcome the interferer.\\
 
-\begin{figure}\label{SS_equalizer_small}
-\includegraphics{SS_Equalizer_small.eps}
-\end{figure} 
+%\begin{figure}\label{SS_equalizer_small}
+%\includegraphics{SS_Equalizer_small.eps}
+%\end{figure} 
 
 
 The important conclusion drawn from the previous experiment is that the when signals are orthogonal the receiver needs to be able to predict what data or energy is being transmismitted at a given time.  Therefore the jammer problem must be constained future.  As a result two jammer scenarios will be defined.  The first scenarios is that the jammer's modulated data or energy is completely known to the receiver and the second is that the data sequence repeats with period being small.  The larger the period the more resources the receiver will need to devote to its determination and evaluation.  The sequence being completely known to the jammer is a reasonable assumption; primarily if the jammer is friendly, as discussed previously in this thesis, then that knowledge can be readily available.\\
@@ -101,41 +119,49 @@ Now that the jammer scenarios have been defined further they can be evaluated.  
 
 %\[ (f\star g)[n] = summation f^{\star}[m]g[n+m]\] NEED CITATION\\
 \begin{equation}\label{cross}
-R_{XY}(t_{1},t_{2})=E[X_{t_{1}}Y_{t_{2}}\cite{gubner}
+R_{XY}(t_{1},t_{2})=E[X_{t_{1}}Y_{t_{2}}]\cite{gubner}
 \end{equation}
 
 An example of two sequences being cross-correlated with one another can be seen below, with the peak being where the signal line up of share the most mutual information with one another.  Therefore from this data the location of the start of the interfers data can easily be located and removed.  A simulation was created with this design in mind, with a unique result.  Since the signals are frequency shifted over one another, when there frequencies match, it produces the best result, but as soon as they are offset, errors start to occur.  This can easily be compensated for using a complex exponential multiplied by either the received or catalogued waveform.  This will enduce a frequency shift cancelling out the shifting signal.  Therefore the error is just a function of the noise itself.\\
 
-\begin{figure}
+\begin{figure}[!ht]\label{ss_correlation}
 %changing power graph of subtraction
-\includegraphics{ss_correlation_sim.eps}
+\centering
+\includegraphics[scale=0.5]{ss_correlation_sim.eps}
+\caption{Spectral Subtraction Correlation method}
 \end{figure} 
 
 This simulation was also repeated but this time was subtracted in the frequency domain.  The result produced near identical results.  Since using this approach requires two fourier transforms, into and out of the frequency domain, computationally it is much more involved and requires many more resources than the time domain approach.  If the data was already the frequency domain from some other process or signal processing technique then the frequency subtraction would be a viable option.\\
 
 Further analysis was done to provide a solid understand of the new requirements of the system and its limitations.  The first is the precise understanding of the interfering signal itself.  Since it is assumed that the signal modulation and data stream is known, attention can be shifted to the other issues that can occur, which are the non-idealities of the system.  The first is the power constraint or effect.  When subtracting the interferer specific power must be measure of the interferer alone, so close to as little possible energy is subtracted from the joined signal that belongs to the desired signal.  An examination of the incorrect estimation of the interfering signal was examined in \ref{power_delta}.
 
-\begin{figure}
+\begin{figure}[!ht]\label{power_delta}  
 %changing power graph of subtraction
-\includegraphics{ss_conv_changing_over_subtraction_level.eps}
+\centering
+\includegraphics[scale=0.5]{ss_conv_changing_over_subtraction_level.eps}
+\caption{Spectral Subtraction Correlation Test with Varying Oversubtraction Level}
 \end{figure}
 
 Besides power, frequency and timing offsets were examined.  These are especially concerning because the signal cannot be demodulated when in operation for feedback information, because it must be fed into the signal separation block for equalization.  Therefore a timing recovery mechanism cannot downsample the signal either.  The timing recovery and carrier recovery mechanism therefore needed to be unobtrusive as possible to the signal.  As a result frequency and timing shifts were examined to understand the sensitivity of the subtraction, and how accurate the recovery mechanismed needed to be.
 
 %Freq Shifting
-\begin{figure}
+\begin{figure}[!ht]\label{shifting}
 %Timing (Phase) shifting
-\includegraphics{ss_conv_phase_offsets.eps}
+\centering
+\includegraphics[scale=0.5]{ss_conv_phase_offsets.eps}
+\caption{Spectral Subtraction with Phase Offsets of Interfering Signal}
 \end{figure}
 
-As you can see from figures \ref{} and \ref{}, the subtraction mechanism is extremely sensitive to timing offsets, while frequency shifts the system is rather robust.  If a full bitshift occures though, the entire system falls apart.  This is a rather large problem and must be considered when attempting such operation on non-simulated data.  This problem was forsean because of the time variance or sensitive of the signals themselves. \\
+As you can see from figure \ref{shifting}, the subtraction mechanism is extremely sensitive to timing offsets, while frequency shifts the system is rather robust.  If a full bitshift occures though, the entire system falls apart.  This is a rather large problem and must be considered when attempting such operation on non-simulated data.  This problem was forsean because of the time variance or sensitive of the signals themselves. \\
 
 Moving on, now that a viable subtraction technique has been determined, the final implementation for the Spectral Subtraction block can be realized.  As discussed in the Hardware and Software Platform section of this thesis, GNU Radio was the first to be examined because of its realtime attributes.  This was quite an involved process requiring many weeks of trial and error.  The first implementation was entirely written in C++, which is the recommended language for signal processing blocks in GNU Radio.\\  
 
 Since C++ within GNU differs from many modern programming styles a code implementation or route was taken to ensure accuracy and speed up development.  Therefore all coding was done with C++ itself, using no GNU Radio built-in libraries\cite{gnuradioCPP}.  To allow for matrix operations the Aramdillo C++ Library\cite{armadillo} was imported and provided needed vector operations such as correlation and faster mathematical functions instead of having to rewrite common search operations.  This library would also be needed for the Signal Separation block, therefore coding with Armadillo would provide the knowledge for future implementations needed in that block.  From the standard C++ implementation results were compared with Matlab, and the code was ported into GNU Radio.\\
 
-\begin{figure}
-\includegraphics{code_work_flow.eps}
+\begin{figure}[!ht] 
+\centering
+\includegraphics[scale=0.5]{code_work_flow.eps}
+\caption{GNU-Radio Code Implementation Workflow}
 \end{figure}
 
 GNU Radio C++ are basically written by first creating test cases and writing your code until they are solved.  This is a common practice among the programming community and provides a definitive endpoint to the code itself.  The code was written and compiled successfully but unforunately the python wrapper called SWIG\cite{swig}, which GNU Radio uses to interact with the C++ block through python, was unable to export the library.  This is an undocumented problem within GNU Radio and was only identified through discussions directly with the GNU Radio core development team.  Therefore another approach had to be considered.\\
@@ -146,8 +172,10 @@ Again more problems occured, stonewalling all progress.  The signal processing b
 
 With these setbacks, it became necessary to look beyond GNU Radio and just utilize MATLAB for signal processing.  Therefore the decision to load captured signals from GNU Radio and process them in MATLAB.  It is nowhere near realtime, but it will process the data appropriately.  The simple GNU Radio needs frontend is important because it allows tight synchronization between multiple receive antenna, which is a require of the original design of the system.  The GNU Radio model can be seen in figure \ref{grc_receiver}, the modulator block has been customized to remove the quantization, producing floating point results.\\
 
-\begin{figure}\label{grc_receiver}
-\includegraphics{grc_receiver.eps}
+\begin{figure}[!ht]\label{grc_receiver}
+\centering
+\includegraphics[scale=0.5]{grc_receiver.eps}
+\caption{GNU-Radio Receiver Half Design}
 \end{figure}
 
 \subsection{Non-deterministic Scenarios}
@@ -169,8 +197,10 @@ When multiple signals are in the envirorment the compensation algorithm learn in
 To accomplish this algorithm holding mechanism, energy detection was chosen to be uses for its simplicity.  Below you can see an image of the jammer signal by itself and the combined signals.  A large increase in energy or step can be seen, which can easily numerically detected.  Energy is calculated using the following equation: \(E_{s}=\newcommand{\inftyint}{\int_{-\infty}^{+\infty}}|x(t)|^{2}dt\).  This was implemented with a moving average filter with a small window to reduce sperious changes due to signals gaps or outliers.  In practice the average peak energy level of the interferer is first calculated, then when the power in the spectrum increases to a level roughly 1.5x of the original level, the compensation algorithms are halted.  A simple technqiue technique, which is commonly uses but in the inverse fashion.  An example of the combined and signals can be seen in figure \ref{combo_signal_time}.  The final results of the Spectral Subtraction block are examined in the next chapter.\\
 
 
-\begin{figure}\label{combo_signal_time}
-\includegraphics{combo_signal_time.eps}
+\begin{figure}[!ht]\label{combo_signal_time}
+\centering
+\includegraphics[scale=0.5]{combo_signal_time.eps}
+\caption{Received mixed and individual signals}
 \end{figure}
 
 \section{Superimposed Equalizer}
@@ -182,9 +212,9 @@ The original objective was the utilize a new signal separation technique called 
 With this model, \cite{midterm_report} shows that no assumptions are necessary regarding the number of the transmit antennas of each of the interferers and the channel orders as long as they are smaller than the block size.  The block size in this case is equal to the combination of the individual channel lengths and the number of transmit antenna used by the desired transmitter.  But this evaluation rely on three assumptions:\\
 
 \begin{enumerate}
-\item The data sequence x_{d} is an i.i.d. sequence such that \(x_{d}~CN(0,\sigma_{d}^{2}\)
+\item The data sequence \(x_{d}\) is an i.i.d. sequence such that \(x_{d}~\mathcal{CN}(0,\sigma_{d}^{2})\)
 
-\item The distribution over the MIMO channel vector is \(p(y;\theta)~CN(\mu_{y},R_{w})\), and the interference vector is distrbuted normal with covariance \(R_{w}\)
+\item The distribution over the MIMO channel vector is \(p(y;\theta)~\mathcal{CN}(\mu_{y},R_{w})\), and the interference vector is distrbuted normal with covariance \(R_{w}\)
 
 \item The transmitted symbols, the channel vector, and the interference vector are jointly independent
 \end{enumerate}
@@ -194,19 +224,23 @@ With these assumptions the mixing process can be undone but the channel estimati
 With our channel estimation method chosen, a simulation was created to prove the effectiveness of such a scheme.  The result of this implementation were directly compared with the results of the paper to prove correctness.% and compared with traditional equalizer performance&
 The results of this simulation are seen in figure \ref{sie}.  It examines a random frequency selective channel, with very high suppression with a across a number of SNR values.  As expected there is a linear relationship between SNR and Error.\\  %For completeness a comparision was done with a traditional LMS equalizer to show the effectiveness of the superimpose equalizer.\\
 
-\begin{figure}\label{sie}
-\includegraphics{sie_SNR.eps}
+\begin{figure}[!ht]\label{sie}
+\centering
+\includegraphics[scale=0.5]{sie_SNR.eps}
+\caption{Superimposed Equalizer SNR Performance}
 \end{figure}
 
-\begin{figure}\label{sie_freq}
-\includegraphics{freq_response_sie.eps}
+\begin{figure}[!ht]\label{sie_freq}
+\centering
+\includegraphics[scale=0.5]{freq_response_sie.eps}
+\caption{Superimposed Equalizer Channel Estimation Performance with High SNR}
 \end{figure}
 
 %INSERT Figure of SNR and channel estimate for Superimpose equalizer\\
 %
 %INSERT Figure with comparision of superimposed equalizer vs. traditional linear equalizer\\
 
-From figure \ref{sie_freq} you can see in a frequency selective fading channel is very well estimated by the superimposed equalizer.  This was exactly the result that was desired, but symbol recovery after equalization still needed to be examined. This unfortunately is the drawback of this formulation.  The first is the condition if the mixing matrix $$H$$ is rank deficient, the channel become inestimiable,  since there become an infinite amount of solutions to the actual unmixing process.  The second is the equalizer, which is numerically intensive, and the alternative has limiting conditions \cite{Ghogho}.  This conclusion, which isn't discussed in \cite{Ghogho}, is when the equalized signal is very suppressed due to the incomplete channel estimate.  The quantization feedback method overcome the previously received frame and dominated all future frames, essentually neglecting any information they have.  Again this only in very suppresive channels.  With these results the superimposed equalizer started to become less desirable due to it's complexity, but evaluations continued due to the amount of time invested into the topic already.\\
+From figure \ref{sie_freq} you can see in a frequency selective fading channel is very well estimated by the superimposed equalizer.  This was exactly the result that was desired, but symbol recovery after equalization still needed to be examined. This unfortunately is the drawback of this formulation.  The first is the condition if the mixing matrix \(H\) is rank deficient, the channel become inestimiable,  since there become an infinite amount of solutions to the actual unmixing process.  The second is the equalizer, which is numerically intensive, and the alternative has limiting conditions \cite{Ghogho}.  This conclusion, which isn't discussed in \cite{Ghogho}, is when the equalized signal is very suppressed due to the incomplete channel estimate.  The quantization feedback method overcome the previously received frame and dominated all future frames, essentually neglecting any information they have.  Again this only in very suppresive channels.  With these results the superimposed equalizer started to become less desirable due to it's complexity, but evaluations continued due to the amount of time invested into the topic already.\\
 
 %NEED MORE MATHEMATICAL EXPLAINATION 
 
@@ -221,28 +255,36 @@ Maximal Ratio Combining is a method of diversity combining in which the signal a
 
 A simple evaluation of MRC was done to prove its capabilities, which is based on the simulations here \cite{mrc_m}.
 
-\begin{figure}
-\includegraphics{mrc_gain.eps}
+\begin{figure}[!ht] 
+\centering
+\includegraphics[scale=0.5]{mrc_gain.eps}
+\caption{Maximal Ratio Combining gain acrossing varying number of antennas}
 \end{figure}
 
 As you can see as you increase the number of antennas in a frequency selective channel the better the result.  Therefore MRC was introduce into the framework of the signal separation block, and the new model for this block can be seen in figure \ref{mrc_sys}.  This block first utlizes adaptive equalizers on the channels individually then uses MRC to combine there results maximizing the SNR of the desired signal.  MRC was combined with the channel estimate approach using adaptive equalizers due to there known feasibility.  From the knowledge learned in the previous with the implementation involving GNU Radio, the signal separation block was created entirely in MATLAB.  The results of this operation will be discussed in the final chapter of the thesis.\\
 
-\begin{figure}\label{mrc_sys}
-\includegraphics{mrc_sys.eps}
+\begin{figure}[!ht]\label{mrc_sys}
+\centering
+\includegraphics[scale=0.8]{mrc_sys.eps}
+\caption{Maxmimal Ratio Combining Block design to replace original Super Imposed Equalizer design}
 \end{figure}
 
 \section{Antenna Subset Selection}
 
-The Antenna Subset Selection (AntSS) block was fully contracted out to external contractors but unfortunately was never fully completed.  It is important to understand the purpose of this block for future research, and how it should iteract with the other blocks of the system.  The AntSS system itself consists of a series of AntSS boards that provides $$2^{M}$$ -to-$$2^{N}$$ downselection from an array of receive antennas to a set of BLISS receiver inputs. Each individual AntSS board provides 4-to-2 antenna downselection via a set of RF switches. A basic block diagram of an individual AntSS board is given in Figure \ref{ants_sys}.  Each AntSS board has four receive paths. Each path consists of a bandpass filter and low-noise amplifier. The output of each receive path is connected to a switch matrix composed of a series of Single-Pole-Double-Throw (SPDT) RF Switches. The switch matrix is configured so that all possible permutations of the 4-to-2 downselection are possible. The switch matrix is controlled by software running on a simple PIC processor. The PIC interfaces with the BLISS hardware platform via an RS-232 link that is connected from the BLISS receiver to all AntSS boards.\\
+The Antenna Subset Selection (AntSS) block was fully contracted out to external contractors but unfortunately was never fully completed.  It is important to understand the purpose of this block for future research, and how it should iteract with the other blocks of the system.  The AntSS system itself consists of a series of AntSS boards that provides \(2^{M}$$ -to-$$2^{N}\) downselection from an array of receive antennas to a set of BLISS receiver inputs. Each individual AntSS board provides 4-to-2 antenna downselection via a set of RF switches. A basic block diagram of an individual AntSS board is given in Figure \ref{ants_sys}.  Each AntSS board has four receive paths. Each path consists of a bandpass filter and low-noise amplifier. The output of each receive path is connected to a switch matrix composed of a series of Single-Pole-Double-Throw (SPDT) RF Switches. The switch matrix is configured so that all possible permutations of the 4-to-2 downselection are possible. The switch matrix is controlled by software running on a simple PIC processor. The PIC interfaces with the BLISS hardware platform via an RS-232 link that is connected from the BLISS receiver to all AntSS boards.\\
 
-\begin{figure}\label{ants_sys}
-\includegraphics{ants_sys.eps}
+\begin{figure}[!ht]\label{ants_sys}
+\centering
+\includegraphics[scale=0.6]{ants_sys.eps}
+\caption{Antenna Subset Selection block outline}
 \end{figure}
 
-During operation, training information which was used also by the signal separation block is also used by AntSS.  It uses this data to provide SNR values at each Antenna of the desired signal.  Once all antennas have been evaluated the system then selects a subset of the best antennas, which is defined by the highest SNR levels.  The signals from these antennas are then fed into the remain BLISS blocks.  AntSS can have $$2^{M}$$ antennas, but will always deliever two signals.  The antennas need to be space at least a single wavelength appart or they will not be considered independent of one another, reducing the effectiveness of AntSS.  The physical boards have been built, which can be seen in figure \ref{antss_boards} and their frequency response on the individual channels can be seen in Appendix \ref{ANTSS_F_RESPONSE}.\\
+During operation, training information which was used also by the signal separation block is also used by AntSS.  It uses this data to provide SNR values at each Antenna of the desired signal.  Once all antennas have been evaluated the system then selects a subset of the best antennas, which is defined by the highest SNR levels.  The signals from these antennas are then fed into the remain BLISS blocks.  AntSS can have \(2^{M}\) antennas, but will always deliever two signals.  The antennas need to be space at least a single wavelength appart or they will not be considered independent of one another, reducing the effectiveness of AntSS.  The physical boards have been built, which can be seen in figure \ref{antss_boards} and their frequency response on the individual channels can be seen in Appendix \ref{ANTSS_F_RESPONSE}.\\
 
-\begin{figure}\label{antss_boards}
-\includegraphics{ants_board.eps}
+\begin{figure}[!ht]\label{antss_boards}
+\centering
+\includegraphics[scale=0.8]{ants_board.eps}
+\caption{Single Antenna Subset Selection physcial board}
 \end{figure}
 
 Unfortunately none of the control mechanisms in software have been created, therefore AntSS couldn't be fully tested and effectiveness deteremined.  This will be a reasonable avenue for future work.\\
