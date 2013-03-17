@@ -29,8 +29,17 @@ The source separation block separates signals when only their mixtures are obser
 
 \begin{equation}\label{}
 R_{y}=E[yy^{t}]
+\end{equation}
+
+\begin{equation}\label{}
 z=Cy
+\end{equation}
+
+\begin{equation}\label{}
 R_{z}=E[z(\tau)z(t-\tau)^{t}
+\end{equation}
+
+\begin{equation}\label{}
 \hat{x}=Vhat{t}Cy
 \end{equation}
 
@@ -44,13 +53,13 @@ The USRP2 or Universal Software Radio Peripheral are intended to be a comparativ
 
 \begin{figure}\label{usrp2_full_hardware}
 \centering
-\includegraphics[scale=0.2]{usrp2_overview.eps}
+\includegraphics[scale=0.1]{usrp2_overview.eps}
 \caption{Full USRP2 Hardware with Daughtercard}
 \end{figure}
 
 \begin{figure}\label{usrp2_mainboard}
 \centering
-\includegraphics[scale=0.2]{usrp2_mainboard.eps}
+\includegraphics[scale=0.1]{usrp2_mainboard.eps}
 \caption{USRP2 Mainboard}
 \end{figure}
 
@@ -102,7 +111,7 @@ The equalizer approach used in this Spectral Subtraction approach is a Least Mea
   
 \begin{figure}[!ht]\label{SS_equalizer}
 \centering
-\includegraphics[scale=0.4]{SS_Equalizer_sim.eps}
+\includegraphics[scale=0.5]{SS_Equalizer_sim.eps}
 \caption{Spectral Subtraction Equalizer Test}
 \end{figure} 
 
@@ -119,7 +128,7 @@ Now that the jammer scenarios have been defined further they can be evaluated.  
 
 %\[ (f\star g)[n] = summation f^{\star}[m]g[n+m]\] NEED CITATION\\
 \begin{equation}\label{cross}
-R_{XY}(t_{1},t_{2})=E[X_{t_{1}}Y_{t_{2}}]\cite{gubner}
+R_{XY}(t_{1},t_{2})=E[X_{t_{1}}Y_{t_{2}}] \cite{gubner}
 \end{equation}
 
 An example of two sequences being cross-correlated with one another can be seen below, with the peak being where the signal line up of share the most mutual information with one another.  Therefore from this data the location of the start of the interfers data can easily be located and removed.  A simulation was created with this design in mind, with a unique result.  Since the signals are frequency shifted over one another, when there frequencies match, it produces the best result, but as soon as they are offset, errors start to occur.  This can easily be compensated for using a complex exponential multiplied by either the received or catalogued waveform.  This will enduce a frequency shift cancelling out the shifting signal.  Therefore the error is just a function of the noise itself.\\
@@ -209,12 +218,12 @@ Moving on, the next block to discuss is the signal separation block.  The develo
 
 The original objective was the utilize a new signal separation technique called AMUSE, but a new avenue was taken with a more theoretical channel estimation problem in mind.  This estimation evaluation will be discussed first.  The first objective for channel estimation is to examine the channel mixing model which assumes a single-input multiple-antenna broadcast channel.  A J-channel FIR system excited by K transmit antennas is considered. A quasi time-invariant multipath channel is assumed which remains constant during the transmission of a set of consecutive symbols, which are called slots. These slots are assumed independent from one another.  The channel estimation is performed over each slot. Each symbol inside a slot is assumed to be the result of a known redundant precoder acting on an input transmit symbol vector drawn from an M-PSK constellation. Therefore the receiver receives signals not only from the intended transmitter but also from Q other interferers. The interferers are assumed to employ the same redundant precoder as the desired signal\cite{skrkantPHD}.\\
 
-With this model, \cite{midterm_report} shows that no assumptions are necessary regarding the number of the transmit antennas of each of the interferers and the channel orders as long as they are smaller than the block size.  The block size in this case is equal to the combination of the individual channel lengths and the number of transmit antenna used by the desired transmitter.  But this evaluation rely on three assumptions:\\
+With this model, \cite{midterm_report} shows that no assumptions are necessary regarding the number of the transmit antennas of each of the interferers and the channel orders as long as they are smaller than the block size.  The block size in this case is equal to the combination of the individual channel lengths and the number of transmit antenna used by the desired transmitter.  But this evaluation rely on three assumptions:
 
 \begin{enumerate}
-\item The data sequence \(x_{d}\) is an i.i.d. sequence such that \(x_{d}~\mathcal{CN}(0,\sigma_{d}^{2})\)
+\item The data sequence \(x_{d}\) is an i.i.d. sequence such that \(x_{d}\sim\mathcal{CN}(0,\sigma_{d}^{2})\)
 
-\item The distribution over the MIMO channel vector is \(p(y;\theta)~\mathcal{CN}(\mu_{y},R_{w})\), and the interference vector is distrbuted normal with covariance \(R_{w}\)
+\item The distribution over the MIMO channel vector is \(p(y;\theta)\sim\mathcal{CN}(\mu_{y},R_{w})\), and the interference vector is distrbuted normal with covariance \(R_{w}\)
 
 \item The transmitted symbols, the channel vector, and the interference vector are jointly independent
 \end{enumerate}
