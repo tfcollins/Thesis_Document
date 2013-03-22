@@ -3,39 +3,72 @@
 
 \section{Overview}
 
-This chapter outlines the outcomes of the individual BLISS system blocks and evaluates their performance and realiseability.  Since a large transistion was made from original research and goals, many limitations were enforced in the final design presented in this thesis.  Feasibility was desired during the implementation stage of this work, causing this transition, but full implementations were produced in the end.  Since certain channel conditions couldn't be replicated in reality baseline evaluations were produced for proof of concept, and rigorious hardening is a viable path for future work.\\ 
+This chapter outlines the outcomes of the individual BLISS system blocks and evaluates their performance and realisability.  Since a large transistion was made from original research and goals, many limitations were enforced in the final design presented in this thesis.  Feasibility was desired during the implementation stage of this work, causing this transition, but physical implementations were produced and analyzed.  Since certain channel conditions couldn't be replicated in reality baseline evaluations were produced for proof of concept, and rigorious hardening is a viable path for future work.\\ 
 
 \section{Spectral Subtraction}
 
-The goal of this section is to present the results of the Spectral Subtraction signal processing block.  This block, as mentioned in previous sections, tries to remove non-orthoganol signals from the spectrum that are located on the same frequency of the desired signal.  Since the receiver isn't allowed to move to other bands, this mimics the effects of a wideband jamming system, causing all effective bandwidth or throughput to diminish.  From the theoretical simulations it is possible to remove the interfering signal but only under severe limitations.  The primary issue is the signal is extremely time varying and alighnment is quite quite difficult.  This problem is made even worse in an over the air implementation since the signal is corrupted even future.  That corruption is time varying as well, and difficult to model to the accuracy needed to provided sufficent signal removal.  In order to operate this system assumes the interferer's system is completely known, including the data that is being modulated into the spectrum.\\
+The goal of this section is to present the results of the Spectral Subtraction signal processing block.  This block, as mentioned in previous sections, tries to remove non-orthoganol known signals from the spectrum that are located on the same frequency of the desired signal.  Since the receiver isn't allowed to move to other bands, this mimics the effects of a wideband jamming system, causing all effective bandwidth or throughput to diminish.  From the theoretical simulations it is possible to remove the interfering signal but only under severe limitations or constraints.  The primary issue is that the signal is extremely time varying and alignment is quite difficult.  To be precise, this block tries to align a source signal with the received signal, and then subtract that signal from all future received segments. This alignment is difficult because the received signal is corrupted by noise and the channel which it passes through. That corruption is time varying as well, and difficult to model over many frames to provided sufficent signal removal.  In order to operate, this system assumes the interferer's system is completely known, including the data that is being modulated into the spectrum.  Therefore it is the goal of the Spectral Subtraction block is to regenerate the corruption caused by the channel, apply that to the source signal, and then subtract.  The experimental evaluation is outlined next and the analysis of its performance.\\
 
 \subsection{Experiment}
 
-This experiment consists of four USRP2 radio transceivers.  One radio acting as a transmitter, one the interferer, and two receive radio connected through a MIMO-USRP cable.  The cable causes direct synchronization between the receive radios.  This is required to perform maximal ratio combining to correctly align signals constructively.  During testing, the interferer first begins transmitting data, then the desired transmitter begins to transmit.  At all times the receiver is actively receiving all signals in the spectrum.  A sample of the combined received signals can be seen in figure \ref{combo_time_signals}.  The lower energy sections represent the individual signals and the high energy level sections show the mixed signals.\\
+This experiment consists of four USRP2 radio transceivers.  One radio acting as a transmitter, one the interferer, and two receive radio connected through a MIMO-USRP cable.  The cable causes direct synchronization between the receive radios.  This is required to perform maximal ratio combining to correctly align signals constructively.  During testing, the interferer first begins transmitting data, then the desired transmitter begins to transmit.  At all times the receiver is actively receiving all signals in the spectrum.  A sample of the combined received signals can be seen in figure %\ref{combo_time_signals}.  
+The lower energy sections represent the individual signals and the high energy level sections show the mixed signals.\\
 
 All transmissions utilize GMSK, due to its resilience to changes in the radio's power amplifier.  All radios operate at 100kbits/sec, well under the maximum rate of the radios, minimizing the load on the machines themselves and the amount of data generated.  The machines connected to the radios are all have Core Series Intel processors, installed with Ubuntu Linux 10.10 and 12.04.  All machines were also running MATLAB 2011B, and GNU-Radio 3.6.2git-145-g7c8347ca built from the git repository.  All signal recordings/reception was done in GNU-Radio and all signal processing at baseband was done in MATLAB.  Figure \ref{ss_setup_real} is a picture of the experimental setup with all four radios
 
 \begin{figure}\label{ss_setup_real}
-\includegraphics{ss_setup_real.eps}
+\centering
+\includegraphics[scale=0.1]{ss_setup_real.eps}
 \caption{Spectral Subtraction Hardware Setup}
 \end{figure}
 
-To evaluate the Spectral Subtraction block the signal was demodulated, timing recovered, and compared against the transmitted data.  Mueller Muller timing was used as a timing recovery method.  Several runs were made, and varying results were recorded.  Even with perfect knowledge of the exact modulated data, the corruption caused by the environment proved extremely hazarous to the signal.  Since the frequency drift of the USRP2 crystal oscillators, which control the transmission and reception frequencies, can vary on the order of kilohertz.  This non-ideality seemed to be the most difficult problem to compenstate for, since it couldn't be directly measured when the signals were mixed.  A visual inspection of the subtracted result show an oscillating error in the spectrum which is shown in figure \ref{ss_oscillation}.  As express previously, Spectral Subtraction is very susceptable to data corruption.  It is analogous to hitting a moving target, since the operation is extremely time varying and time dependent.\\  
+\subsection{Analysis}
 
-To help compensate for these non-idealities phase sychronization and carrier sychronization was attempted with the received signal.  As outlined in the Implementation chapter, Spectral Subtraction is designed as a receiver in a receiver system.  The front received locks onto the interferer, applys necessary phase shifts, and subtracts a synthetically generated signal from the previously known data which has also been modulated and pulse-shaped.  Unfortunately this the received data also contains many other effects cause by the channel, including multipath and large amounts of noise.  To resolve this the front receiver must estimate the channel and apply the same amount of noise to the signal to remove it sufficiently.  \(\textbf{Y=HX+W}\), only \(X\) is known in this realization, and both \(H\) and \(W\) are time dependent.  As mentioned previously SS is very susceptible to any carrier, power, and timing effects.  Figure \ref{ss_oscillation} is a prime example of how phase shifts can effect results.\\
+The system was able to correctly identify power changes in the signal and provide the most accurate estimates before the signals begin to mix.  This mixing of signals cannot last for long periods of time because the non-idealities of the hardware and environment begin to corrupt the estimate of the interfering signal.  This corruption remove any hope of desired signal recovery.  The corruption can be seen clearly in figure \ref{ss_oscillation}, as the frames further from the estimate become more and more corrupted.  This period of time for which the estimate provides enough accuracy for spectral removal depends on the changes in phase frequency and channel effects.\\
+
+Many of the non-idealities associated with Spectral Subtraction were discussed in the Implementation chapter.  Though most of effort was put towards compensating for these effects, they still produced a large amount of error in the final design.  These sources of corruption manifested as several different errors in the output of the block.  The first was timing offsets.  Since the interferer is extremely time-varying, if a single bit is missed, the entire signal downstream becomes corrupted.  If this timing is out of phase \(\pi\) radians, then an identical corruption occurs.  As \(\phi->0\), this exponentially decreases the error.  As for carrier frequency and phase offsets, this error manifests as an oscillating error in the output signal.  Figure \ref{ss_oscillation} shows severals frames and the resulting energy left behind after subtraction.  This plot was generate by a simplified test, just the interferer transmitted data and attempts were made to nullify these transmissions.  These oscillations point towards problems in phase or frequency estimations.\\
 
 \begin{figure}\label{ss_oscillation}
-\includegraphics{ss_oscillation.eps}
+\centering
+\includegraphics[scale=0.5]{ss_oscillation.eps}
 \caption{Error Oscillation After Spectral Subtraction}
 \end{figure}
 
-Since noise couldn't be varied in this implementation for direct comparision against simulation, presented is a series of runs and their coinciding errors.  Each run only represents the periods for which the signals are mixed, which is roughly 3 seconds.  The error represents the accuracy of the demodulated signal and not the amount of unwanted still existing in the channel, since it is less desired.  This data can be seen in figure \ref{ss_error_runs}.\\
+
+%%To evaluate the Spectral Subtraction block the signal was demodulated, timing recovered, and compared against the transmitted data.  Mueller Muller timing was used as a timing recovery method.  Several runs were made, and varying results were recorded.  Even with perfect knowledge of the exact modulated data, the corruption caused by the environment proved extremely hazarous to the signal.  Since the frequency drift of the USRP2 crystal oscillators, which control the transmission and reception frequencies, can vary on the order of kilohertz.  %%
+These non-ideality seemed to be the most difficult problem to compenstate for, and become worse when the signals are mixed.  This is because they cannot be directly measured.  A oscillating error in the spectrum, shown in figure \ref{ss_oscillation}, mirror the effects shown in the simplier nullifying case.  As express previously, Spectral Subtraction is very susceptable to data corruption.  It is analogous to hitting a moving target, since the operation is extremely time varying and time dependent.\\  
+
+To help compensate for these non-idealities phase sychronization and carrier sychronization was attempted with the received signal.  As outlined in the Implementation chapter, Spectral Subtraction is designed as a receiver in a receiver system.  The front received locks onto the interferer, applys necessary phase shifts, and subtracts a synthetically generated signal from the previously known data which has also been modulated and pulse-shaped.  Unfortunately this the received data also contains many other effects cause by the channel, including multipath and large amounts of noise.  To resolve this the front receiver must estimate the channel and apply the same amount of noise to the signal to remove it sufficiently.  \( \bf{Y}=H_{I}(X_{I})+H_{D}(X_{D})+W \), only \(\bf{X_{I}}\) is known in this realization, and both \(\bf{H_{I}}\) and \(\bf{W}\) are time dependent.  As mentioned previously SS is very susceptible to any carrier, power, and timing effects.\\
+
+
+It is important to show Spectral Subtraction operating correctly and when errors occur in the estimation.  Figure \ref{ss_result_great} show a desired result from Spectral subtraction when all timing is aligned, while figure \ref{ss_result_bad} shows the error propeagation through the frames.  Both these results looked 20 frames ahead of the section used for subtraction.  Finally figure \ref{many_frames}, shows the error associated with increasing the frames looking ahead.  As expected, the further you move away from your original subtraction frame, the worse your results become.\\
+
+\begin{figure}\label{ss_result_great}
+\centering
+\includegraphics[scale=0.5]{ss_result_GREAT.eps}
+\caption{Desired result after Spectral Subtraction with 20 Forward Frames}
+\end{figure}
+
+\begin{figure}\label{ss_result_bad}
+\centering
+\includegraphics[scale=0.5]{ss_result_BAD_Timing.eps}
+\caption{Error after Spectral Subtraction with incorrect phase estimates with 20 Forward Frames}
+\end{figure}
+
+\begin{figure}\label{many_frames}
+\centering
+\includegraphics[scale=0.5]{many_frames.eps}
+\caption{Error associated with increasing duration of estimation frame}
+\end{figure}
+
+
+%Since noise couldn't be varied in this implementation for direct comparision against simulation, presented is a series of runs and their coinciding errors.  Each run only represents the periods for which the signals are mixed, which is roughly 3 seconds.  The error represents the accuracy of the demodulated signal and not the amount of unwanted still existing in the channel, since it is less desired.  This data can be seen in figure \ref{ss_error_runs}.\\
 
 %\begin{figure}\label{ss_error_runs}
 %\includegraphics{ss_error_runs.eps}
 %\end
 
-\subsection{Analysis}
+\subsection{Summary}
 
 Spectral Subtraction in a extremely well studied area in signal processing, but no existing literature exists for its application in a digital communication system.  It has been shown here that it can be quite difficult for it to be applied, even under serious constraints.  Under the conditions of this thesis, the assumptions are quite reasonable, but due to the large amount of error in the results, more may need to be considered.  These may include accuracy requirements for physical equipment, primarily to reduce carrier frequency drift.  Burst scenarios may also be considered to reduce bit error rate.  Overall, for a completely non-existant field of study, these results point the possibility of operational success.  Future work will we required, especially during the implementation phase of designs.\\
 
@@ -45,7 +78,7 @@ The Signal Separation block changed the most from the original research design. 
 
 \subsection{Experiment}
 
-Signal Separation utilized an identical setup as the Spectral Subtraction testing, which is quite obvious since Signal Separation is downstream from Spectral subtraction in the data path.  To separate problems or issues with the performance of the Spectral Subtraction block it is removed from the data path, providing direct analysis and evaluation of the Signal Separation block.  It takes in two data stream, which have been timing synchronize through the use of the MIMO USRP cable.  These streams are equalized by an LMS Adaptive equalizer of length 14.  These taps provided the Maximal Ratio Combining weight analysis, providing information on which of the channel was less corrupted.  This is done by combining the filter tap values and taking the ratio of the two equalizers, and these weights determine how much of each signal is added to the final output signal.\\ 
+Signal Separation utilized an identical setup as the Spectral Subtraction testing, which is quite obvious since Signal Separation is downstream from Spectral subtraction in the data path.  The interferer was also removed from this testing, and the noise that pre-existed in the spectrum used to reflect the noise remaining from Spectral Subtraction.  This decision was made to separate problems or issues with the performance of the Spectral Subtraction block, providing direct analysis and evaluation of the Signal Separation block.  It takes in two data stream, which have been timing synchronize through the use of the MIMO USRP cable.  These streams are equalized by an LMS Adaptive equalizer of length 14.  These taps provided the Maximal Ratio Combining weight analysis, providing information on which of the channel was less corrupted.  This is done by combining the filter tap values and taking the ratio of the two equalizers, and these weights determine how much of each signal is added to the final output signal.\\ 
 
 Again all transmissions utilize GMSK, due to its resilience to changes in the radio's power amplifier.  All radios operate at 100kbits/sec, well under the maximum rate of the radios, minimizing the load on the machines themselves and the amount of data generated.  The machines connected to the radios are all Core Series Intel processing, installed with Ubuntu Linux 10.10 and 12.04.  All machines were also running MATLAB 2011B, and GNU-Radio 3.6.2git-145-g7c8347ca built from the git repository.  All signal recordings/reception was done in GNU-Radio and all signal processing at baseband was done in MATLAB.  Therefore the entire Signal Separation block resides in MATLAB.\\  
 
@@ -58,15 +91,15 @@ Several separate transmissions were made and baseline bit error rates were calcu
 
 \subsection{Analysis}
 
-From the results seen from the baseline testing, reception seems to be quite flawless. To provide a comparision to the simulated results, the transmitter power was lowered to synthetically reduce the SNR of the signal.  The results of these tests can be seen in figure \ref{ssep_snr_tests}.   
+From the results seen from the baseline testing, reception seems to be quite reasonable given the inferior hardware. To provide a comparison to the simulated results, the transmitter power was lowered to synthetically reduce the SNR of the signal.  The results of these tests can be seen in figure \ref{ssep_snr_tests}.   
 
 \begin{figure}\label{ssep_snr_tests}
-\includegraphics{ssep_snr_tests.eps}
+\centering
+\includegraphics[scale=0.5]{ssep_snr_tests.eps}
 \caption{Implementation Signal Separation Performance with varying TX gain}
 \end{figure}
 
-Since only antennas are provided by the AntSS block, MRC will suffer.  Higher performance will be provided by more input signals, but that would increase the complexity of the system significantly.  More input signals could be a future ally for BLISS system for future research.  For the current system architecture the results are acceptable given the limitations and variability in the hardware itself.\\
-ADD MORE\\
+Since only antennas are provided by the AntSS block, MRC will suffer.  Higher performance will be provided by more input signals, but that would increase the complexity of the system significantly.  More input signals could be a future alley for BLISS system for future research.  For the current system architecture the results are acceptable given the limitations and variability in the hardware itself.\\
 
 \section{Antenna Subset Selection}
 
@@ -74,7 +107,7 @@ Since Anteena Subset Selection was done by outside contractors, no analysis will
 
 \section{Summary}
 
-These results show that it is extremely difficult to avoid a wide-band jammer even when fine details are known about the interferer itself.  Spectral Subtraction has large downfalls in its implemented realization due to its fagil nature.  Small non-idealities can cause large errors, especially in timing, causing a large disalighnment in the subtracted signal.  Producing large error.  Other allys must be considered for signal removal or possible signal avoidance.  Signal Separation is focused in solid theoretical foundation and provides additional SNR above single antenna reception, allowing an expoitation in the dimensionality of the environment and the signal itself.  It was fully implemented with reasonable BER given the non-ideal hardware.  Additional antennas should be considered for futher gains from Maxmimal Ratio Combining.\\
+These results show that it is extremely difficult to avoid a wide-band jammer even when fine details are known about the interferer itself.  Spectral Subtraction has large downfalls in its implemented realization due to its fagil nature.  Small non-idealities can cause large errors, especially in timing, causing a large disalignment in the subtracted signal.  Equipment with higher tolerances would be a way of minimizing these effects.  Signal Separation is focused in solid theoretical foundation and provides additional SNR above single antenna reception, allowing an expoilation in the dimensionality of the environment and the signal itself.  It was fully implemented with reasonable BER given the non-ideal hardware.  Additional antennas should be considered for futher gains from Maxmimal Ratio Combining.\\
 
 
 

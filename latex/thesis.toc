@@ -1,5 +1,5 @@
 \contentsline {chapter}{List of Figures}{vi}
-\contentsline {chapter}{List of Tables}{vii}
+\contentsline {chapter}{List of Tables}{viii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}
 \contentsline {section}{\numberline {1.2}State of the Art}{2}
@@ -22,21 +22,22 @@
 \contentsline {section}{\numberline {3.1}Overview}{28}
 \contentsline {section}{\numberline {3.2}System}{30}
 \contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{32}
-\contentsline {section}{\numberline {3.4}Spectral Subtraction}{37}
-\contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{39}
+\contentsline {section}{\numberline {3.4}Spectral Subtraction}{36}
+\contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{38}
 \contentsline {subsection}{\numberline {3.4.2}Non-deterministic Scenarios}{45}
 \contentsline {subsection}{\numberline {3.4.3}Over the Air Implementation Considerations}{46}
-\contentsline {section}{\numberline {3.5}Superimposed Equalizer}{47}
+\contentsline {section}{\numberline {3.5}Superimposed Equalizer}{48}
 \contentsline {section}{\numberline {3.6}Antenna Subset Selection}{53}
 \contentsline {section}{\numberline {3.7}Summary}{56}
-\contentsline {chapter}{\numberline {4}Results}{57}
-\contentsline {section}{\numberline {4.1}Overview}{57}
-\contentsline {section}{\numberline {4.2}Spectral Subtraction}{57}
-\contentsline {subsection}{\numberline {4.2.1}Experiment}{58}
+\contentsline {chapter}{\numberline {4}Results}{58}
+\contentsline {section}{\numberline {4.1}Overview}{58}
+\contentsline {section}{\numberline {4.2}Spectral Subtraction}{58}
+\contentsline {subsection}{\numberline {4.2.1}Experiment}{59}
 \contentsline {subsection}{\numberline {4.2.2}Analysis}{60}
-\contentsline {section}{\numberline {4.3}Signal Separation}{60}
-\contentsline {subsection}{\numberline {4.3.1}Experiment}{61}
-\contentsline {subsection}{\numberline {4.3.2}Analysis}{62}
-\contentsline {section}{\numberline {4.4}Antenna Subset Selection}{62}
-\contentsline {section}{\numberline {4.5}Summary}{62}
-\contentsline {chapter}{Bibliography}{65}
+\contentsline {subsection}{\numberline {4.2.3}Summary}{62}
+\contentsline {section}{\numberline {4.3}Signal Separation}{64}
+\contentsline {subsection}{\numberline {4.3.1}Experiment}{65}
+\contentsline {subsection}{\numberline {4.3.2}Analysis}{66}
+\contentsline {section}{\numberline {4.4}Antenna Subset Selection}{67}
+\contentsline {section}{\numberline {4.5}Summary}{67}
+\contentsline {chapter}{Bibliography}{68}

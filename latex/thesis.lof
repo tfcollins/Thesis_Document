@@ -16,22 +16,26 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces USRP2 Mainboard}}{34}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces USRP System Block Diagram\cite {sdr_blocks}}}{35}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces USRP2 MIMO Cable}}{36}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces GNU-Radio MIMO Enable Source Block}}{37}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces GNU-Radio MIMO Enable Source Block}}{36}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Original Spectral Subtraction Technique Results}}{38}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Spectral Subtraction Equalizer Test}}{39}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Spectral Subtraction Correlation method}}{41}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Spectral Subtraction Correlation Test with Varying Oversubtraction Level}}{42}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectral Subtraction with Phase Offsets of Interfering Signal}}{43}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces GNU-Radio Code Implementation Workflow}}{44}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectral Subtraction with Phase Offsets of Interfering Signal}}{42}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces GNU-Radio Code Implementation Workflow}}{43}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces GNU-Radio Receiver Half Design}}{45}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Received mixed and individual signals}}{48}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Superimposed Equalizer SNR Performance}}{50}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Superimposed Equalizer Channel Estimation Performance with High SNR}}{51}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Maximal Ratio Combining gain acrossing varying number of antennas}}{52}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Maxmimal Ratio Combining Block design to replace original Super Imposed Equalizer design}}{53}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Antenna Subset Selection block outline}}{54}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Single Antenna Subset Selection physcial board}}{55}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Received mixed and individual signals}}{47}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Spectral Subtraction Block Diagram}}{48}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Superimposed Equalizer SNR Performance}}{51}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Superimposed Equalizer Channel Estimation Performance with High SNR}}{51}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Maximal Ratio Combining gain acrossing varying number of antennas}}{53}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Maxmimal Ratio Combining Block design to replace original Super Imposed Equalizer design}}{54}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Antenna Subset Selection block outline}}{55}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Single Antenna Subset Selection physcial board}}{56}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral Subtraction Hardware Setup}}{59}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Error Oscillation After Spectral Subtraction}}{60}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Implementation Signal Separation Performance with varying TX gain}}{63}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral Subtraction Hardware Setup}}{60}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Error Oscillation After Spectral Subtraction}}{61}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Desired result after Spectral Subtraction with 20 Forward Frames}}{63}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Error after Spectral Subtraction with incorrect phase estimates with 20 Forward Frames}}{63}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Error associated with increasing duration of estimation frame}}{64}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Implementation Signal Separation Performance with varying TX gain}}{66}
