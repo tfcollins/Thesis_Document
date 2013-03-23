@@ -16,9 +16,9 @@ This chapter is broken down into several sections which include a system level o
 To provide a more straight forward explaination of the BLISS system it is appropriate to provided a system level overview.  The system's original purpose was to remove the effects of narrow and wideband jamming.  It accomplishes this goal through a series of processing blocks and a selection block.  These blocks include: the antenna subset selection (AntSS) block, spectral subtraction block, and finally the blind source separation block.  The figure below shows the interconnections between these blocks and certain modification were made from the original design of the system due to practical constraints.  These changes will be brought fourth as the blocks themselves are discussed in detail. Since an external research group is responsible to the AntSS block, it will not be throughly discussed by this thesis, but its fundimental purpose will be examined.\\
 
 \begin{figure}[!ht]\label{bliss_system}
-\centering
-\includegraphics[scale=0.5]{bliss_system.eps}
-\caption{Overview of BLISS System }
+\hspace{0.2in}
+\includegraphics[width=0.75\textwidth]{bliss_system.eps}
+\caption{Overview of BLISS system }
 \end{figure}
 
 The first step in the BLISS system is to pass through the AntSS block.  Physically this block is equipped with many antenna in groups of 4.  As the block title portrays a subset of these antennas will be selected and they will be passed on to the next block.  Precisely a \(2^{M}-to-2^{N}\) downselection from an array of receive antennas to a set of BLISS receiver inputs. Each individual AntSS board provides 4-to-2 antenna downselection through a set of RF switches.  The goal of AntSS is to provide spatial separation through an array of antennas maximizing the SNR of the wanted signal.  It is important to note that the antenna spacing must be adiquet to provide enough separation or independence, depending on the operating frequencies or wavelength of the signals themselves.  Once the appropriate antennas are selected two signals are to the spectral subtraction block.\\
@@ -28,7 +28,7 @@ The spectral subtraction block is next, which is used to removal known unwanted 
 The source separation block separates signals when only their mixtures are observed.  The operation is called blind, since the signal sources and mixing procedure are unknown to the receiver.  Under some conditions this constraint cannot be completely upheld.  This is true because the solutions needed to solve such an event become generally intractable.  An initial approach in this project was to use a technique called AMUSE (Algorithm for Multiple Unknown Signals Extraction)\cite{AMUSE}.  AMUSE works by first collecting an estimate of the covariance matrix of the received signal, computing the singular value decomposition of that covariance matrix, then performing several transforms on the received signal once the number of mixed received signals is known.  Then a covariance is calculated from these transformed received signals which are offset by some instance \(\tau\), and a eigenvalue decomposition is done upon these covariances.  From this decomposition the singular values are used with the transform matrix and the received signal to provide an estimate of the wanted source signal.\\
 
 \begin{equation}\label{}
-R_{y}=E[yy^{t}]
+R_{y}=E[yy^\top]
 \end{equation}
 
 \begin{equation}\label{}
@@ -54,14 +54,14 @@ The USRP2 or Universal Software Radio Peripheral are intended to be a comparativ
 \begin{figure}\label{usrp2_full_hardware}
 \centering
 \includegraphics[scale=0.1]{usrp2_overview.eps}
-\caption{Full USRP2 Hardware with Daughtercard}
+\caption{Full USRP2 hardware with daughtercard}
 \end{figure}
 
-\begin{figure}\label{usrp2_mainboard}
-\centering
-\includegraphics[scale=0.08]{usrp2_mainboard.eps}
-\caption{USRP2 Mainboard}
-\end{figure}
+%\begin{figure}\label{usrp2_mainboard}
+%\centering
+%\includegraphics[scale=0.1]{usrp2_mainboard.eps}
+%\caption{USRP2 mainboard}
+%\end{figure}
 
 
 The information flow is important to understand within the phyiscal radio.  This SDR block diagram shown below, outlines the common tasks done by the: daughtercard, FPGA, DAC/ADC, and host computer.  Since the FPGA is programmable the operations can change if desire, but the three dominating software packages that utlize the USRP2 flow this structure.  Beginning on the far left of the diagram and continuing to the right, at the daughtercard are RF emitions are received and transmitted.  The daughter also contain mixers that translate the signal to an intermediate frequency.  Next come the dual 100 MS/s 14-bit ADCs, dual 400 MS/s 16-bit DACs, two digital down-converters with programmable decimation rates, and two digital up-converters with programmable interpolation rates\cite{USRP2Stats}.  These are located on the mainboard of the USRP2 itself.  The FPGA is a Xilinx Spartan 3 XC3S2000, which with the current FPGA software is 59\% free in general logic but only 3\% free in memory.  The FPGA also does not have any DSP resources.  The limited memory left in the USRP2 FPGA severely limited any additional development.  As a result on newer models, such as the N210, the FPGA has been upgrade.\cite{n210spec}\\
@@ -69,7 +69,7 @@ The information flow is important to understand within the phyiscal radio.  This
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{sdr_block_d.eps}
-\caption{USRP System Block Diagram\cite{sdr_blocks}}
+\caption{USRP System block diagram\cite{sdr_blocks}}
 \end{figure}
 
 The data itself constain several pieces of metadata in a frame.  RX metadata structure for describing sent IF data includes time specification, fragmentation flags, burst flags, and error codes. The receive routines convert IF data headers into metadata\cite{metadata}.  Such metadata can be used to indicate the position and FPGA timestamp associated with the sample that corresponds to the start of the underlying frame. By default, existing blocks will transparently propagate any attributes contained on their input streams to their output streams. Blocks that use the attributes can query their input streams to locate all (key, value, offset) tuples in the region of the stream that they are currently working on in their “work” method. Likewise, blocks can copy, add or delete attributes on their output streams\cite{sdr_blog}.  This knowledge is extremely useful when doing multiple receive antenna arrays when alignment is necessary, or in any situation where fine timing information is required.\\
@@ -208,7 +208,7 @@ To accomplish this algorithm holding mechanism, energy detection was chosen to b
 
 \begin{figure}[!ht]\label{combo_signal_time}
 \centering
-\includegraphics[scale=0.5]{combo_signal_time.eps}
+\includegraphics[scale=0.4]{combo_signal_time.eps}
 \caption{Received mixed and individual signals}
 \end{figure}
 
@@ -217,7 +217,7 @@ Now that the triggering mechanism for halting the algorithms has been determined
 
 \begin{figure}[!ht]\label{ss_overview}
 \centering
-\includegraphics[scale=0.6]{SS_overview.eps}
+\includegraphics[width=1.1\textwidth]{SS_overview.eps}
 \caption{Spectral Subtraction Block Diagram}
 \end{figure}
 

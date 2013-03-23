@@ -11,8 +11,7 @@ The goal of this section is to present the results of the Spectral Subtraction s
 
 \subsection{Experiment}
 
-This experiment consists of four USRP2 radio transceivers.  One radio acting as a transmitter, one the interferer, and two receive radio connected through a MIMO-USRP cable.  The cable causes direct synchronization between the receive radios.  This is required to perform maximal ratio combining to correctly align signals constructively.  During testing, the interferer first begins transmitting data, then the desired transmitter begins to transmit.  At all times the receiver is actively receiving all signals in the spectrum.  A sample of the combined received signals can be seen in figure %\ref{combo_time_signals}.  
-The lower energy sections represent the individual signals and the high energy level sections show the mixed signals.\\
+This experiment consists of four USRP2 radio transceivers.  One radio acting as a transmitter, one the interferer, and two receive radio connected through a MIMO-USRP cable.  The cable causes direct synchronization between the receive radios.  This is required to perform maximal ratio combining to correctly align signals constructively.  During testing, the interferer first begins transmitting data, then the desired transmitter begins to transmit.  At all times the receiver is actively receiving all signals in the spectrum.  A sample of the combined received signals can be seen in figure \ref{combo_time_signals}.  The lower energy sections represent the individual signals and the high energy level sections show the mixed signals.\\
 
 All transmissions utilize GMSK, due to its resilience to changes in the radio's power amplifier.  All radios operate at 100kbits/sec, well under the maximum rate of the radios, minimizing the load on the machines themselves and the amount of data generated.  The machines connected to the radios are all have Core Series Intel processors, installed with Ubuntu Linux 10.10 and 12.04.  All machines were also running MATLAB 2011B, and GNU-Radio 3.6.2git-145-g7c8347ca built from the git repository.  All signal recordings/reception was done in GNU-Radio and all signal processing at baseband was done in MATLAB.  Figure \ref{ss_setup_real} is a picture of the experimental setup with all four radios
 
@@ -45,19 +44,19 @@ It is important to show Spectral Subtraction operating correctly and when errors
 
 \begin{figure}\label{ss_result_great}
 \centering
-\includegraphics[scale=0.5]{ss_result_GREAT.eps}
+\includegraphics[scale=0.7]{ss_result_GREAT.eps}
 \caption{Desired result after Spectral Subtraction with 20 Forward Frames}
 \end{figure}
 
 \begin{figure}\label{ss_result_bad}
 \centering
-\includegraphics[scale=0.5]{ss_result_BAD_Timing.eps}
+\includegraphics[scale=0.7]{ss_result_BAD_Timing.eps}
 \caption{Error after Spectral Subtraction with incorrect phase estimates with 20 Forward Frames}
 \end{figure}
 
 \begin{figure}\label{many_frames}
 \centering
-\includegraphics[scale=0.5]{many_frames.eps}
+\includegraphics[scale=0.7]{many_frames.eps}
 \caption{Error associated with increasing duration of estimation frame}
 \end{figure}
 
@@ -95,7 +94,7 @@ From the results seen from the baseline testing, reception seems to be quite rea
 
 \begin{figure}\label{ssep_snr_tests}
 \centering
-\includegraphics[scale=0.5]{ssep_snr_tests.eps}
+\includegraphics[scale=0.5]{mrc_snr_comp.eps} %{ssep_snr_tests.eps}
 \caption{Implementation Signal Separation Performance with varying TX gain}
 \end{figure}
 

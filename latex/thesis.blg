@@ -4,6 +4,7 @@ The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: background.aux
 A level-1 auxiliary file: implementation.aux
 A level-1 auxiliary file: results.aux
+A level-1 auxiliary file: conclusion.aux
 The style file: amsplain.bst
 Database file #1: mybib.bib
 Warning--entry type for "gnuradioCPP" isn't style-file defined
@@ -26,7 +27,7 @@ Warning--missing pages in spectrumware
 Warning--can't use both author and editor fields in gubner
 You've used 61 entries,
             2213 wiz_defined-function locations,
-            790 strings with 12227 characters,
+            791 strings with 12241 characters,
 and the built_in function-call counts, 18470 in all, are:
 = -- 1627
 > -- 713

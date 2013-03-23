@@ -10,24 +10,24 @@
 \contentsline {section}{\numberline {2.2}Anti-Jamming}{9}
 \contentsline {section}{\numberline {2.3}Communication Systems}{12}
 \contentsline {subsection}{\numberline {2.3.1}Equalization}{15}
-\contentsline {subsection}{\numberline {2.3.2}Superimposed Training Equalization}{19}
+\contentsline {subsection}{\numberline {2.3.2}Superimposed Training Equalization}{20}
 \contentsline {section}{\numberline {2.4}Spectral Subtraction}{22}
 \contentsline {subsection}{\numberline {2.4.1}Residual Noise}{23}
 \contentsline {section}{\numberline {2.5}Software Defined Radio}{24}
 \contentsline {subsection}{\numberline {2.5.1}GNU Radio}{25}
 \contentsline {subsection}{\numberline {2.5.2}MATLAB}{26}
-\contentsline {subsection}{\numberline {2.5.3}Comparision}{26}
-\contentsline {subsection}{\numberline {2.5.4}Summary}{27}
-\contentsline {chapter}{\numberline {3}Implementation}{28}
-\contentsline {section}{\numberline {3.1}Overview}{28}
-\contentsline {section}{\numberline {3.2}System}{30}
-\contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{32}
+\contentsline {subsection}{\numberline {2.5.3}Comparision}{27}
+\contentsline {subsection}{\numberline {2.5.4}Summary}{28}
+\contentsline {chapter}{\numberline {3}Implementation}{29}
+\contentsline {section}{\numberline {3.1}Overview}{29}
+\contentsline {section}{\numberline {3.2}System}{31}
+\contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{33}
 \contentsline {section}{\numberline {3.4}Spectral Subtraction}{36}
-\contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{38}
+\contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{39}
 \contentsline {subsection}{\numberline {3.4.2}Non-deterministic Scenarios}{45}
 \contentsline {subsection}{\numberline {3.4.3}Over the Air Implementation Considerations}{46}
-\contentsline {section}{\numberline {3.5}Superimposed Equalizer}{48}
-\contentsline {section}{\numberline {3.6}Antenna Subset Selection}{53}
+\contentsline {section}{\numberline {3.5}Superimposed Equalizer}{49}
+\contentsline {section}{\numberline {3.6}Antenna Subset Selection}{55}
 \contentsline {section}{\numberline {3.7}Summary}{56}
 \contentsline {chapter}{\numberline {4}Results}{58}
 \contentsline {section}{\numberline {4.1}Overview}{58}
@@ -40,4 +40,7 @@
 \contentsline {subsection}{\numberline {4.3.2}Analysis}{66}
 \contentsline {section}{\numberline {4.4}Antenna Subset Selection}{67}
 \contentsline {section}{\numberline {4.5}Summary}{67}
-\contentsline {chapter}{Bibliography}{68}
+\contentsline {chapter}{\numberline {5}Conclusions}{68}
+\contentsline {section}{\numberline {5.1}Research Outcomes}{68}
+\contentsline {section}{\numberline {5.2}Future Work}{69}
+\contentsline {chapter}{Bibliography}{71}

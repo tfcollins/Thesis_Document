@@ -11,11 +11,44 @@ As oart if this work the following was achieved:
 
 \item Tasked original research was examined and evaluated. Incorporating several years of development and work from many individuals
 
-\item A viable solution was theoretically developed for removal of non-orthogonal wide-band jamming sources.  Conservative constraints were applied to 
+\item A viable solution was theoretically developed for removal of non-orthogonal wide-band jamming sources.  Conservative constraints were applied to the construction, providing enough flexibility for hardware implementations.  The constraints only limited the interfering signal, determining that it must repeat in a relatively short period.  This made it more easily implementable and simplify the receiver design.  This contraint can be removed, but more resources will be required during subtraction, especially in memory resources.
 
+\item A hardware implementation was produced for Spectral Subtraction utilizing both GNU Radio and MATLAB
+
+\item This Spectral Subtraction block provided significant signal removal of actual over the air signals, but timing issues still remain.
+
+\item In-depth analysis was provided into the sources of error with the Spectral Subtraction block
+
+\item An alternative solution was provided for the Signal Separation block originally presented.  This solution was based on a well know method, Maximal Ratio Combining, for combining signals in a constructive way by utilizing their dimensionality.  This decision was made in combination with the project advisors
+
+\item Theoretical simulations were generated in MATLAB providing a basis for performance for Maximal Ratio Combining
+
+\item A hardware implementation was produced for the Signal Separation block utilizing both GNU Radio and MATLAB.
+
+\item A comparison was provided between the theoretical simulations and the hardware implementation.  It is unfair to directly compare the implementation and theoretical results, since the theoretical results don't account for the non-idealities associated with over the air transmissions but the comparison was provided. 
 
 \end{itemize}
 
 \section{Future Work}
 
+Future research activities that are related to this work are discussed in this section.
 
+\begin{itemize}
+
+\item Removal of the short repeated signal constraint must be explored to not hinder the effects or purpose of the jammer itself.  Long sequences or a method for sequence generation such as LFSR (Linear Feedback Shift Registers) could be implemented in such a way.  The receiver must be able to very accurately predict what sample will come next in the stream itself in-order to provide accurate signal removal.
+
+\item Original theoretical derivation by Dr. Srikanth Pagadarai for Signal Separation must be readdressed and superimposed equalizer design explored.  The end result of Dr. Pagadarai work focused on the effectiveness of specifically designed training data using a affine precoder.  A complex timing recover will need to be constructed to utilize such a system due to the scattered nature of the training symbols superimposed on the data itself.
+
+\item A larger number of signals feed into the Spectral Subtraction and Signal Separation blocks should be explored to improve the functionality of Maximal Ratio Combining.
+
+\item GNU Radio controlling blocks for Antenna Subset Selection block should be implemented to provide the necessary dimensionally separated signals into the downstream blocks.
+
+\item System integration needs to be done between all three blocks to provide a complete system.  Performance metrics should be evaluated on this system once constructed to determine its effectiveness under wide-band jamming conditions.
+
+\item Current implementations need to be optimized and code re-factored allowing for better code portability and performance gains.
+
+\item Hardware considerations need to be addressed, determining requirements for actual deployment of such a system in the field.  Hardware constraints will be the largest limiting factor, especially on the RF front end of the design.
+
+
+
+\end{itemize}
