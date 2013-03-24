@@ -1,10 +1,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Open Systems Interconnection Model}}{3}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Original system proposed purpose}}{6}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces DBPSK signal uncorrupted by jammer}}{10}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces DBPSK signal corrupted by jammer}}{10}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Basic Transmitter Outline}}{13}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Basic Receiver Outline}}{14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Basic wireless receiver outline}}{14}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces FIR Filter Structure}}{16}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Good timing recovery produces open eye}}{19}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Poor timing recovery produces closed eye}}{19}
@@ -18,24 +19,25 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces GNU-Radio MIMO Enable Source Block}}{37}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Original Spectral Subtraction Technique Results}}{38}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Spectral Subtraction Equalizer Test}}{40}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Spectral Subtraction Correlation method}}{41}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Spectral Subtraction Correlation Test with Varying Oversubtraction Level}}{42}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Spectral Subtraction with Phase Offsets of Interfering Signal}}{43}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces GNU-Radio Code Implementation Workflow}}{44}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces GNU-Radio Receiver Half Design}}{46}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Received mixed and individual signals}}{48}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Spectral Subtraction Block Diagram}}{49}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Superimposed Equalizer SNR Performance}}{52}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Superimposed Equalizer Channel Estimation Performance with High SNR}}{52}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Maximal Ratio Combining gain acrossing varying number of antennas}}{54}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Maxmimal Ratio Combining Block design to replace original Super Imposed Equalizer design}}{54}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Antenna Subset Selection block outline}}{56}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Single Antenna Subset Selection physcial board}}{57}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Autocorrelation of random signal}}{41}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Spectral Subtraction Correlation method}}{42}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Spectral Subtraction Correlation Test with Varying Oversubtraction Level}}{43}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectral Subtraction with phase offsets of interfering signal}}{43}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces GNU-Radio code implementation workflow}}{44}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces GNU-Radio Receiver Half Design}}{46}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Received mixed and individual signals}}{48}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Spectral Subtraction Block Diagram}}{49}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Superimposed Equalizer SNR Performance}}{52}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Superimposed Equalizer Channel Estimation Performance with High SNR}}{52}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Maximal Ratio Combining gain acrossing varying number of antennas}}{54}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Maximal Ratio Combining block design to replace original Super Imposed Equalizer design}}{55}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Antenna Subset Selection block outline}}{56}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Single Antenna Subset Selection physical board}}{57}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral Subtraction Hardware Setup}}{60}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Error Oscillation After Spectral Subtraction}}{61}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Desired result after Spectral Subtraction with 20 Forward Frames}}{63}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Error after Spectral Subtraction with incorrect phase estimates with 20 Forward Frames}}{63}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Error associated with increasing duration of estimation frame}}{64}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Implementation Signal Separation Performance with varying TX gain}}{66}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral Subtraction Hardware Setup}}{61}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Error Oscillation After Spectral Subtraction}}{62}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Desired result after Spectral Subtraction with 20 Forward Frames}}{64}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Error after Spectral Subtraction with incorrect phase estimates with 20 Forward Frames}}{64}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Error associated with increasing duration of estimation frame}}{65}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Implementation Signal Separation Performance with varying TX gain}}{67}
 \addvspace {10\p@ }

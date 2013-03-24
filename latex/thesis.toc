@@ -3,7 +3,7 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}
 \contentsline {section}{\numberline {1.2}State of the Art}{2}
-\contentsline {section}{\numberline {1.3}Thesis Contributions}{6}
+\contentsline {section}{\numberline {1.3}Thesis Contributions}{7}
 \contentsline {section}{\numberline {1.4}Thesis Organization}{7}
 \contentsline {chapter}{\numberline {2}Background}{8}
 \contentsline {section}{\numberline {2.1}Jamming}{8}
@@ -14,8 +14,8 @@
 \contentsline {section}{\numberline {2.4}Spectral Subtraction}{22}
 \contentsline {subsection}{\numberline {2.4.1}Residual Noise}{23}
 \contentsline {section}{\numberline {2.5}Software Defined Radio}{24}
-\contentsline {subsection}{\numberline {2.5.1}GNU Radio}{25}
-\contentsline {subsection}{\numberline {2.5.2}MATLAB}{26}
+\contentsline {subsection}{\numberline {2.5.1}GNU Radio}{26}
+\contentsline {subsection}{\numberline {2.5.2}MATLAB}{27}
 \contentsline {subsection}{\numberline {2.5.3}Comparision}{27}
 \contentsline {subsection}{\numberline {2.5.4}Summary}{28}
 \contentsline {chapter}{\numberline {3}Implementation}{29}
@@ -24,23 +24,23 @@
 \contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{33}
 \contentsline {section}{\numberline {3.4}Spectral Subtraction}{36}
 \contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{39}
-\contentsline {subsection}{\numberline {3.4.2}Non-deterministic Scenarios}{45}
-\contentsline {subsection}{\numberline {3.4.3}Over the Air Implementation Considerations}{46}
-\contentsline {section}{\numberline {3.5}Superimposed Equalizer}{49}
+\contentsline {subsection}{\numberline {3.4.2}Non-deterministic Scenarios}{46}
+\contentsline {subsection}{\numberline {3.4.3}Over the Air Implementation Considerations}{47}
+\contentsline {section}{\numberline {3.5}Signal Separation}{50}
 \contentsline {section}{\numberline {3.6}Antenna Subset Selection}{55}
-\contentsline {section}{\numberline {3.7}Summary}{56}
-\contentsline {chapter}{\numberline {4}Results}{58}
-\contentsline {section}{\numberline {4.1}Overview}{58}
-\contentsline {section}{\numberline {4.2}Spectral Subtraction}{58}
-\contentsline {subsection}{\numberline {4.2.1}Experiment}{59}
-\contentsline {subsection}{\numberline {4.2.2}Analysis}{60}
-\contentsline {subsection}{\numberline {4.2.3}Summary}{62}
-\contentsline {section}{\numberline {4.3}Signal Separation}{64}
-\contentsline {subsection}{\numberline {4.3.1}Experiment}{65}
-\contentsline {subsection}{\numberline {4.3.2}Analysis}{66}
-\contentsline {section}{\numberline {4.4}Antenna Subset Selection}{67}
-\contentsline {section}{\numberline {4.5}Summary}{67}
-\contentsline {chapter}{\numberline {5}Conclusions}{68}
-\contentsline {section}{\numberline {5.1}Research Outcomes}{68}
-\contentsline {section}{\numberline {5.2}Future Work}{69}
-\contentsline {chapter}{Bibliography}{71}
+\contentsline {section}{\numberline {3.7}Summary}{58}
+\contentsline {chapter}{\numberline {4}Results}{59}
+\contentsline {section}{\numberline {4.1}Overview}{59}
+\contentsline {section}{\numberline {4.2}Spectral Subtraction}{59}
+\contentsline {subsection}{\numberline {4.2.1}Experiment}{60}
+\contentsline {subsection}{\numberline {4.2.2}Analysis}{61}
+\contentsline {subsection}{\numberline {4.2.3}Summary}{63}
+\contentsline {section}{\numberline {4.3}Signal Separation}{65}
+\contentsline {subsection}{\numberline {4.3.1}Experiment}{66}
+\contentsline {subsection}{\numberline {4.3.2}Analysis}{67}
+\contentsline {section}{\numberline {4.4}Antenna Subset Selection}{68}
+\contentsline {section}{\numberline {4.5}Summary}{68}
+\contentsline {chapter}{\numberline {5}Conclusions}{69}
+\contentsline {section}{\numberline {5.1}Research Outcomes}{69}
+\contentsline {section}{\numberline {5.2}Future Work}{70}
+\contentsline {chapter}{Bibliography}{72}

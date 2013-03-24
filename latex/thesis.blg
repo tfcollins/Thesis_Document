@@ -19,7 +19,6 @@ Warning--entry type for "sdr_blocks" isn't style-file defined
 --line 186 of file mybib.bib
 Warning--entry type for "wired" isn't style-file defined
 --line 234 of file mybib.bib
-Warning--I didn't find a database entry for "TBD"
 Warning--to sort, need author or key in sdr_blocks
 Warning--to sort, need author or key in sdr_blog
 Warning--to sort, need author or key in mimo_cable
@@ -27,7 +26,7 @@ Warning--missing pages in spectrumware
 Warning--can't use both author and editor fields in gubner
 You've used 61 entries,
             2213 wiz_defined-function locations,
-            791 strings with 12241 characters,
+            789 strings with 12235 characters,
 and the built_in function-call counts, 18470 in all, are:
 = -- 1627
 > -- 713
@@ -66,4 +65,4 @@ warning$ -- 5
 while$ -- 154
 width$ -- 63
 write$ -- 498
-(There were 12 warnings)
+(There were 11 warnings)
