@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  11 APR 2013 21:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  11 APR 2013 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -143,68 +143,73 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box28
 \@float@everytoks=\toks24
 \@floatcapt=\box29
-) (./thesis.aux)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+) (./thesis.aux
+(./background.aux) (./implementation.aux) (./results.aux) (./conclusion.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
-Overfull \hbox (45.71718pt too wide) in paragraph at lines 64--64
+Overfull \hbox (45.71718pt too wide) in paragraph at lines 65--65
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 
  []
 
 [1
 
-] (./abstract.tex
+] (./abstract.tex) [1] [3] (./thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
-LaTeX Warning: Citation `scarcity' on page 1 undefined on input line 1.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
-) [1] [3] (./thesis.toc)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [4
+
+])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [4
+ [5]
+(./thesis.lof [6
 
-] (./thesis.lof)
+] [7])
 \tf@lof=\write4
 \openout4 = `thesis.lof'.
 
- [5
-
-] (./thesis.lot)
+ [8] (./thesis.lot)
 \tf@lot=\write5
 \openout5 = `thesis.lot'.
 
- [6
+ [9
 
-]
-(./introduction.tex
+] (./introduction.tex
 Chapter 1.
-
-LaTeX Warning: Citation `scarcity' on page 1 undefined on input line 5.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
-
-
-LaTeX Warning: Citation `frater' on page 1 undefined on input line 7.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -214,86 +219,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 12.
- (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 12.
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-
-LaTeX Warning: Citation `Zimmermann' on page 2 undefined on input line 23.
-
-
-LaTeX Warning: Reference `osi_model' on page 2 undefined on input line 23.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
 File: OSI_model.eps Graphic file (type eps)
 <OSI_model.eps>
-
-LaTeX Warning: Citation `1' on page 2 undefined on input line 31.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 [2]
-
-LaTeX Warning: Citation `1' on page 3 undefined on input line 33.
-
-
-LaTeX Warning: Citation `detjam' on page 3 undefined on input line 33.
-
-
-LaTeX Warning: Citation `3' on page 3 undefined on input line 33.
-
-
-LaTeX Warning: Citation `3' on page 3 undefined on input line 33.
-
-
-LaTeX Warning: Citation `3' on page 3 undefined on input line 33.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 [3]
-
-LaTeX Warning: Citation `2' on page 4 undefined on input line 35.
-
-
-LaTeX Warning: Citation `5' on page 4 undefined on input line 35.
-
-
-LaTeX Warning: Citation `6' on page 4 undefined on input line 35.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-
-LaTeX Warning: Citation `7' on page 4 undefined on input line 37.
-
-
-LaTeX Warning: Citation `sterling' on page 4 undefined on input line 37.
-
-
-LaTeX Warning: Citation `8' on page 4 undefined on input line 37.
-
 [4]
-
-LaTeX Warning: Citation `sdr_jam' on page 5 undefined on input line 40.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
@@ -304,13 +250,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
  []
 
 [5]
-
-LaTeX Warning: Citation `4' on page 6 undefined on input line 45.
-
-
-LaTeX Warning: Reference `bliss_goal' on page 6 undefined on input line 45.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
@@ -327,15 +266,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
  (./background.tex
 Chapter 2.
 
-LaTeX Warning: Citation `10' on page 9 undefined on input line 8.
-
-
-LaTeX Warning: Citation `10' on page 9 undefined on input line 8.
-
-
-LaTeX Warning: Citation `ieee80211' on page 9 undefined on input line 8.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -344,10 +274,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
 
 ]
-
-LaTeX Warning: Citation `sterling' on page 10 undefined on input line 10.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
@@ -361,47 +287,24 @@ Overfull \hbox (19.09303pt too wide) in paragraph at lines 13--26
  []
 
 
-LaTeX Warning: Reference `antitable' on page 10 undefined on input line 30.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 [10]
-
-LaTeX Warning: Citation `11' on page 11 undefined on input line 54.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 [11]
-
-LaTeX Warning: Citation `12' on page 12 undefined on input line 56.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-LaTeX Warning: Citation `13' on page 12 undefined on input line 64.
-
-
-LaTeX Warning: Citation `wavelet' on page 12 undefined on input line 64.
-
-
-LaTeX Warning: Citation `14' on page 12 undefined on input line 64.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
-
-
-LaTeX Warning: Citation `kandangath' on page 12 undefined on input line 66.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
@@ -419,11 +322,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
  []
 
 [13]
-
-LaTeX Warning: Reference `fig:Transmitter_System_Diagram' on page 14 undefined 
-on input line 77.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
@@ -435,50 +333,22 @@ Overfull \hbox (13.6527pt too wide) in paragraph at lines 81--82
  []
 
 
-LaTeX Warning: Reference `mixing' on page 14 undefined on input line 85.
-
-
-LaTeX Warning: Citation `9' on page 14 undefined on input line 91.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 [14]
-
-LaTeX Warning: Reference `Receiver_Blocks' on page 15 undefined on input line 9
-3.
-
-
-LaTeX Warning: Citation `9' on page 15 undefined on input line 93.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 File: images/Receiver.eps Graphic file (type eps)
 <images/Receiver.eps>
-
-LaTeX Warning: Citation `9' on page 15 undefined on input line 101.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 [15]
-
-LaTeX Warning: Citation `9' on page 16 undefined on input line 103.
-
-
-LaTeX Warning: Citation `viterbi' on page 16 undefined on input line 103.
-
-
-LaTeX Warning: Citation `turbo' on page 16 undefined on input line 103.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
@@ -489,9 +359,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
  []
 
 
-LaTeX Warning: Reference `FIR_filter' on page 16 undefined on input line 109.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
@@ -499,13 +366,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 [16]
 File: images/FIR_filter.eps Graphic file (type eps)
  <images/FIR_filter.eps>
-
-LaTeX Warning: Reference `weighted' on page 17 undefined on input line 117.
-
-
-LaTeX Warning: Citation `spinger' on page 17 undefined on input line 123.
-
-
 Overfull \hbox (1.46953pt too wide) in paragraph at lines 123--124
 []\OT1/cmr/m/n/10.95 Unfortunately, the ZFE has a large dis-ad-van-tage; it can
 -not com-pen-sate for small amounts
@@ -517,40 +377,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
  []
 
 [17]
-
-LaTeX Warning: Reference `mse' on page 18 undefined on input line 125.
-
-
-LaTeX Warning: Reference `lms_eq' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Reference `lms_eq2' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Reference `lms_eq3' on page 18 undefined on input line 131.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 [18]
-
-LaTeX Warning: Reference `lms_eq2' on page 19 undefined on input line 147.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
-
-
-LaTeX Warning: Citation `9' on page 19 undefined on input line 149.
-
-
-LaTeX Warning: Reference `eye_closed' on page 19 undefined on input line 151.
-
-
-LaTeX Warning: Reference `eye_clean' on page 19 undefined on input line 151.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 149--152
@@ -566,37 +400,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--166
  []
 
 [19] [20]
-
-LaTeX Warning: Citation `16' on page 21 undefined on input line 170.
-
-
-LaTeX Warning: Citation `16' on page 21 undefined on input line 170.
-
-
-LaTeX Warning: Citation `Ghogho' on page 21 undefined on input line 170.
-
-
-LaTeX Warning: Citation `19' on page 21 undefined on input line 170.
-
-
-LaTeX Warning: Citation `17' on page 21 undefined on input line 170.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
-
-
-LaTeX Warning: Citation `17' on page 21 undefined on input line 172.
-
-
-LaTeX Warning: Citation `17' on page 21 undefined on input line 172.
-
-
-LaTeX Warning: Citation `18' on page 21 undefined on input line 172.
-
-
-LaTeX Warning: Citation `ghost' on page 21 undefined on input line 172.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
@@ -604,19 +410,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--173
  []
 
 [21]
-
-LaTeX Warning: Citation `20' on page 22 undefined on input line 180.
-
-
-LaTeX Warning: Citation `16' on page 22 undefined on input line 180.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
-
-
-LaTeX Warning: Citation `Ghogho' on page 22 undefined on input line 182.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 182--183
@@ -629,18 +425,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--186
  []
 
 
-LaTeX Warning: Citation `boll' on page 23 undefined on input line 189.
-
-
-LaTeX Warning: Citation `SSEXAMPLE' on page 23 undefined on input line 189.
-
-
-LaTeX Warning: Citation `SSEXAMPLE2' on page 23 undefined on input line 189.
-
-
-LaTeX Warning: Citation `SSEXAMPLE3' on page 23 undefined on input line 189.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
@@ -650,20 +434,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-
-LaTeX Warning: Citation `mnoise' on page 24 undefined on input line 200.
-
 [24]
-
-LaTeX Warning: Citation `berouti' on page 25 undefined on input line 202.
-
-
-LaTeX Warning: Citation `boll' on page 25 undefined on input line 204.
-
-
-LaTeX Warning: Citation `boll' on page 25 undefined on input line 204.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
@@ -674,22 +445,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
  []
 
 [25]
-
-LaTeX Warning: Citation `21' on page 26 undefined on input line 211.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
-
-
-LaTeX Warning: Citation `22' on page 26 undefined on input line 213.
-
-
-LaTeX Warning: Citation `23' on page 26 undefined on input line 213.
-
-
-LaTeX Warning: Citation `23' on page 26 undefined on input line 213.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 213--214
@@ -698,22 +456,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
 File: images/sdr_overview.eps Graphic file (type eps)
 <images/sdr_overview.eps>
-
-LaTeX Warning: Citation `24' on page 26 undefined on input line 221.
-
-
-LaTeX Warning: Citation `24' on page 26 undefined on input line 221.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
 [26]
-
-LaTeX Warning: Citation `spectrumware' on page 27 undefined on input line 225.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
@@ -724,17 +471,6 @@ File: images/gnr_outline.eps Graphic file (type eps)
 Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
-
-
-LaTeX Warning: Citation `matlabsdru' on page 28 undefined on input line 237.
-
-
-LaTeX Warning: Citation `matlabtargeting' on page 28 undefined on input line 23
-7.
-
-
-LaTeX Warning: Reference `sdru_example' on page 28 undefined on input line 237.
-
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 237--238
@@ -754,7 +490,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--250
  []
 
 [29])
-Underfull \hbox (badness 10000) in paragraph at lines 253--96
+Underfull \hbox (badness 10000) in paragraph at lines 253--97
 
  []
 
@@ -764,25 +500,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--96
  (./implementation.tex
 Chapter 3.
 
-LaTeX Warning: Citation `midterm_report' on page 31 undefined on input line 6.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
 File: images/as6_blocks.eps Graphic file (type eps)
 <images/as6_blocks.eps>
-
-LaTeX Warning: Citation `antss' on page 31 undefined on input line 14.
-
-
-LaTeX Warning: Citation `boll' on page 31 undefined on input line 14.
-
-
-LaTeX Warning: Citation `AMUSE' on page 31 undefined on input line 14.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
@@ -808,13 +531,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
 File: images/bliss_system.eps Graphic file (type eps)
 <images/bliss_system.eps>
-
-LaTeX Warning: Citation `onr_original' on page 33 undefined on input line 27.
-
-
-LaTeX Warning: Citation `onr_original' on page 33 undefined on input line 27.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
@@ -824,28 +540,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-
-LaTeX Warning: Citation `AMUSE' on page 34 undefined on input line 34.
-
 [34]
 Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-LaTeX Warning: Citation `USRP2Stats' on page 35 undefined on input line 40.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
-
-
-LaTeX Warning: Citation `wired' on page 35 undefined on input line 42.
-
-
-LaTeX Warning: Reference `usrp2_full_hardware' on page 35 undefined on input li
-ne 42.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
@@ -855,13 +558,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 [35]
 File: images/usrp2_overview3.eps Graphic file (type eps)
  <images/usrp2_overview3.eps>
-
-LaTeX Warning: Citation `USRP2Stats' on page 36 undefined on input line 57.
-
-
-LaTeX Warning: Citation `n210spec' on page 36 undefined on input line 57.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
@@ -869,31 +565,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 [36]
 File: images/sdr_block_d.eps Graphic file (type eps)
  <images/sdr_block_d.eps>
-
-LaTeX Warning: Citation `sdr_blocks' on page 37 undefined on input line 62.
-
-
-LaTeX Warning: Citation `sdr_blocks' on page 37 undefined on input line 62.
-
-
-LaTeX Warning: Citation `metadata' on page 37 undefined on input line 65.
-
-
-LaTeX Warning: Citation `sdr_blog' on page 37 undefined on input line 65.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
-
-
-LaTeX Warning: Reference `mimo' on page 37 undefined on input line 67.
-
-
-LaTeX Warning: Citation `mimo_cable' on page 37 undefined on input line 67.
-
-
-LaTeX Warning: Reference `mimo_grc' on page 37 undefined on input line 67.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
@@ -910,10 +584,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
  []
 
 [38]
-
-LaTeX Warning: Reference `SS_basic' on page 39 undefined on input line 86.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
@@ -921,15 +591,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
 [39]
 File: images/SS_basic.eps Graphic file (type eps)
  <images/SS_basic.eps>
-
-LaTeX Warning: Citation `ss_subjective1' on page 40 undefined on input line 94.
-
-
-
-LaTeX Warning: Citation `ss_subjective2' on page 40 undefined on input line 94.
-
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
@@ -940,25 +601,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
  []
 
 [40]
-
-LaTeX Warning: Citation `9' on page 41 undefined on input line 100.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 File: images/SS_Equalizer_sim.eps Graphic file (type eps)
 <images/SS_Equalizer_sim.eps>
-
-LaTeX Warning: Reference `SS_equalizer' on page 41 undefined on input line 108.
-
-
-
-LaTeX Warning: Reference `SS_equalizer' on page 41 undefined on input line 108.
-
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
@@ -969,22 +617,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
  []
 
 
-LaTeX Warning: Reference `cross' on page 42 undefined on input line 117.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 [42]
-
-LaTeX Warning: Citation `gubner' on page 43 undefined on input line 121.
-
-
-LaTeX Warning: Reference `ss_correlation_ex' on page 43 undefined on input line
- 124.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
@@ -993,35 +630,19 @@ File: images/correlation_ex2.eps Graphic file (type eps)
 <images/correlation_ex2.eps>
 File: images/ss_correlation_sim2.eps Graphic file (type eps)
  <images/ss_correlation_sim2.eps>
-
-LaTeX Warning: Reference `ss_correlate_GG' on page 43 undefined on input line 1
-40.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 File: images/ss_correlation_sim.eps Graphic file (type eps)
 <images/ss_correlation_sim.eps>
-
-LaTeX Warning: Reference `fig:power_delta' on page 43 undefined on input line 1
-49.
-
 File: images/ss_conv_changing_over_subtraction_level.eps Graphic file (type eps
 )
+
 <images/ss_conv_changing_over_subtraction_level.eps> [43] [44]
 File: images/ss_conv_phase_offsets2.eps Graphic file (type eps)
 
 <images/ss_conv_phase_offsets2.eps>
-
-LaTeX Warning: Reference `shifting' on page 45 undefined on input line 168.
-
-
-LaTeX Warning: Reference `ss_correlation' on page 45 undefined on input line 16
-8.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
@@ -1032,29 +653,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--173
  []
 
 [46]
-
-LaTeX Warning: Citation `gnuradioCPP' on page 47 undefined on input line 174.
-
-
-LaTeX Warning: Citation `armadillo' on page 47 undefined on input line 174.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
 File: images/code_work_flow.eps Graphic file (type eps)
 <images/code_work_flow.eps>
-
-LaTeX Warning: Citation `swig' on page 47 undefined on input line 182.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
-
-
-LaTeX Warning: Citation `numpy' on page 47 undefined on input line 184.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 184--185
@@ -1062,17 +669,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--185
  []
 
 [47]
-
-LaTeX Warning: Citation `tomrondeau' on page 48 undefined on input line 186.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
-
-
-LaTeX Warning: Reference `ref:grc_receiver' on page 48 undefined on input line 
-188.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 188--189
@@ -1080,11 +679,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--189
  []
 
 File: images/grc_receiver.eps Graphic file (type eps)
-<images/grc_receiver.eps>
-
-LaTeX Warning: Citation `lpcfilter' on page 48 undefined on input line 198.
-
-[48]
+<images/grc_receiver.eps> [48]
 Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
@@ -1103,10 +698,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
-
-
-LaTeX Warning: Reference `fig:combo_signal_time' on page 50 undefined on input 
-line 212.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 212--213
@@ -1128,31 +719,14 @@ Overfull \hbox (43.36464pt too wide) in paragraph at lines 226--227
  []
 
 
-LaTeX Warning: Citation `AMUSE' on page 52 undefined on input line 233.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 [52]
-
-LaTeX Warning: Citation `skrkantPHD' on page 53 undefined on input line 237.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
-
-
-LaTeX Warning: Citation `midterm_report' on page 53 undefined on input line 239
-.
-
-
-LaTeX Warning: Citation `Ghogho' on page 53 undefined on input line 249.
-
-
-LaTeX Warning: Citation `Ghogho' on page 53 undefined on input line 249.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 249--250
@@ -1160,73 +734,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--250
  []
 
 [53]
-
-LaTeX Warning: Reference `sie' on page 54 undefined on input line 252.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
 File: images/sie_SNR2.eps Graphic file (type eps)
 <images/sie_SNR2.eps>
-
-LaTeX Warning: Citation `Ghogho' on page 54 undefined on input line 257.
-
-
-LaTeX Warning: Citation `Ghogho' on page 54 undefined on input line 257.
-
 File: images/freq_response_sie2.eps Graphic file (type eps)
-<images/freq_response_sie2.eps>
-
-LaTeX Warning: Reference `fig:sie_freq' on page 54 undefined on input line 270.
-
-
-
-LaTeX Warning: Citation `Ghogho' on page 54 undefined on input line 270.
-
-
-LaTeX Warning: Citation `Ghogho' on page 54 undefined on input line 270.
-
-
+ <images/freq_response_sie2.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
 [54] [55]
-
-LaTeX Warning: Citation `AMUSE' on page 56 undefined on input line 279.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
-
-
-LaTeX Warning: Citation `fs1037c' on page 56 undefined on input line 281.
-
-
-LaTeX Warning: Reference `fig:MRC' on page 56 undefined on input line 281.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
-
-LaTeX Warning: Citation `diversity' on page 56 undefined on input line 283.
-
 File: images/MRC_Sys2.eps Graphic file (type eps)
 <images/MRC_Sys2.eps>
-
-LaTeX Warning: Citation `mrc_m' on page 56 undefined on input line 292.
-
 File: images/mrc_gain.eps Graphic file (type eps)
-<images/mrc_gain.eps>
-
-LaTeX Warning: Reference `mrc_sys_ss' on page 56 undefined on input line 300.
-
-
+ <images/mrc_gain.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
@@ -1234,10 +767,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--301
 [56] [57]
 File: images/mrc_sys.eps Graphic file (type eps)
  <images/mrc_sys.eps>
-
-LaTeX Warning: Reference `ants_sys' on page 58 undefined on input line 310.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
@@ -1245,10 +774,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 310--311
 [58]
 File: images/ants_sys.eps Graphic file (type eps)
  <images/ants_sys.eps>
-
-LaTeX Warning: Reference `antss_boards' on page 59 undefined on input line 318.
-
-
 
 LaTeX Warning: Reference `ANTSS_F_RESPONSE' on page 59 undefined on input line 
 318.
@@ -1290,36 +815,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
 
 ]
-
-LaTeX Warning: Reference `fig:combo_signal_time' on page 63 undefined on input 
-line 14.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-
-LaTeX Warning: Reference `ss_setup_real' on page 63 undefined on input line 17.
-
-
 File: images/ss_setup_real.eps Graphic file (type eps)
 <images/ss_setup_real.eps>
-
-LaTeX Warning: Reference `ss_oscillation' on page 63 undefined on input line 27
-.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 [63]
-
-LaTeX Warning: Reference `ss_oscillation' on page 64 undefined on input line 29
-.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
@@ -1327,9 +833,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 [64]
 File: ss_oscillation.eps Graphic file (type eps)
  <ss_oscillation.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
-LaTeX Warning: Reference `ss_oscillation' on page 65 undefined on input line 39
-.
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
 
 
-Underfull \hb
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
+File: images/ss_result_GREAT.eps Graphic file (type eps)
+<images/ss_result_GREAT.eps>
+File: images/ss_result_BAD_Timing.eps Graphic file (type eps)
+ <images/ss_result_BAD_Timing.eps>
+File: images/many_frames.eps Graphic file (type eps)
+
+<images/many_frames.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+[66] [67]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+File: images/mrc_snr_comp.eps Graphic file (type eps)
+<images/mrc_snr_comp.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+[70]) [71]
+\openout2 = `conclusion.aux'.
+
+ (./conclusion.tex
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+[72
+
+
+
+] [73]) [74] (./thesis.bbl [75
+
+
+] [76] [77]
+Underfull \hbox (badness 3460) in paragraph at lines 200--204
+[]\OT1/cmr/m/n/10.95 B. Farhang-Boroujeny, ``Ex-per-i-men-tal study of semi-bli
+nd chan-nel iden-ti-fi-ca-
+ []
+
+[78] [79] [80] [81]) [82] (./thesis.aux (./background.aux)
+(./implementation.aux) (./results.aux) (./conclusion.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1898 strings out of 493489
+ 22651 string characters out of 3141349
+ 77996 words of memory out of 3000000
+ 5117 multiletter control sequences out of 15000+200000
+ 14127 words of font info for 51 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 27i,8n,24p,60986b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on thesis.dvi (91 pages, 223420 bytes).

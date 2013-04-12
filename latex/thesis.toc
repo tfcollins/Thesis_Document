@@ -1,0 +1,46 @@
+\contentsline {chapter}{List of Figures}{vi}
+\contentsline {chapter}{List of Tables}{ix}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}
+\contentsline {section}{\numberline {1.2}State of the Art}{2}
+\contentsline {section}{\numberline {1.3}Thesis Contributions}{7}
+\contentsline {section}{\numberline {1.4}Thesis Organization}{8}
+\contentsline {chapter}{\numberline {2}Required Background Knowledge}{9}
+\contentsline {section}{\numberline {2.1}Jamming}{9}
+\contentsline {section}{\numberline {2.2}Anti-Jamming}{10}
+\contentsline {section}{\numberline {2.3}Communication Systems}{13}
+\contentsline {subsection}{\numberline {2.3.1}Equalization}{16}
+\contentsline {subsection}{\numberline {2.3.2}Superimposed Training Equalization}{21}
+\contentsline {section}{\numberline {2.4}Spectral Subtraction}{23}
+\contentsline {subsection}{\numberline {2.4.1}Residual Noise}{24}
+\contentsline {section}{\numberline {2.5}Software Defined Radio}{25}
+\contentsline {subsection}{\numberline {2.5.1}GNU Radio}{27}
+\contentsline {subsection}{\numberline {2.5.2}MATLAB}{29}
+\contentsline {subsection}{\numberline {2.5.3}Reference Comparison}{30}
+\contentsline {section}{\numberline {2.6}Summary}{30}
+\contentsline {chapter}{\numberline {3}Implementation}{31}
+\contentsline {section}{\numberline {3.1}Overview}{31}
+\contentsline {section}{\numberline {3.2}System}{33}
+\contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{35}
+\contentsline {section}{\numberline {3.4}Spectral Subtraction}{39}
+\contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{41}
+\contentsline {subsection}{\numberline {3.4.2}Hardware Consideration}{46}
+\contentsline {subsection}{\numberline {3.4.3}Non-deterministic Scenarios}{48}
+\contentsline {subsection}{\numberline {3.4.4}Over the Air Implementation Considerations}{49}
+\contentsline {section}{\numberline {3.5}Signal Separation}{52}
+\contentsline {section}{\numberline {3.6}Antenna Subset Selection}{58}
+\contentsline {section}{\numberline {3.7}Summary}{61}
+\contentsline {chapter}{\numberline {4}Experimental Results}{62}
+\contentsline {section}{\numberline {4.1}Overview}{62}
+\contentsline {section}{\numberline {4.2}Spectral Subtraction}{62}
+\contentsline {subsection}{\numberline {4.2.1}Experiment}{63}
+\contentsline {subsection}{\numberline {4.2.2}Analysis}{64}
+\contentsline {subsection}{\numberline {4.2.3}Summary}{66}
+\contentsline {section}{\numberline {4.3}Signal Separation}{68}
+\contentsline {subsection}{\numberline {4.3.1}Experiment}{69}
+\contentsline {subsection}{\numberline {4.3.2}Analysis}{70}
+\contentsline {section}{\numberline {4.4}Summary}{71}
+\contentsline {chapter}{\numberline {5}Conclusions}{72}
+\contentsline {section}{\numberline {5.1}Research Outcomes}{72}
+\contentsline {section}{\numberline {5.2}Future Work}{73}
+\contentsline {chapter}{Bibliography}{75}

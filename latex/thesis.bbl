@@ -23,40 +23,41 @@
 
 \bibitem{scarcity}
 \BIBentryALTinterwordspacing
-K.~Pretz, August 2012. [Online]. Available:
+K.~Pretz, ``{Overcoming Spectrum Scarcity},'' August 2012. [Online]. Available:
   \url{http://theinstitute.ieee.org/technology-focus/technology-topic/overcoming-spectrum-scarcity}
 \BIBentrySTDinterwordspacing
 
 \bibitem{onr_original}
-D.~A.~M. Wyglinski and D.~C.~R. Anderson, ``Bliss: A blind spectrum separation
-  approach for jamming-resistant communications,'' Office of Naval Research,
+D.~A.~M. Wyglinski and D.~C.~R. Anderson, ``{BLISS: A Blind Spectrum Separation
+  Approach for Jamming-Resistant Communications},'' Office of Naval Research,
   Technical Proposal ONR 09-016, 2009.
 
 \bibitem{sdr_blocks}
 \BIBentryALTinterwordspacing
-March 2013. [Online]. Available:
+``{Resource Allocation Studies Using Software Defined Radio (SDR)},'' March
+  2013. [Online]. Available:
   \url{http://confluence.qu.edu.qa/display/NPRPRESEARCH/USRP2+Testbed}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ghogho}
-M.~Ghogho, D.~McLernon, E.~Alameda-Hernandez, and A.~Swami, ``Channel
-  estimation and symbol detection for block transmission using data-dependent
-  superimposed training,'' \emph{Signal Processing Letters, IEEE}, vol.~12,
+M.~Ghogho, D.~McLernon, E.~Alameda-Hernandez, and A.~Swami, ``{Channel
+  Estimation and Symbol Detection for Block Transmission Using Data-Dependent
+  Superimposed Training},'' \emph{Signal Processing Letters, IEEE}, vol.~12,
   no.~3, pp. 226 -- 229, march 2005.
 
 \bibitem{frater}
-M.~R. Frater and M.~Ryan, \emph{Electronic Warfare for the Digitized
-  Battlefield}.\hskip 1em plus 0.5em minus 0.4em\relax Artech Print on Demand,
+M.~R. Frater and M.~Ryan, \emph{{Electronic Warfare for the Digitized
+  Battlefield}}.\hskip 1em plus 0.5em minus 0.4em\relax Artech Print on Demand,
   2001.
 
 \bibitem{Zimmermann}
-H.~Zimmermann, ``Osi reference model--the iso model of architecture for open
-  systems interconnection,'' \emph{Communications, IEEE Transactions on},
+H.~Zimmermann, ``{OSI Reference Model--The ISO Model of Architecture for Open
+  Systems Interconnection},'' \emph{Communications, IEEE Transactions on},
   vol.~28, no.~4, pp. 425 -- 432, apr 1980.
 
 \bibitem{1}
-A.~Mpitziopoulos, D.~Gavalas, C.~Konstantopoulos, and G.~Pantziou, ``A survey
-  on jamming attacks and countermeasures in wsns,'' \emph{IEEE Communications
+A.~Mpitziopoulos, D.~Gavalas, C.~Konstantopoulos, and G.~Pantziou, ``{A Survey
+  on Jamming Attacks and Countermeasures in WSNs},'' \emph{IEEE Communications
   Surveys and Tutorials}, vol.~11, no.~4, pp. 42--56, 2009.
 
 \bibitem{detjam}
@@ -74,36 +75,37 @@ K.-C. Chen and R.~Prasad, \emph{Cognitive Radio Networks}.\hskip 1em plus 0.5em
   minus 0.4em\relax John Wiley and Sons, 2009.
 
 \bibitem{2}
-F.~Ahsan, A.~Zahir, S.~Mohsin, and K.~Hussain, ``Survey on survival approaches
-  in wireless network against jamming attack,'' \emph{Journal of Theoretical
+F.~Ahsan, A.~Zahir, S.~Mohsin, and K.~Hussain, ``{Survey on Survival Approaches
+  in Wireless Network Against Jamming Attack},'' \emph{Journal of Theoretical
   and Applied Information Technology}, vol.~30, no.~1, pp. 55--67, August 2011.
 
 \bibitem{5}
-M.~Acharya and D.~Thuente, ``Intelligent jamming attacks, counterattacks and
-  (counter)2 attacks in 802.11b wireless networks,'' in \emph{Proceedings of
+M.~Acharya and D.~Thuente, ``{Intelligent Jamming Attacks, Counterattacks and
+  (Counter)2 Attacks in 802.11b Wireless Networks},'' in \emph{Proceedings of
   the OPNETWORK Conference}, 2005.
 
 \bibitem{6}
-J.~Shi, T.~Salonidis, and E.~W. Knightly, ``Starvation mitigation through
-  multi-channel coordination in csma multi-hop wireless networks,'' in \emph{in
-  CSMA Multi-hop Wireless Networks,'' in Proceedings of the International
-  Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)}, 2006, pp.
-  214--225.
+J.~Shi, T.~Salonidis, and E.~W. Knightly, ``{Starvation mitigation through
+  multi-channel coordination in csma multi-hop wireless networks},'' in
+  \emph{in CSMA Multi-hop Wireless Networks,'' in Proceedings of the
+  International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)},
+  2006, pp. 214--225.
 
 \bibitem{7}
 \BIBentryALTinterwordspacing
-K.~W. Reese and A.~Salem, ``A survey on jamming avoidance in ad-hoc sensory
-  networks,'' \emph{J. Comput. Sci. Coll.}, vol.~24, no.~3, pp. 93--98, Jan.
+K.~W. Reese and A.~Salem, ``{A survey on jamming avoidance in ad-hoc sensory
+  networks},'' \emph{J. Comput. Sci. Coll.}, vol.~24, no.~3, pp. 93--98, Jan.
   2009. [Online]. Available:
   \url{http://dl.acm.org/citation.cfm?id=1409873.1409891}
 \BIBentrySTDinterwordspacing
 
 \bibitem{sterling}
-C.~H. Sterling, \emph{Military Communications: From Ancient Times to the 21st
-  Century}.\hskip 1em plus 0.5em minus 0.4em\relax ABC-CLIO, 2007.
+C.~H. Sterling, \emph{{Military Communications: From Ancient Times to the 21st
+  Century}}.\hskip 1em plus 0.5em minus 0.4em\relax ABC-CLIO, 2007.
 
 \bibitem{8}
-K.~Mahadevan, S.~Hong, and J.~Dullum, ``Anti-jamming: A study,'' December 2005.
+K.~Mahadevan, S.~Hong, and J.~Dullum, ``{Anti-Jamming: A Study},'' December
+  2005.
 
 \bibitem{sdr_jam}
 \BIBentryALTinterwordspacing
@@ -114,41 +116,41 @@ H.~Arslan, \emph{Cognitive Radio, Software Defined Radio, and Adaptive Wireless
 \BIBentrySTDinterwordspacing
 
 \bibitem{4}
-J.~Mitola, ``The software radio architecture,'' \emph{IEEE Communications
+J.~Mitola, ``{The Software Radio Architecture},'' \emph{IEEE Communications
   Magazine}, pp. 26--38, 1995.
 
 \bibitem{10}
 \BIBentryALTinterwordspacing
-F.~Ellersick, D.~Schilling, I.~C. Society, I.~of~Electrical, E.~Engineers, and
-  I.~X.~O. service), \emph{Special Issue on Progress in Military
-  Communications}, ser. IEEE journal on selected areas in communications : a
+F.~Ellersick and D.~Schilling, \emph{{Special Issue on Progress in Military
+  Communications}}, ser. IEEE journal on selected areas in communications : a
   publication of the IEEE Communications Society.\hskip 1em plus 0.5em minus
   0.4em\relax IEEE, 1985. [Online]. Available:
   \url{http://books.google.com/books?id=NDq8HAAACAAJ}
 \BIBentrySTDinterwordspacing
 
 \bibitem{ieee80211}
-I.~C. Society, ``Part 11: Wireless lan medium access control (mac) and physical
-  layer (phy) specifications part 11: Wireless lan medium access control (mac)
-  and physical layer (phy) specifications,'' IEEE, Tech. Rep., 2012.
+I.~C. Society, ``{Part 11: Wireless LAN Medium Access Control (MAC) and
+  Physical Layer (PHY) Specifications Part 11: Wireless LAN Medium Access
+  Control (MAC) and Physical Layer (PHY) Specifications},'' IEEE, Tech. Rep.,
+  2012.
 
 \bibitem{11}
-A.~Haimovich and A.~Vadhri, ``Rejection of narrow-band interferences in pn
-  spread spectrum systems using an eigenanalysis approach,'' in \emph{Military
+A.~Haimovich and A.~Vadhri, ``{Rejection of Narrow-band Interferences in PN
+  Spread Spectrum Systems Using an Eigenanalysis Approach},'' in \emph{Military
   Communications Conference, 1994. MILCOM '94. Conference Record, 1994 IEEE},
   oct 1994, pp. 1002 --1006 vol.3.
 
 \bibitem{12}
-R.~DiPietro, ``An fft based technique for suppressing narrow-band interference
-  in pn spread spectrum communications systems,'' in \emph{Acoustics, Speech,
+R.~DiPietro, ``{An FFT Based Technique for Suppressing Narrow-band Interference
+  in PN Spread Spectrum Communications Systems},'' in \emph{Acoustics, Speech,
   and Signal Processing, 1989. ICASSP-89., 1989 International Conference on},
   may 1989, pp. 1360 --1363 vol.2.
 
 \bibitem{13}
-W.~Jones and K.~Jones, ``Narrowband interference suppression using filter-bank
-  analysis/synthesis techniques,'' in \emph{Military Communications Conference,
-  1992. MILCOM '92, Conference Record. Communications - Fusing Command, Control
-  and Intelligence., IEEE}, oct 1992, pp. 898 --902 vol.3.
+W.~Jones and K.~Jones, ``{Narrowband Interference Suppression using Filter-Bank
+  Analysis/Synthesis Techniques},'' in \emph{Military Communications
+  Conference, 1992. MILCOM '92, Conference Record. Communications - Fusing
+  Command, Control and Intelligence., IEEE}, oct 1992, pp. 898 --902 vol.3.
 
 \bibitem{wavelet}
 Y.~Xu, J.~Weaver, J.~Healy, D.M., and J.~Lu, ``Wavelet transform domain
@@ -156,8 +158,8 @@ Y.~Xu, J.~Weaver, J.~Healy, D.M., and J.~Lu, ``Wavelet transform domain
   Processing, IEEE Transactions on}, vol.~3, no.~6, pp. 747--758, 1994.
 
 \bibitem{14}
-L.~Zhao, M.~Amin, and A.~Lindsey, ``Subspace projection techniques for anti-fm
-  jamming gps receivers,'' in \emph{Statistical Signal and Array Processing,
+L.~Zhao, M.~Amin, and A.~Lindsey, ``{Subspace Projection Techniques for Anti-FM
+  Jamming GPS Receivers},'' in \emph{Statistical Signal and Array Processing,
   2000. Proceedings of the Tenth IEEE Workshop on}, 2000, pp. 529 --533.
 
 \bibitem{kandangath}
@@ -190,36 +192,35 @@ N.~Morinaga, R.~Kohno, and S.~Sampei, \emph{Wireless Communication
 \BIBentrySTDinterwordspacing
 
 \bibitem{16}
-S.~Adireddy, L.~Tong, and H.~Viswanathan, ``Optimal placement of training for
-  frequency-selective block-fading channels,'' \emph{Information Theory, IEEE
+S.~Adireddy, L.~Tong, and H.~Viswanathan, ``{Optimal Placement of Training for
+  Frequency-Selective Block-Fading Channels},'' \emph{Information Theory, IEEE
   Transactions on}, vol.~48, no.~8, pp. 2338 -- 2353, aug 2002.
 
 \bibitem{19}
-B.~Farhang-Boroujeny, ``Experimental study of semi-blind channel
-  identification/equalization through pilot signals,'' in \emph{Signal
+B.~Farhang-Boroujeny, ``{Experimental study of semi-blind channel
+  identification/equalization through pilot signals},'' in \emph{Signal
   Processing, 1996., 3rd International Conference on}, vol.~1, oct 1996, pp.
   618 --621 vol.1.
 
 \bibitem{17}
-G.~Zhou, M.~Viberg, and T.~McKelvey, ``A first-order statistical method for
-  channel estimation,'' \emph{Signal Processing Letters, IEEE}, vol.~10, no.~3,
-  pp. 57 --60, march 2003.
+G.~Zhou, M.~Viberg, and T.~McKelvey, ``{A First-Order Statistical Method for
+  Channel Estimation},'' \emph{Signal Processing Letters, IEEE}, vol.~10,
+  no.~3, pp. 57 --60, march 2003.
 
 \bibitem{18}
-A.~Orozco-Lugo, M.~Lara, and D.~McLernon, ``Channel estimation using implicit
-  training,'' \emph{Signal Processing, IEEE Transactions on}, vol.~52, no.~1,
+A.~Orozco-Lugo, M.~Lara, and D.~McLernon, ``{Channel Estimation Using Implicit
+  Training},'' \emph{Signal Processing, IEEE Transactions on}, vol.~52, no.~1,
   pp. 240 -- 254, jan. 2004.
 
 \bibitem{ghost}
 \BIBentryALTinterwordspacing
-E.~Distribution, ``Solving tv reception problems,'' 2002. [Online]. Available:
-  \url{http://www1.electusdistribution.com.au/images_uploaded/tvrecepe.pdf}
+``{SOLVING TV RECEPTION PROBLEMS},'' 2002. [Online]. Available:
+  \url{http://www1.electusdistribution.com.au/imagesuploaded/tvrecepe.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{20}
-S.~Adireddy and L.~Tong, ``Optimal placement of known symbols for nonergodic
-  broadcast channels,'' \emph{IEEE Trans. Info. Theory}, vol. 2192, p.
-  http://www.ece.corne, 2002.
+S.~Adireddy and L.~Tong, ``{Optimal Placement of Known Symbols for Nonergodic
+  Broadcast Channels},'' \emph{IEEE Trans. Info. Theory}, vol. 2192, 2002.
 
 \bibitem{boll}
 S.~F. Boll, ``A spectral subtraction algorithm for suppression of acoustic
@@ -255,24 +256,25 @@ M.~Berouti, R.~Schwartz, and J.~Makhoul, ``Enhancement of speech corrupted by
   International Conference on ICASSP '79.}, vol.~4, apr 1979, pp. 208 -- 211.
 
 \bibitem{21}
-I.~Mitola, J., ``Software radios: Survey, critical evaluation and future
-  directions,'' \emph{Aerospace and Electronic Systems Magazine, IEEE}, vol.~8,
-  no.~4, pp. 25 --36, april 1993.
+I.~Mitola, J., ``{Software Radios: Survey, Critical Evaluation and Future
+  Directions},'' \emph{Aerospace and Electronic Systems Magazine, IEEE},
+  vol.~8, no.~4, pp. 25 --36, april 1993.
 
 \bibitem{22}
 \BIBentryALTinterwordspacing
-R.~Staple and K.~Werbach, march 2004. [Online]. Available:
+R.~Staple and K.~Werbach, ``{The End of Spectrum Scarcity},'' march 2004.
+  [Online]. Available:
   \url{http://spectrum.ieee.org/telecom/wireless/the-end-of-spectrum-scarcity}
 \BIBentrySTDinterwordspacing
 
 \bibitem{23}
-R.~Lackey and D.~Upmal, ``Speakeasy: the military software radio,''
+R.~Lackey and D.~Upmal, ``{Speakeasy: The Military Software Radio},''
   \emph{Communications Magazine, IEEE}, vol.~33, no.~5, pp. 56 --61, may 1995.
 
 \bibitem{24}
-E.~Koski and C.~Linn, ``The jtrs program: software-defined radios as a software
-  product line,'' in \emph{Software Product Line Conference, 2006 10th
-  International}, 0-0 2006, pp. 10 pp. --191.
+E.~Koski and C.~Linn, ``{The JTRS program: software-defined radios as a
+  software product line},'' in \emph{Software Product Line Conference, 2006
+  10th International}, 0-0 2006, pp. 10 pp. --191.
 
 \bibitem{spectrumware}
 V.~Bose, M.~Ismert, M.~Welborn, and J.~Guttag, ``Virtual radios,''
@@ -309,14 +311,14 @@ R.~Li and F.~Wang, ``Adaptive semiblind signal separation approach using
 
 \bibitem{USRP2Stats}
 \BIBentryALTinterwordspacing
-E.~Research, ``Usrp2 the next generation of software radio systems,'' 1043
+E.~Research, ``{USRP2 The Next Generation of Software Radio Systems},'' 1043
   North Shoreline Blvd, September 2010. [Online]. Available:
   \url{http://www.ece.umn.edu/users/ravi0022/class/ee4505/ettus_ds_usrp2_v5.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{wired}
 \BIBentryALTinterwordspacing
-Q.~Norton, ``Gnu radio opens an unseen world.'' [Online]. Available:
+Q.~Norton, ``{GNU Radio Opens an Unseen World}.'' [Online]. Available:
   \url{http://www.wired.com/science/discoveries/news/2006/06/70933?currentPage=all}
 \BIBentrySTDinterwordspacing
 
@@ -363,7 +365,7 @@ J.~A. Gubner, \emph{Probability and Random Processes for Electrical
 
 \bibitem{gnuradioCPP}
 \BIBentryALTinterwordspacing
-T.~G.~R. Project, ``Gnu radio 3.6.4 c++ api documentation.'' [Online].
+T.~G.~R. Project, ``{GNU Radio 3.6.4 C++ API Documentation}.'' [Online].
   Available: \url{http://gnuradio.org/doc/doxygen/index.html}
 \BIBentrySTDinterwordspacing
 
@@ -374,20 +376,20 @@ C.~Sanderson, ``Armadillo: An open source c++ linear algebra library for fast
 
 \bibitem{swig}
 \BIBentryALTinterwordspacing
-D.~Beazley, ``Swig (simplified wrapper and interface generator),'' 1996--.
+D.~Beazley, ``{SWIG (Simplified Wrapper and Interface Generator)},'' 1996--.
   [Online]. Available: \url{http://www.swig.org/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{numpy}
 \BIBentryALTinterwordspacing
-E.~Jones, T.~Oliphant, P.~Peterson \emph{et~al.}, ``{SciPy}: Open source
-  scientific tools for {Python},'' 2001--. [Online]. Available:
+E.~Jones, T.~Oliphant, P.~Peterson \emph{et~al.}, ``{{SciPy}: Open source
+  scientific tools for {Python}},'' 2001--. [Online]. Available:
   \url{http://www.scipy.org/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{tomrondeau}
 \BIBentryALTinterwordspacing
-E.~Blossom, ``[discuss-gnuradio] s/eric/tom/g,'' TheMailArchive, September
+E.~Blossom, ``{[Discuss-gnuradio] s/Eric/Tom/g},'' TheMailArchive, September
   2010. [Online]. Available:
   \url{http://www.mail-archive.com/discuss-gnuradio@gnu.org/msg26468.html}
 \BIBentrySTDinterwordspacing
@@ -415,8 +417,8 @@ R.~Adve, ``Receive diversity.'' [Online]. Available:
 
 \bibitem{mrc_m}
 \BIBentryALTinterwordspacing
-K.~S.~M. Pillai, ``Maximal ratio combining effective snr,'' apr 2009. [Online].
-  Available:
+K.~S.~M. Pillai, ``{Maximal Ratio Combining Effective SNR},'' apr 2009.
+  [Online]. Available:
   \url{ttp://images.dsplog.com/db-install/wp-content/uploads/2008/09/scri
   pt_maximal_ratio_combining_effective_snr.m}
 \BIBentrySTDinterwordspacing
