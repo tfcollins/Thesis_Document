@@ -1,90 +1,107 @@
 \relax 
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Implementation}{29}}
+\citation{midterm_report}
+\citation{antss}
+\citation{boll}
+\citation{AMUSE}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Implementation}{31}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:implementation}{{3}{29}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Overview}{29}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}System}{31}}
-\newlabel{bliss_system}{{3.2}{31}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of BLISS system }}{31}}
+\newlabel{ch:implementation}{{3}{31}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Overview}{31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces The AS\textsuperscript  {6} system is made up of three primary blocks: antenna subset selection, spectral subtraction, and signal separation. These combine to provide reliable signal reception in low-mobility spectral environments}}{32}}
+\citation{onr_original}
+\citation{onr_original}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}System}{33}}
 \citation{AMUSE}
+\newlabel{bliss_system}{{3.2}{34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of the original BLISS system as present in the proposal document \cite  {onr_original}, outlines three basic blocks: antenna subset selection, spectral subtraction, and blind source separation.}}{34}}
 \citation{USRP2Stats}
 \citation{wired}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Hardware and Software Platforms}{35}}
 \citation{USRP2Stats}
 \citation{n210spec}
-\newlabel{usrp2_full_hardware}{{3.3}{34}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Full USRP2 hardware with daughtercard}}{34}}
+\newlabel{usrp2_full_hardware}{{3.3}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Full USRP2 hardware with daughtercard}}{36}}
+\citation{sdr_blocks}
 \citation{sdr_blocks}
 \citation{metadata}
 \citation{sdr_blog}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces USRP System block diagram\cite  {sdr_blocks}}}{35}}
 \citation{mimo_cable}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Spectral Subtraction}{36}}
-\newlabel{mimo}{{3.3}{37}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces USRP2 MIMO Cable}}{37}}
-\newlabel{mimo_grc}{{3.3}{37}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces GNU-Radio MIMO Enable Source Block}}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces USRP System block diagram outlining the two operational sections of the USRP itself and their tasks, as well as the PC connected to radio \cite  {sdr_blocks}.}}{37}}
+\newlabel{mimo}{{3.3}{38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces USRP2 MIMO Cable}}{38}}
+\newlabel{mimo_grc}{{3.3}{39}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces GNU-Radio MIMO Enable Source Block}}{39}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Spectral Subtraction}{39}}
 \citation{ss_subjective1}
 \citation{ss_subjective2}
-\newlabel{SS_basic}{{3.4}{38}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Original Spectral Subtraction Technique Results}}{38}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{39}}
-\newlabel{SS_equalizer}{{3.4.1}{40}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Spectral Subtraction Equalizer Test}}{40}}
+\newlabel{SS_basic}{{3.4}{40}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Original Spectral Subtraction Technique Results}}{40}}
+\citation{9}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Equalizer Approach}{41}}
+\newlabel{SS_equalizer}{{3.4.1}{42}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Spectral Subtraction equalizer test shifting jammer across a large frequency range, causing overlaps or interference with the desired signal.}}{42}}
 \citation{gubner}
-\newlabel{cross}{{3.5}{41}}
-\newlabel{ss_correlation_ex}{{3.4.1}{41}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Autocorrelation of random signal}}{41}}
-\newlabel{ss_correlation}{{3.4.1}{42}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Spectral Subtraction Correlation method}}{42}}
-\newlabel{power_delta}{{3.4.1}{43}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Spectral Subtraction Correlation Test with Varying Oversubtraction Level}}{43}}
-\newlabel{shifting}{{3.4.1}{43}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectral Subtraction with phase offsets of interfering signal}}{43}}
+\newlabel{cross}{{3.1}{43}}
+\newlabel{ss_correlation_ex}{{3.4.1}{44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Autocorrelation of random signal and signal subsection. The red peaks show the locations of the subsection embedded in the random signal.}}{44}}
+\newlabel{ss_correlation}{{3.4.1}{44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Spectral Subtraction correlation method, with fixed subtraction estimate frequency and shift actual interferer center frequency.}}{44}}
+\newlabel{ss_correlate_GG}{{3.4.1}{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectral Subtraction correlation method, with matched subtraction estimate frequency to shifting actual interferer center frequency.}}{45}}
+\newlabel{fig:power_delta}{{3.4.1}{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Spectral Subtraction correlation test with varying power level scaling interfering signal, while examining the BER of the decoded desired signal. This shows the sensitive to power difference of the two signals.}}{45}}
+\newlabel{shifting}{{3.4.1}{46}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Spectral Subtraction with phase offsets of interfering signal, showing large error in the decoded desired signal.}}{46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Hardware Consideration}{46}}
 \citation{gnuradioCPP}
 \citation{armadillo}
 \citation{swig}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces GNU-Radio code implementation workflow}}{44}}
 \citation{numpy}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces GNU-Radio code implementation workflow}}{47}}
 \citation{tomrondeau}
 \citation{lpcfilter}
-\newlabel{grc_receiver}{{3.4.1}{46}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces GNU-Radio Receiver Half Design}}{46}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Non-deterministic Scenarios}{46}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Over the Air Implementation Considerations}{47}}
-\newlabel{combo_signal_time}{{3.4.3}{48}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Received mixed and individual signals}}{48}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Non-deterministic Scenarios}{48}}
+\newlabel{ref:grc_receiver}{{3.4.2}{49}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces GNU-Radio Receiver Half Design}}{49}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Over the Air Implementation Considerations}{49}}
+\newlabel{fig:combo_signal_time}{{3.4.4}{51}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Sample periods of time when the interferer is only transmitting, both interferer and desired signal is transmitting, and the desired signal alone. Energy detection can easily determine periods of signal mixing and non-mixing.}}{51}}
 \citation{AMUSE}
-\newlabel{ss_overview}{{3.4.3}{49}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Spectral Subtraction Block Diagram}}{49}}
+\newlabel{ss_overview}{{3.4.4}{52}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Spectral Subtraction Block Diagram}}{52}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Signal Separation}{52}}
 \citation{skrkantPHD}
 \citation{midterm_report}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Signal Separation}{50}}
 \citation{Ghogho}
 \citation{Ghogho}
 \citation{Ghogho}
 \citation{Ghogho}
-\newlabel{sie}{{3.5}{52}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Superimposed Equalizer SNR Performance}}{52}}
-\newlabel{sie_freq}{{3.5}{52}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Superimposed Equalizer Channel Estimation Performance with High SNR}}{52}}
+\citation{Ghogho}
+\citation{Ghogho}
+\newlabel{sie}{{3.5}{55}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Superimposed Equalizer MSE across several SNR values. The clearer the signal the better our estimation becomes. This result was identical to reference \cite  {Ghogho}.}}{55}}
+\newlabel{fig:sie_freq}{{3.5}{55}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces Superimposed Equalizer channel estimate superimposed on actual channel. With SNR > 25, estimates are considered accurate.}}{55}}
 \citation{AMUSE}
 \citation{fs1037c}
 \citation{diversity}
 \citation{mrc_m}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Maximal Ratio Combining gain acrossing varying number of antennas}}{54}}
-\newlabel{mrc_sys}{{3.5}{55}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces Maximal Ratio Combining block design to replace original Super Imposed Equalizer design}}{55}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Antenna Subset Selection}{55}}
-\newlabel{ants_sys}{{3.6}{56}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces Antenna Subset Selection block outline}}{56}}
-\newlabel{antss_boards}{{3.6}{57}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces Single Antenna Subset Selection physical board}}{57}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.7}Summary}{58}}
+\newlabel{fig:MRC}{{3.5}{57}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces Block diagram of Maximal Ratio Combining, which combines spatially separated signals weighted by according to their SNR values.}}{57}}
+\newlabel{mrc_sys}{{3.5}{57}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces Maximal Ratio Combining gain across varying number of antennas. The more antennas provided at the input the more spatial diversity, resulting in a higher combined SNR.}}{57}}
+\newlabel{mrc_sys_ss}{{3.5}{58}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces Maximal Ratio Combining block design to replace original Super Imposed Equalizer design. AntSS currently is only designed to supply two signal, but could be modified for future implementations.}}{58}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Antenna Subset Selection}{58}}
+\newlabel{ants_sys}{{3.6}{59}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces Antenna Subset Selection block outline}}{59}}
+\newlabel{antss_boards}{{3.6}{60}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.24}{\ignorespaces Single Antenna Subset Selection physical board}}{60}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Summary}{61}}
 \@setckpt{implementation}{
-\setcounter{page}{59}
-\setcounter{equation}{5}
+\setcounter{page}{62}
+\setcounter{equation}{1}
 \setcounter{enumi}{3}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -98,7 +115,7 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{21}
+\setcounter{figure}{24}
 \setcounter{table}{0}
 \setcounter{parentequation}{0}
 \setcounter{float@type}{4}

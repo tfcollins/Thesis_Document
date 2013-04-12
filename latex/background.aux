@@ -2,55 +2,61 @@
 \citation{10}
 \citation{10}
 \citation{ieee80211}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Background}{8}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Required Background Knowledge}{9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:background}{{2}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Jamming}{8}}
+\newlabel{ch:background}{{2}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Jamming}{9}}
 \citation{sterling}
-\newlabel{wavelength}{{2.1}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Anti-Jamming}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Anti-Jamming}{10}}
 \citation{11}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces DBPSK signal uncorrupted by jammer}}{10}}
-\newlabel{fig:chapter001_dist_001}{{2.1}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces DBPSK signal corrupted by jammer}}{10}}
-\newlabel{fig:chapter001_reward_001}{{2.2}{10}}
-\newlabel{antitable}{{2.2}{10}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Comparision of Anti-Jamming Techniques}}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces DBPSK signal uncorrupted by jammer. Clean clustering around the constellation points provides accurate symbol recovery.}}{11}}
+\newlabel{fig:chapter001_dist_001}{{2.1}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces DBPSK signal corrupted by jammer. The overlapping clustering around the constellation points provides difficult symbol recovery.}}{11}}
+\newlabel{fig:chapter001_reward_001}{{2.2}{11}}
+\newlabel{antitable}{{2.2}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Comparision of Anti-Jamming Techniques}}{11}}
 \citation{12}
 \citation{13}
+\citation{wavelet}
 \citation{14}
 \citation{kandangath}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Communication Systems}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Communication Systems}{13}}
 \citation{9}
-\newlabel{fig:Transmitter_System_Diagram}{{2.3}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Basic Transmitter Outline}}{13}}
+\newlabel{fig:Transmitter_System_Diagram}{{2.3}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Basic transmitter outline, converting information or data to a easily recoverable signal by the receiver.}}{14}}
+\newlabel{mixing}{{2.1}{14}}
 \citation{9}
-\newlabel{mixing}{{2.2}{14}}
-\newlabel{Receiver_Blocks}{{2.3}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Basic wireless receiver outline}}{14}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Equalization}{15}}
-\newlabel{FIR_filter}{{2.3.1}{16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces FIR Filter Structure}}{16}}
-\newlabel{weighted}{{2.3}{16}}
-\newlabel{lms_eq}{{2.4}{17}}
-\newlabel{lms_eq2}{{2.5}{17}}
-\newlabel{lms_eq3}{{2.6}{17}}
+\citation{9}
+\newlabel{Receiver_Blocks}{{2.3}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Basic wireless receiver outline, with four primary blocks. All designed to remove corruption caused by the wireless environment and translate transmitted signals back to desired data.}}{15}}
+\citation{9}
+\citation{viterbi}
+\citation{turbo}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Equalization}{16}}
+\citation{spinger}
+\newlabel{FIR_filter}{{2.3.1}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces FIR Filter Structure}}{17}}
+\newlabel{weighted}{{2.2}{17}}
+\newlabel{mse}{{2.3}{18}}
+\newlabel{lms_eq}{{2.4}{18}}
+\newlabel{lms_eq2}{{2.5}{18}}
+\newlabel{lms_eq3}{{2.6}{18}}
+\citation{9}
+\newlabel{eye_clean}{{2.3.1}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Adequate timing recovery produces open eye, which clearly defines the received symbols in time.}}{20}}
+\newlabel{eye_closed}{{2.3.1}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Poor timing recovery produces a closed eye, identifying that the signal cannot be recovered unless corrective measures applied.}}{20}}
 \citation{16}
 \citation{16}
 \citation{Ghogho}
 \citation{19}
-\newlabel{dd_eq}{{2.7}{18}}
-\newlabel{eye_clean}{{2.3.1}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Good timing recovery produces open eye}}{19}}
-\newlabel{eye_closed}{{2.3.1}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Poor timing recovery produces closed eye}}{19}}
 \citation{17}
 \citation{17}
 \citation{17}
 \citation{18}
 \citation{ghost}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Superimposed Training Equalization}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Superimposed Training Equalization}{21}}
 \citation{20}
 \citation{16}
 \citation{Ghogho}
@@ -58,30 +64,34 @@
 \citation{SSEXAMPLE}
 \citation{SSEXAMPLE2}
 \citation{SSEXAMPLE3}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Spectral Subtraction}{22}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Spectral Subtraction}{23}}
+\citation{mnoise}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Residual Noise}{24}}
 \citation{berouti}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Residual Noise}{23}}
 \citation{boll}
 \citation{boll}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Software Defined Radio}{25}}
 \citation{21}
 \citation{22}
 \citation{23}
 \citation{23}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Software Defined Radio}{24}}
+\citation{24}
 \citation{24}
 \citation{spectrumware}
+\newlabel{sdr_overview}{{2.5}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Software defined radio pushes all the adaptive elements and data manipulation operation into software. The goal of SDR is to provide or define all of the radio operation in software.}}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}GNU Radio}{27}}
 \citation{matlabsdru}
 \citation{matlabtargeting}
-\newlabel{gnr_struct}{{2.5.1}{26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces GNU Radio Code Structure}}{26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}GNU Radio}{26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}MATLAB}{27}}
-\newlabel{sdru_example}{{2.5.2}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Sample SDRU MATLAB Model}}{27}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Comparision}{27}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.4}Summary}{28}}
+\newlabel{gnr_struct}{{2.5.1}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces GNU Radio code structure based on signal processing C++ blocks and controlling, through SWIG, Python layers.}}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}MATLAB}{29}}
+\newlabel{sdru_example}{{2.5.2}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Sample SDRU MATLAB model created in Simulink. This model has the ability to demodulate and play FM radio stations when using a USRP device.}}{29}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Reference Comparison}{30}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Summary}{30}}
 \@setckpt{background}{
-\setcounter{page}{29}
+\setcounter{page}{31}
 \setcounter{equation}{7}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -91,12 +101,12 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{2}
-\setcounter{section}{5}
-\setcounter{subsection}{4}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{9}
+\setcounter{figure}{10}
 \setcounter{table}{1}
 \setcounter{parentequation}{0}
 \setcounter{float@type}{4}

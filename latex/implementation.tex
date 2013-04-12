@@ -6,6 +6,7 @@
 This chapter outlines the proposed implementation of a receiver design, for wide-band jammer scenarios and low-mobility situations.  An adaptive signal processing software solution for mitigating the effects of both intentional and unintentional jamming (including wide-band jamming) through a combination of three techniques.  These include: antenna subset selection, spectral subtraction, and signal separation, which work in conjunction with one another to extract specific transmissions from a mixture of intercepted wireless signals. The goal of the proposed solution, originally called BLInd Spectrum Separation (BLISS), is to enable reliable, high throughput, and robust end-to-end wireless communications, especially high capacity multimedia (voice, data, imagery) transmissions. This was later rename to AS\textsuperscript{6}.  In particular, the focus of the proposed work is the so-called ``disadvantaged user''.  These users are generally considered limited in transmission and processing power such as small-deck combatants, submarines, unmanned air vehicles (UAVs), dispersed ground units in urban and radio frequency (RF) challenged environments \cite{midterm_report}.  The previous research is also discussed for each section and implementation consideration are examined from this work.\\
 
 \begin{figure}
+\centering
 \includegraphics[width=0.75\textwidth]{as6_blocks.eps}
 \caption{The AS\textsuperscript{6} system is made up of three primary blocks: antenna subset selection, spectral subtraction, and signal separation.  These combine to provide reliable signal reception in low-mobility spectral environments}
 \end{figure}
@@ -30,7 +31,7 @@ The first step in the AS\textsuperscript{6} system is to pass through the AntSS 
 
 The Spectral Subtraction block is next, which is used to removal known unwanted signal from the spectrum so the source separation block and work properly.  The original design of the spectral subtraction block is to use an existing audio technique of removing noise or signals in the frequency domain through a subtraction and smoothing technique.  This technique was discussed previously in the background section, therefore its historical literature will not be examined further.  To enable the removal of unwanted signals, the Spectral Subtraction block maintains a database of known power spectral densities (PSD) of common modulation schemes.  A recognition system would be implemented to automatic identification of the interfering signal and the block would simply subtract it out, through its already known estimate from its database.  Next, the subtracted signal is passed to the Signal Separation System, where the signal is unmixed.\\
 
-The Signal Separation block separates signals when only their mixtures are observed.  The operation is called blind, since the signal sources and mixing procedure are unknown to the receiver.  Under several conditions, this constraint cannot be completely upheld.  This is true because the solutions needed to solve such an event become generally intractable.  An initial approach in this project was to use a technique called AMUSE (Algorithm for Multiple Unknown Signals Extraction) \cite{AMUSE}.  AMUSE works by first collecting an estimate of the covariance matrix of the received signal \(R_{y}=E[yy^\top]\). Then computing the singular value decomposition of that covariance matrix, and estimating the number of sources, noise variance \(\sigma\) and singular values \(\psi_{1},\psi_{2},...,\psi_{N},\).  Next a data transform is done \(z=Cy\), where \(C = diag(1/\psi(1),1/\psi(2),1/\psi(3),...,1/\psi(N),)\).  Then an offset \(\tau\) is selected and \(R_{z}=E[z(t)z(t-\tau)^\top]\) is estimated.  From this estimate an eigenvalue decomposition is done on \(\frac{R_{z}(\tau)+R_{z}(\tau)^\top}{2}\) and the singular values are collected in \(\Sigma\).  Finally an estimate of the signal sources can be computed \(\^s=\Sigma C y\).  
+The Signal Separation block separates signals when only their mixtures are observed.  The operation is called blind, since the signal sources and mixing procedure are unknown to the receiver.  Under several conditions, this constraint cannot be completely upheld.  This is true because the solutions needed to solve such an event become generally intractable.  An initial approach in this project was to use a technique called AMUSE (Algorithm for Multiple Unknown Signals Extraction) \cite{AMUSE}.  AMUSE works by first collecting an estimate of the covariance matrix of the received signal \(R_{y}=E[yy^\top]\). Then computing the singular value decomposition of that covariance matrix, and estimating the number of sources, noise variance \(\sigma\) and singular values \(\psi_{1},\psi_{2},...,\psi_{N},\).  Next a data transform is done \(z=Cy\), where \(C = diag(1/\psi(1),1/\psi(2),1/\psi(3),...,1/\psi(N),)\).  Then an offset \(\tau\) is selected and \(R_{z}=E[z(t)z(t-\tau)^\top]\) is estimated.  From this estimate an eigenvalue decomposition is done on \(\frac{R_{z}(\tau)+R_{z}(\tau)^\top}{2}\) and the singular values are collected in \(\Sigma\).  Finally an estimate of the signal sources can be computed \(\hat{s}=\Sigma C y\).  
 
 It is important to note that for simplicity the mixing matrix for the original proposed solution involving AMUSE is generally constructed as a linear time invariant (LTI) system.  There is some activity occurring with nonlinear mixing, but that was considered outside of the scope of this problem.\\
 
@@ -141,8 +142,8 @@ This simulation was also repeated but with prior knowledge of the interferer's c
 \begin{figure}[!ht]\label{ss_correlate_GG}
 %changing power graph of subtraction
 \centering
-\includegraphics[scale=0.5]{ss_correlation_sim2.eps}
-\caption{Spectral Subtraction correlation method, with matched subtraction estimate frequency to shifting actual interferer center frequency.
+\includegraphics[scale=0.5]{ss_correlation_sim.eps}
+\caption{Spectral Subtraction correlation method, with matched subtraction estimate frequency to shifting actual interferer center frequency.}
 \end{figure} 
 
 Further analysis was done to provide a solid understand of the new requirements of the system and its limitations.  The first is the precise understanding of the interfering signal itself.  Since it is assumed that the signal modulation and data stream are known, attention can be shifted to the other issues that can occur, which are the non-idealities of the system.  The first is the power constraint or effects.  When subtracting the interferer, accurate power measurements must taken so the estimate is scaled correctly for the environment.  By accurately estimating the power of the interferer, minimal energy will be subtracted from the the desired signal, which is also in the band.  An examination of the incorrect estimation of the interfering signal's power was examined in Figure \ref{fig:power_delta}.
@@ -164,7 +165,7 @@ Besides power, frequency and timing offsets were examined.  These are especially
 \caption{Spectral Subtraction with phase offsets of interfering signal, showing large error in the decoded desired signal.}
 \end{figure}
 
-As you can see from Figure \ref{shifting}, the subtraction mechanism is very sensitive to phase timing offsets.  If a full bit-shift occurs then the entire system falls apart.  This is a rather large problem and must be considered when attempting such operation on non-simulated data.  The frequency sensitivity can be seen from a previous figure, Figure \ref{s_correlation}.  This problem was foreseen because of the time variance or sensitivity of the signals themselves.  Therefore, adaptive compensation methods must be utilize in the final implementation to fix these corruptions.\\
+As you can see from Figure \ref{shifting}, the subtraction mechanism is very sensitive to phase timing offsets.  If a full bit-shift occurs then the entire system falls apart.  This is a rather large problem and must be considered when attempting such operation on non-simulated data.  The frequency sensitivity can be seen from a previous figure, Figure \ref{ss_correlation}.  This problem was foreseen because of the time variance or sensitivity of the signals themselves.  Therefore, adaptive compensation methods must be utilize in the final implementation to fix these corruptions.\\
 
 \subsection{Hardware Consideration}
 
@@ -253,7 +254,7 @@ The results of this simulation are seen in Figure \ref{sie}.  It examines a rand
 \begin{figure}[!ht]\label{sie}
 \centering
 \includegraphics[scale=0.5]{sie_SNR2.eps}
-\caption{Superimposed Equalizer MSE across several SNR values.  The clearer the signal the better our estimation becomes.  This result was identical to reference \ref{Ghogho}.}
+\caption{Superimposed Equalizer MSE across several SNR values.  The clearer the signal the better our estimation becomes.  This result was identical to reference \cite{Ghogho}.}
 \end{figure}
 
 \begin{figure}[!ht]\label{fig:sie_freq}
@@ -283,7 +284,7 @@ Assuming the received signal is an array of samples received the individual ante
 
 \begin{figure}[!ht]\label{fig:MRC}
 \centering
-\includegraphics[scale=0.5]{MRC_Sys2.eps}
+\includegraphics[width=0.75\textwidth]{MRC_Sys2.eps}
 \caption{Block diagram of Maximal Ratio Combining, which combines spatially separated signals weighted by according to their SNR values.}
 \end{figure}
 

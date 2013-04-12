@@ -5,64 +5,56 @@ A level-1 auxiliary file: background.aux
 A level-1 auxiliary file: implementation.aux
 A level-1 auxiliary file: results.aux
 A level-1 auxiliary file: conclusion.aux
-The style file: amsplain.bst
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mybib.bib
-Warning--entry type for "gnuradioCPP" isn't style-file defined
---line 71 of file mybib.bib
-Warning--entry type for "fs1037c" isn't style-file defined
---line 100 of file mybib.bib
-Warning--entry type for "mimo_cable" isn't style-file defined
---line 168 of file mybib.bib
-Warning--entry type for "sdr_blog" isn't style-file defined
---line 177 of file mybib.bib
-Warning--entry type for "sdr_blocks" isn't style-file defined
---line 186 of file mybib.bib
-Warning--entry type for "wired" isn't style-file defined
---line 234 of file mybib.bib
-Warning--to sort, need author or key in sdr_blocks
-Warning--to sort, need author or key in sdr_blog
-Warning--to sort, need author or key in mimo_cable
-Warning--missing pages in spectrumware
-Warning--can't use both author and editor fields in gubner
-You've used 61 entries,
-            2213 wiz_defined-function locations,
-            789 strings with 12235 characters,
-and the built_in function-call counts, 18470 in all, are:
-= -- 1627
-> -- 713
-< -- 3
-+ -- 295
-- -- 226
-* -- 1282
-:= -- 2807
-add.period$ -- 61
-call.type$ -- 61
-change.case$ -- 295
-chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 844
-empty$ -- 1748
-format.name$ -- 226
-if$ -- 4061
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 70 entries,
+            4039 wiz_defined-function locations,
+            1172 strings with 18802 characters,
+and the built_in function-call counts, 44957 in all, are:
+= -- 3612
+> -- 879
+< -- 348
++ -- 471
+- -- 140
+* -- 2012
+:= -- 6918
+add.period$ -- 133
+call.type$ -- 70
+change.case$ -- 54
+chr.to.int$ -- 834
+cite$ -- 70
+duplicate$ -- 3301
+empty$ -- 3852
+format.name$ -- 178
+if$ -- 10362
 int.to.chr$ -- 0
-int.to.str$ -- 61
-missing$ -- 104
-newline$ -- 193
-num.names$ -- 112
-pop$ -- 510
+int.to.str$ -- 70
+missing$ -- 593
+newline$ -- 283
+num.names$ -- 66
+pop$ -- 1472
 preamble$ -- 1
-purify$ -- 236
-quote$ -- 0
-skip$ -- 623
+purify$ -- 0
+quote$ -- 2
+skip$ -- 3543
 stack$ -- 0
-substring$ -- 1175
-swap$ -- 187
-text.length$ -- 3
+substring$ -- 2008
+swap$ -- 2605
+text.length$ -- 70
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 230
-warning$ -- 5
-while$ -- 154
-width$ -- 63
-write$ -- 498
-(There were 11 warnings)
+top$ -- 5
+type$ -- 70
+warning$ -- 0
+while$ -- 168
+width$ -- 72
+write$ -- 695
