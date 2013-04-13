@@ -4,44 +4,49 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces DBPSK signal uncorrupted by jammer. Clean clustering around the constellation points provides accurate symbol recovery.}}{11}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces DBPSK signal corrupted by jammer. The overlapping clustering around the constellation points provides difficult symbol recovery.}}{11}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Basic transmitter outline, converting information or data to a easily recoverable signal by the receiver.}}{14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Basic transmitter outline, converting information or data to a easily recoverable signal by the receiver. The transmitter consists of three primary blocks: the encoder, pulse-shape filter, and frequency translator/modulator.}}{14}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Basic wireless receiver outline, with four primary blocks. All designed to remove corruption caused by the wireless environment and translate transmitted signals back to desired data.}}{15}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces FIR Filter Structure}}{17}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces FIR filter structure with four taps. The represent b the tap coefficients, and the z represent the tap delays. The delays allow the filter access to previous signal samples for future use.}}{17}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Adequate timing recovery produces open eye, which clearly defines the received symbols in time.}}{20}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Poor timing recovery produces a closed eye, identifying that the signal cannot be recovered unless corrective measures applied.}}{20}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Software defined radio pushes all the adaptive elements and data manipulation operation into software. The goal of SDR is to provide or define all of the radio operation in software.}}{27}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces GNU Radio code structure based on signal processing C++ blocks and controlling, through SWIG, Python layers.}}{28}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Sample SDRU MATLAB model created in Simulink. This model has the ability to demodulate and play FM radio stations when using a USRP device.}}{29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The AS\textsuperscript {6} system is made up of three primary blocks: antenna subset selection, spectral subtraction, and signal separation. These combine to provide reliable signal reception in low-mobility spectral environments}}{32}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of the original BLISS system as present in the proposal document \cite {onr_original}, outlines three basic blocks: antenna subset selection, spectral subtraction, and blind source separation.}}{34}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Full USRP2 hardware with daughtercard}}{36}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces USRP System block diagram outlining the two operational sections of the USRP itself and their tasks, as well as the PC connected to radio \cite {sdr_blocks}.}}{37}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces USRP2 MIMO Cable}}{38}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces GNU-Radio MIMO Enable Source Block}}{39}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Original Spectral Subtraction Technique Results}}{40}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Spectral Subtraction equalizer test shifting jammer across a large frequency range, causing overlaps or interference with the desired signal.}}{42}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Autocorrelation of random signal and signal subsection. The red peaks show the locations of the subsection embedded in the random signal.}}{44}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Spectral Subtraction correlation method, with fixed subtraction estimate frequency and shift actual interferer center frequency.}}{44}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectral Subtraction correlation method, with matched subtraction estimate frequency to shifting actual interferer center frequency.}}{45}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Spectral Subtraction correlation test with varying power level scaling interfering signal, while examining the BER of the decoded desired signal. This shows the sensitive to power difference of the two signals.}}{45}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Spectral Subtraction with phase offsets of interfering signal, showing large error in the decoded desired signal.}}{46}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces GNU-Radio code implementation workflow}}{47}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces GNU-Radio Receiver Half Design}}{49}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Sample periods of time when the interferer is only transmitting, both interferer and desired signal is transmitting, and the desired signal alone. Energy detection can easily determine periods of signal mixing and non-mixing.}}{51}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Spectral Subtraction Block Diagram}}{52}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Superimposed Equalizer MSE across several SNR values. The clearer the signal the better our estimation becomes. This result was identical to reference \cite {Ghogho}.}}{55}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Superimposed Equalizer channel estimate superimposed on actual channel. With SNR > 25, estimates are considered accurate.}}{55}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Block diagram of Maximal Ratio Combining, which combines spatially separated signals weighted by according to their SNR values.}}{57}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Maximal Ratio Combining gain across varying number of antennas. The more antennas provided at the input the more spatial diversity, resulting in a higher combined SNR.}}{57}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Maximal Ratio Combining block design to replace original Super Imposed Equalizer design. AntSS currently is only designed to supply two signal, but could be modified for future implementations.}}{58}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Antenna Subset Selection block outline}}{59}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Single Antenna Subset Selection physical board}}{60}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The AS\textsuperscript {6} system is made up of three primary blocks: antenna subset selection, spectral subtraction, and signal separation. These combine to provide reliable signal reception in low-mobility spectral environments}}{33}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of the original BLISS system as present in the proposal document \cite {onr_original}, outlines three basic blocks: antenna subset selection, spectral subtraction, and blind source separation.}}{35}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Full USRP2 hardware with daughtercard attached. Outline are the three primary IC's: the FPGA, ADC, and DAC.}}{37}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces USRP system block diagram outlining the two operational sections of the USRP itself and their tasks, as well as the PC connected to radio \cite {sdr_blocks}. All adaptive functions and upper layer control is done in the PC, while the radio usually only provides access to the RF environment.}}{38}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces USRP2 MIMO cable connecting two USRP2 devices. This cable is used to couple local oscillators together to phase allign output samples.}}{40}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces GNU-Radio MIMO enabled source block, used to interface with two connected USRP2's.}}{40}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Original Spectral Subtraction technique results showing massive error, especially when the interferer is directly ontop of the desired signal. Only when the interferer moves out of band does the error decrease to an acceptable value.}}{41}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Spectral Subtraction equalizer test shifting jammer across a large frequency range, causing overlaps or interference with the desired signal.}}{43}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Autocorrelation of random signal and signal subsection. The red peaks show the locations of the subsection embedded in the random signal.}}{45}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Spectral Subtraction correlation method, with fixed subtraction estimate frequency and shift actual interferer center frequency.}}{45}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectral Subtraction correlation method, with matched subtraction estimate frequency to shifting actual interferer center frequency.}}{46}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Spectral Subtraction correlation test with varying power level scaling interfering signal, while examining the BER of the decoded desired signal. This shows the sensitive to power difference of the two signals.}}{46}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Spectral Subtraction with phase offsets of interfering signal, showing large error in the decoded desired signal.}}{47}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces GNU-Radio code implementation workflow first beginning all work in standard C++, then transitioning to C++ with only GNU-Radio supplied libaries, and finally to full implementation flow-graph with USRP.}}{48}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces GNU-Radio receiver portion of final prototype, utilizing custom demodulation blocks removing specific algorithms and quantizers. The MIMO USRP source block is also shown, which has yet to be implemented in MATLAB/Simulink.}}{50}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Sample periods of time when the interferer is only transmitting, both interferer and desired signal is transmitting, and the desired signal alone. Energy detection can easily determine periods of signal mixing and non-mixing.}}{52}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Spectral Subtraction block diagram with three datapaths. The signals the AntSS used to estimate the offsets of the interferer and the channel conditions, which are applied to an existing signal in the radio's library. Then the corrected library source signal is correlated with the received signal, to find an appropriate signal section to be used to subtraction from the rest of the signal. Finally the selection signal subtraction is replicated and subtracted from the entire received waveform. }}{53}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Superimposed Equalizer MSE across several SNR values. The more pronounce (higher SNR) the signal the better our estimation becomes. This result was identical to reference \cite {Ghogho}, for the SI case.}}{56}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Superimposed Equalizer channel estimate in red, superimposed on actual the channel in blue. With SNR > 25, estimates are considered accurate.}}{56}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Block diagram of Maximal Ratio Combining, which combines spatially separated signals weighted by according to their SNR values.}}{58}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Maximal Ratio Combining gain across varying number of antennas. The more antennas provided at the input the more spatial diversity, resulting in a higher combined SNR.}}{59}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Maximal Ratio Combining block design to replace original Super Imposed Equalizer design. AntSS currently is only designed to supply two signal, but could be modified for future implementations.}}{59}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Antenna Subset Selection block outline of four receive antennae, of which two are selected through a series of switches.}}{61}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Single Antenna Subset Selection physical board, able to select two among its four receive antennas. This selection logic is controlled through a programmable integrated circuit on the board, connecting to a master controller. The master board itself passes messages through a RS232 connection to the PC.}}{62}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral Subtraction Hardware Setup}}{64}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces After Spectral Subtraction the error, or the remaining not removed interferer, appears as an oscillation at the remaining frame positions. Green represents the subtraction frame estimate, blue the originally received frames, and red the frames after subtraction.}}{65}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Desired result after Spectral Subtraction with 20 Forward Frames}}{67}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Error after Spectral Subtraction with incorrect phase estimates with 20 Forward Frames}}{67}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Error associated with increasing duration of estimation frame}}{68}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Implementation Signal Separation Performance with varying TX gain}}{70}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral Subtraction Hardware Setup}}{65}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces After Spectral Subtraction the error, or the remaining not removed interferer, appears as an oscillation at the remaining frame positions. Green represents the subtraction frame estimate, blue the originally received frames, and red the frames after subtraction.}}{66}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Desired result after Spectral Subtraction with 20 forward frames, producing limited residual signal. Phase changes minimally across these frames.}}{68}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Error after Spectral Subtraction with incorrect phase estimates with 20 forward frames. The error oscillates among the remaining frames.}}{68}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Error associated with increasing duration between restimation of subtractions frames. The far the subtraction pushed into future frames, the more inaccurate that estimate becomes.}}{69}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Signal Separation MRC performance comparison against simulations. Each data point represents the average BER of 67,000 frames received at varying SNR levels.}}{71}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }

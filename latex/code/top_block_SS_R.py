@@ -1,0 +1,76 @@
+#!/usr/bin/env python
+##################################################
+# Gnuradio Python Flow Graph
+# Title: Top Block Ss R
+# Generated: Thu Mar 21 17:41:25 2013
+##################################################
+
+from gnuradio import digital
+from gnuradio import eng_notation
+from gnuradio import gr
+from gnuradio import uhd
+from gnuradio.eng_option import eng_option
+from gnuradio.gr import firdes
+from optparse import OptionParser
+
+class top_block_SS_R(gr.top_block):
+
+	def __init__(self):
+		gr.top_block.__init__(self, "Top Block Ss R")
+
+		##################################################
+		# Variables
+		##################################################
+		self.samp_rate = samp_rate = 100000
+
+		##################################################
+		# Blocks
+		##################################################
+		self.uhd_usrp_source_0 = uhd.usrp_source(
+			device_addr="",
+			stream_args=uhd.stream_args(
+				cpu_format="fc32",
+				channels=range(1),
+			),
+		)
+		self.uhd_usrp_source_0.set_samp_rate(samp_rate)
+		self.uhd_usrp_source_0.set_center_freq(2.4e9, 0)
+		self.uhd_usrp_source_0.set_gain(25, 0)
+		self.gr_pll_carriertracking_cc_0 = gr.pll_carriertracking_cc(1.5*3.1459/200, 4, -4)
+		self.gr_head_0 = gr.head(gr.sizeof_gr_complex*1, 1000000)
+		self.gr_file_sink_0_0 = gr.file_sink(gr.sizeof_float*1, "/home/sdruser/COLLINS/SS/received_GMSK.txt")
+		self.gr_file_sink_0_0.set_unbuffered(False)
+		self.gr_file_sink_0 = gr.file_sink(gr.sizeof_gr_complex*1, "/home/sdruser/COLLINS/SS/received.txt")
+		self.gr_file_sink_0.set_unbuffered(False)
+		self.digital_gmsk_demod_0 = digital.gmsk_demod(
+			samples_per_symbol=2,
+			gain_mu=0.175,
+			mu=0.5,
+			omega_relative_limit=0.005,
+			freq_error=0.0,
+			verbose=False,
+			log=False,
+		)
+
+		##################################################
+		# Connections
+		##################################################
+		self.connect((self.gr_pll_carriertracking_cc_0, 0), (self.gr_file_sink_0, 0))
+		self.connect((self.uhd_usrp_source_0, 0), (self.gr_head_0, 0))
+		self.connect((self.gr_head_0, 0), (self.gr_pll_carriertracking_cc_0, 0))
+		self.connect((self.digital_gmsk_demod_0, 0), (self.gr_file_sink_0_0, 0))
+		self.connect((self.gr_pll_carriertracking_cc_0, 0), (self.digital_gmsk_demod_0, 0))
+
+	def get_samp_rate(self):
+		return self.samp_rate
+
+	def set_samp_rate(self, samp_rate):
+		self.samp_rate = samp_rate
+		self.uhd_usrp_source_0.set_samp_rate(self.samp_rate)
+
+if __name__ == '__main__':
+	parser = OptionParser(option_class=eng_option, usage="%prog: [options]")
+	(options, args) = parser.parse_args()
+	tb = top_block_SS_R()
+	tb.run()
+

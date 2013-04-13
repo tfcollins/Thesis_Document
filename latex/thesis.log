@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  11 APR 2013 22:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  12 APR 2013 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -147,35 +147,82 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-) (./thesis.aux
-(./background.aux) (./implementation.aux) (./results.aux) (./conclusion.aux))
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count107
+\FV@InFile=\read2
+\FV@TabBox=\box30
+\c@FancyVerbLine=\count108
+\FV@StepNumber=\count109
+\FV@OutFile=\write3
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count110
+\lst@gtempboxa=\box31
+\lst@token=\toks25
+\lst@length=\count111
+\lst@currlwidth=\dimen114
+\lst@column=\count112
+\lst@pos=\count113
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count114
+\lst@lineno=\count115
+\abovecaptionskip=\skip44
+\belowcaptionskip=\skip45
+\lst@maxwidth=\dimen117
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count116
+\lst@skipnumbers=\count117
+\lst@framebox=\box32
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(./thesis.aux (./background.aux) (./implementation.aux) (./results.aux)
+(./conclusion.aux) (./appendixb.aux) (./appendixc.aux) (./appendixd.aux)
+(./appendixe.aux) (./appendixf.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+\c@lstlisting=\count118
 
-Overfull \hbox (45.71718pt too wide) in paragraph at lines 65--65
+Overfull \hbox (45.71718pt too wide) in paragraph at lines 66--66
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 
  []
 
 [1
 
-] (./abstract.tex) [1] [3] (./thesis.toc
+]
+Overfull \hbox (900.8365pt too wide) in paragraph at lines 67--68
+[][] 
+ []
+
+[2] (./abstract.tex) [1] [3] (./thesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -188,19 +235,25 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [4
 
 ])
-\tf@toc=\write3
-\openout3 = `thesis.toc'.
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
 
  [5]
 (./thesis.lof [6
 
-] [7])
-\tf@lof=\write4
-\openout4 = `thesis.lof'.
+]
+Overfull \hbox (2.571pt too wide) in paragraph at lines 29--29
+ \OT1/cmr/m/n/10.95 dard C++, then tran-si-tion-ing to C++ with only GNU-Radio 
+sup-plied libaries, 
+ []
+
+[7])
+\tf@lof=\write5
+\openout5 = `thesis.lof'.
 
  [8] (./thesis.lot)
-\tf@lot=\write5
-\openout5 = `thesis.lot'.
+\tf@lot=\write6
+\openout6 = `thesis.lot'.
 
  [9
 
@@ -332,12 +385,12 @@ Overfull \hbox (13.6527pt too wide) in paragraph at lines 81--82
  [][] 
  []
 
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
@@ -376,12 +429,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-[17]
+[17] [18]
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-[18]
+
 Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
@@ -395,52 +448,47 @@ File: images/eye_clean.eps Graphic file (type eps)
 <images/eye_clean.eps>
 File: images/eye_closed.eps Graphic file (type eps)
  <images/eye_closed.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
@@ -454,47 +502,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
-File: images/sdr_overview.eps Graphic file (type eps)
-<images/sdr_overview.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+File: images/sdr_overview.eps Graphic file (type eps)
+<images/sdr_overview.eps> [26]
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 [27]
 File: images/gnr_outline.eps Graphic file (type eps)
  <images/gnr_outline.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 [28]
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
 File: images/sdru_example.eps Graphic file (type eps)
- <images/sdru_example.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+<images/sdru_example.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
-
- []
-
-[29])
-Underfull \hbox (badness 10000) in paragraph at lines 253--97
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-[30]
+)
+Underfull \hbox (badness 10000) in paragraph at lines 258--103
+
+ []
+
+[30] [31]
 \openout2 = `implementation.aux'.
 
  (./implementation.tex
@@ -510,7 +562,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[31
+[32
 
 
 
@@ -519,7 +571,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-[32]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -531,98 +583,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
 File: images/bliss_system.eps Graphic file (type eps)
 <images/bliss_system.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 [35]
-File: images/usrp2_overview3.eps Graphic file (type eps)
- <images/usrp2_overview3.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 [36]
-File: images/sdr_block_d.eps Graphic file (type eps)
- <images/sdr_block_d.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+File: images/usrp2_overview3.eps Graphic file (type eps)
+ <images/usrp2_overview3.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 [37]
-File: images/mimo2.eps Graphic file (type eps)
- <images/mimo2.eps>
-File: images/mimo_grc.eps Graphic file (type eps)
- <images/mimo_grc.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+File: images/sdr_block_d.eps Graphic file (type eps)
+ <images/sdr_block_d.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+File: images/mimo2.eps Graphic file (type eps)
+<images/mimo2.eps>
+File: images/mimo_grc.eps Graphic file (type eps)
+ <images/mimo_grc.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 [39]
-File: images/SS_basic.eps Graphic file (type eps)
- <images/SS_basic.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+File: images/SS_basic.eps Graphic file (type eps)
+ <images/SS_basic.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 File: images/SS_Equalizer_sim.eps Graphic file (type eps)
 <images/SS_Equalizer_sim.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
@@ -630,172 +676,172 @@ File: images/correlation_ex2.eps Graphic file (type eps)
 <images/correlation_ex2.eps>
 File: images/ss_correlation_sim2.eps Graphic file (type eps)
  <images/ss_correlation_sim2.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 File: images/ss_correlation_sim.eps Graphic file (type eps)
-<images/ss_correlation_sim.eps>
+<images/ss_correlation_sim.eps> [44]
 File: images/ss_conv_changing_over_subtraction_level.eps Graphic file (type eps
 )
 
-<images/ss_conv_changing_over_subtraction_level.eps> [43] [44]
+<images/ss_conv_changing_over_subtraction_level.eps> [45] [46]
 File: images/ss_conv_phase_offsets2.eps Graphic file (type eps)
 
 <images/ss_conv_phase_offsets2.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 File: images/code_work_flow.eps Graphic file (type eps)
 <images/code_work_flow.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-
- []
-
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 File: images/grc_receiver.eps Graphic file (type eps)
-<images/grc_receiver.eps> [48]
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+<images/grc_receiver.eps> [49]
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 [50]
-File: images/combo_signal_time.eps Graphic file (type eps)
- <images/combo_signal_time.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
-[51]
-File: images/SS_overview.eps Graphic file (type eps)
- <images/SS_overview.eps>
-Overfull \hbox (43.36464pt too wide) in paragraph at lines 226--227
- [][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
  []
 
-
+[51]
+File: images/combo_signal_time.eps Graphic file (type eps)
+ <images/combo_signal_time.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
-
+File: images/SS_overview.eps Graphic file (type eps)
+ <images/SS_overview.eps>
+Overfull \hbox (43.36464pt too wide) in paragraph at lines 239--240
+ [][] 
  []
 
-
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 251--253
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+
+ []
+
+[55]
 File: images/sie_SNR2.eps Graphic file (type eps)
-<images/sie_SNR2.eps>
+ <images/sie_SNR2.eps>
 File: images/freq_response_sie2.eps Graphic file (type eps)
  <images/freq_response_sie2.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
-[54] [55]
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
+[57]
 File: images/MRC_Sys2.eps Graphic file (type eps)
-<images/MRC_Sys2.eps>
+ <images/MRC_Sys2.eps>
 File: images/mrc_gain.eps Graphic file (type eps)
  <images/mrc_gain.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-[56] [57]
 File: images/mrc_sys.eps Graphic file (type eps)
- <images/mrc_sys.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
-
- []
-
-[58]
-File: images/ants_sys.eps Graphic file (type eps)
- <images/ants_sys.eps>
-
-LaTeX Warning: Reference `ANTSS_F_RESPONSE' on page 59 undefined on input line 
-318.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
+<images/mrc_sys.eps> [58]
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
 [59]
+File: images/ants_sys.eps Graphic file (type eps)
+ <images/ants_sys.eps>
+
+LaTeX Warning: Reference `ANTSS_F_RESPONSE' on page 60 undefined on input line 
+336.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
 File: images/ants_board.eps Graphic file (type eps)
- <images/ants_board.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+<images/ants_board.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
 [60]
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
-) [61]
+) [61] [62]
 \openout2 = `results.aux'.
 
  (./results.tex
@@ -810,7 +856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[62
+[63
 
 
 
@@ -821,29 +867,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 File: images/ss_setup_real.eps Graphic file (type eps)
 <images/ss_setup_real.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-[63]
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
 [64]
-File: ss_oscillation.eps Graphic file (type eps)
- <ss_oscillation.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 [65]
+File: ss_oscillation.eps Graphic file (type eps)
+ <ss_oscillation.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
@@ -854,42 +900,43 @@ File: images/ss_result_BAD_Timing.eps Graphic file (type eps)
 File: images/many_frames.eps Graphic file (type eps)
 
 <images/many_frames.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-[66] [67]
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-[68]
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+[67] [68]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 [69]
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+[70]
 File: images/mrc_snr_comp.eps Graphic file (type eps)
-<images/mrc_snr_comp.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+ <images/mrc_snr_comp.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-[70]) [71]
+[71]
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+) [72]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
@@ -899,32 +946,88 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[72
+[73
 
 
 
-] [73]) [74] (./thesis.bbl [75
+] [74]) [75] (./thesis.bbl [76
 
 
-] [76] [77]
-Underfull \hbox (badness 3460) in paragraph at lines 200--204
-[]\OT1/cmr/m/n/10.95 B. Farhang-Boroujeny, ``Ex-per-i-men-tal study of semi-bli
-nd chan-nel iden-ti-fi-ca-
- []
+] [77] [78] [79] [80] [81] [82]) [83]
+\openout2 = `appendixb.aux'.
 
-[78] [79] [80] [81]) [82] (./thesis.aux (./background.aux)
-(./implementation.aux) (./results.aux) (./conclusion.aux))
+
+(./appendixb.tex
+Appendix A.
+File: images/antss_response.eps Graphic file (type eps)
+<images/antss_response.eps>) [84
+
+
+]
+\openout2 = `appendixc.aux'.
+
+ (./appendixc.tex
+Appendix B.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
+ [85
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 48.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 48.
+ [86] [87]
+[88] [89]) [90]
+\openout2 = `appendixd.aux'.
+
+ (./appendixd.tex
+Appendix C.
+[91
+
+
+
+] [92] [93]) [94]
+\openout2 = `appendixe.aux'.
+
+ (./appendixe.tex
+Appendix D.
+[95
+
+
+
+] [96] [97] [98] [99] [100]) [101]
+\openout2 = `appendixf.aux'.
+
+ (./appendixf.tex
+Appendix E.
+[102
+
+
+
+] [103] [104] [105]) [106] (./thesis.aux (./background.aux)
+(./implementation.aux) (./results.aux) (./conclusion.aux) (./appendixb.aux)
+(./appendixc.aux) (./appendixd.aux) (./appendixe.aux) (./appendixf.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1898 strings out of 493489
- 22651 string characters out of 3141349
- 77996 words of memory out of 3000000
- 5117 multiletter control sequences out of 15000+200000
- 14127 words of font info for 51 fonts, out of 3000000 for 9000
+ 3520 strings out of 493489
+ 47001 string characters out of 3141349
+ 167605 words of memory out of 3000000
+ 6679 multiletter control sequences out of 15000+200000
+ 14828 words of font info for 53 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 27i,8n,24p,60986b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,32p,60986b,1429s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.dvi (91 pages, 223420 bytes).
+Output written on thesis.dvi (116 pages, 294044 bytes).

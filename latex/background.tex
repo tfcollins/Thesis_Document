@@ -79,7 +79,7 @@ Let us examine the transmitter first since it is less complicated than the recei
 \begin{figure}[!ht]\label{fig:Transmitter_System_Diagram}
 \centering
 \includegraphics[scale=0.8]{Transmitter.eps}
-\caption{Basic transmitter outline, converting information or data to a easily recoverable signal by the receiver.}
+\caption{Basic transmitter outline, converting information or data to a easily recoverable signal by the receiver.  The transmitter consists of three primary blocks: the encoder, pulse-shape filter, and frequency translator/modulator.}
 \end{figure}
 
 The transmitter's sole purpose is the send data that is convenient for the receiver to understand, and allow others to use the transmission medium as well.  The coding phase of the transmitter can have many features and purposes, but simply it will encode data into a symbol with a form of redundancy or scheme that will help the receiver reconstructed the information more easily.  Next the pulse-shape filter is used to help separate data and help maximize the SNR at the receiver.  This filtering can be done with an assortment of filter shapes, but the most popular is the raised square-root cosine filter.  After pulse-shaping, the signal is translated into frequency information and unconverted to a high RF with a carrier signal.  The translation is done with a modulation scheme such a binary phase-shift keying (BPSK) or pulse amplitude modulation (PAM).  The is up-converted by mixing the signal with a sinusoid, seen by Equation \eqref{mixing}.
@@ -111,7 +111,7 @@ As listed in the previous section, many equalizers exists and operate under spec
 \begin{figure}[!ht]\label{FIR_filter}
 \centering
 \includegraphics[scale=0.7]{FIR_filter.eps}
-\caption{FIR Filter Structure}
+\caption{FIR filter structure with four taps.  The represent b the tap coefficients, and the z represent the tap delays.  The delays allow the filter access to previous signal samples for future use.}
 \end{figure}
 
 The Zero Forcing Equalizer (ZFE) uses peak distortion criteria to determine equalizer coefficients.  The ZFE produces zero ISI at its output.  If \(H_{c}(f)\) is assumed to be the effects of the channel, the ideal equalizer would be \( H_{eq}(f)=\frac{1}{H_{c}(f)}\).  This can also be consider the inverse of the channel.  The filter coefficients are modeled as weighted pulses convolved with the channel, which can be expressed as Equation \eqref{weighted}.  Here \(b\) represents the weighted filter taps, \(p_{r}\) represents the input signal and \(p_{eq}\) represents the output of the filter.
@@ -150,16 +150,18 @@ Several blind equalizers exist but an extension of the LMS equalizer for blind s
 \(e = \frac{1}{2}(sgn(y[k]-y[k])^{2}\)
 Where the \(sgn\) function returns 1 for positive numbers and -1 for negative numbers.  This expression is quite similar to the original LMS implementation except instead of a known symbol the data is quantized using the sign function.  This type of quantization using the sign function is only applicable with binary modulation schemes such as BPSK.  This equalizer method is usually combined with a training equalizer method in practice, since if a nearly closed eye is observed, when using an eye diagram, this equalizer cannot open it by itself.  An example of such an eye diagram is shown in Figure \ref{eye_closed}, and clean/open eye diagram can be seen in Figure \ref{eye_clean}.\\
 
-\begin{figure}\label{eye_clean}
+\begin{figure}
 \centering
 \includegraphics[scale=0.8]{eye_clean.eps}
 \caption{Adequate timing recovery produces open eye, which clearly defines the received symbols in time.}
+\label{eye_clean}
 \end{figure}
 
-\begin{figure}\label{eye_closed}
+\begin{figure}
 \centering
 \includegraphics[scale=0.8]{eye_closed.eps}
 \caption{Poor timing recovery produces a closed eye, identifying that the signal cannot be recovered unless corrective measures applied.}
+\label{eye_closed}
 \end{figure}
 
 In this section, we have examined several equalizer techniques while outlining their advantages and disadvantages.  Most techniques require some training mechanisms to operate under heavy channel distortion, and blind techniques such as decision-directed equalization will fail under these conditions.  Unfortunately, such training data can take considerable resources, and lower overall data throughput.  In practice as much as 20\% of frame information is training.  Therefore other techniques must be considered to help overcome this obstacle.\\
@@ -212,10 +214,11 @@ For the past two decades there has been a paradigm shift is the definition of a 
 
 SDRs can be flexible enough to avoid the ``limited spectrum'' assumptions of designers of previous kinds of radios, in one or more ways including: Ultrawideband transceivers, cognitive radio, dynamic mesh networks, software-defined antenna arrays among others \cite{22}.  One of the first SDR implementations was a project called ``SpeakEasy''.  The original purpose of SpeakEasy was to use programmable processing to emulate more than ten existing military radios, operating in frequency bands between 2 MHz and 2 GHz \cite{23}.  Therefore with this single radio, the operator could talk to ten radios operating under ten different standards.  As simple enough idea, but unfortunately the implementation left much to be desired.  For example, physically the device encapsulated the entire back of a common pickup truck \cite{23}.  This might be great for a ground station that does not move, but for a mobile unit this was highly impractical.  Secondly, in 1992 field programmable gate arrays (FPGA) required significant time, comparatively to re-flash or change their operational parameters.  Again, this also limited SpeakEasy's flexibility.\\
 
-\begin{figure}\label{sdr_overview}
+\begin{figure}
 \centering
 \includegraphics[width=0.95\textwidth]{sdr_overview.eps}
 \caption{Software defined radio pushes all the adaptive elements and data manipulation operation into software.  The goal of SDR is to provide or define all of the radio operation in software.}
+\label{sdr_overview}
 \end{figure}
 
 Today, the main target implementations are within cellular base stations and military applications such as the JTRS project.  The JTRS or Joint Tactical Radio System, was a program of the US military to produce radios that provide flexible and inter-operable communications \cite{24}. Examples of radio terminals that require support include hand-held, vehicular, airborne and dismounted radios, as well as base-stations\cite{24}.  Again, this project still has limited results and many setbacks have occurred.  Commercially, from a wide spread penetration standpoint, SDR is still many years away due to the size and cost of current devices.  The two barriers to this are speed and size.  To provide enough data throughput, modern SDRs need to quite large physically, which is a serious drawback in many applications.   Aside from these limitations, SDRs provide excellent flexibility especially in a laboratory and proof of concept environment.  Rapid prototyping is an obvious place where such radios shine, allowing massive changes without hardware modification.  To support this flexibility several software packages have been constructed around the SDR concept, allowing for aggressive prototyping.  The two examples discussed here were selected because of operability with the selected hardware, which will be discussed future in chapter 3.\\
@@ -224,10 +227,11 @@ Today, the main target implementations are within cellular base stations and mil
 
 The first software package to be discussed by this thesis is GNU Radio.  GNU Radio provides the reconfigurable signal processing blocks that are necessary for software defined radios. GNU Radio is an open source project allowing for SDR developers to develop unique signal processing blocks and SDR systems.  GNU Radio was started in 2001, originally forked from the SpectrumWare project developed at the Massachusetts Institute of Technology \cite{spectrumware}.  Since 2001, the code base has undergone massive changes, containing almost no code from the original SpectrumWare project.  Physically the code consist of three languages Python, C++, and SWIG.  Python provides the overarching control of the system or program, while C++ provides the actual signal processing blocks and mathematics.  SWIG is a wrapper for C++ which allows Python to dynamically wrap around C++ and control or compile with it.  A diagram below better illustrates this architecture.  It is also important to mention that there as significant paradigm shifts in the community, pushing more and more code to Python rather than C++, due to its easier programming syntax and structure.\\
 
-\begin{figure}\label{gnr_struct}
+\begin{figure}
 \centering
 \includegraphics[scale=0.8]{gnr_outline.eps}
 \caption{GNU Radio code structure based on signal processing C++ blocks and controlling, through SWIG, Python layers.}
+\label{gnr_struct}
 \end{figure}
 
 GNU Radio provides a very structured framework of flow design.  Data processing segments are extremely self contained to minimize error propagation during system debugging.  Since the software is open-source full access to all code is provide, giving low-level access to all operation within GNU Radio.  Much of the actions have been abstracted to limited the knowledge of the lower layers, but if specific actions are required for an application.  Then serious depth or knowledge is needed about the overall project's structure, which is quite overloading.\\
@@ -236,10 +240,11 @@ GNU Radio provides a very structured framework of flow design.  Data processing 
 
 MATLAB is an extremely well known engineering, mathematical, biological, and financial software suite.  MATLAB provide massive data leverage and advanced communication system models and algorithm for significant data processing.  Since 2007, they have also provided hardware compliance with specific SDR platforms through their Simulink platform, and more recently within MATLAB itself \cite{matlabsdru}.  This thesis primarily utilizes the signal processing and communication system aspects of MATLAB, since MATLAB cannot fully utilize all aspects of the chosen hardware.  It is important to note under alternate constraints, MATLAB can provide adequate performance directly interfacing with hardware, especially when accessing its targeting features seen here \cite{matlabtargeting}.  Figure \ref{sdru_example} shows an example of a common MATLAB SDR model through Simulink.\\
 
-\begin{figure}[!ht]\label{sdru_example}
+\begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{sdru_example.eps}
 \caption{Sample SDRU MATLAB model created in Simulink.  This model has the ability to demodulate and play FM radio stations when using a USRP device.}
+\label{sdru_example}
 \end{figure}
 
 MATLAB provides allow connection to a USRP device through MATLAB directly of with Simulink.  The device simply acts as a real-time data source complementing their signal processing and communications toolboxes very well.  Rather than full implementations like GNUR Radio, MATLAB focuses on signal analysis rather than real-time performance.  The primary limitation is the single threaded nature of MATLAB and Simulink, which is slowly being improved upon for the SDR application.\\

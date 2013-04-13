@@ -6,6 +6,11 @@ A level-1 auxiliary file: implementation.aux
 A level-1 auxiliary file: results.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: IEEEtran.bst
+A level-1 auxiliary file: appendixb.aux
+A level-1 auxiliary file: appendixc.aux
+A level-1 auxiliary file: appendixd.aux
+A level-1 auxiliary file: appendixe.aux
+A level-1 auxiliary file: appendixf.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -19,42 +24,42 @@ Database file #1: mybib.bib
 Done.
 You've used 70 entries,
             4039 wiz_defined-function locations,
-            1173 strings with 18834 characters,
-and the built_in function-call counts, 44447 in all, are:
-= -- 3556
-> -- 860
+            1181 strings with 19009 characters,
+and the built_in function-call counts, 44597 in all, are:
+= -- 3577
+> -- 863
 < -- 347
-+ -- 462
-- -- 135
-* -- 2012
-:= -- 6891
-add.period$ -- 136
++ -- 463
+- -- 136
+* -- 2024
+:= -- 6930
+add.period$ -- 138
 call.type$ -- 70
-change.case$ -- 57
+change.case$ -- 59
 chr.to.int$ -- 834
 cite$ -- 70
-duplicate$ -- 3256
-empty$ -- 3829
-format.name$ -- 173
-if$ -- 10216
+duplicate$ -- 3264
+empty$ -- 3837
+format.name$ -- 174
+if$ -- 10247
 int.to.chr$ -- 0
 int.to.str$ -- 70
-missing$ -- 587
+missing$ -- 588
 newline$ -- 283
-num.names$ -- 65
-pop$ -- 1453
+num.names$ -- 66
+pop$ -- 1449
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 3475
+skip$ -- 3483
 stack$ -- 0
-substring$ -- 1971
-swap$ -- 2558
+substring$ -- 1973
+swap$ -- 2567
 text.length$ -- 69
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 70
 warning$ -- 0
-while$ -- 166
+while$ -- 167
 width$ -- 72
-write$ -- 696
+write$ -- 699

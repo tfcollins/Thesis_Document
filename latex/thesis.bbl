@@ -299,7 +299,7 @@ A.~Wyglinski, C.~Anderson, and S.~Pagadarai, ``Semi-blind estimation of
 
 \bibitem{antss}
 \BIBentryALTinterwordspacing
-E.~Telatar, ``Capacity of multi-antenna gaussian channels,'' \emph{European
+E.~Telatar, ``{Capacity of Multi-antenna Gaussian Channels},'' \emph{European
   Transactions on Telecommunications}, vol.~10, no.~6, pp. 585--595, 1999.
   [Online]. Available: \url{http://dx.doi.org/10.1002/ett.4460100604}
 \BIBentrySTDinterwordspacing
@@ -324,7 +324,7 @@ Q.~Norton, ``{GNU Radio Opens an Unseen World}.'' [Online]. Available:
 
 \bibitem{n210spec}
 \BIBentryALTinterwordspacing
-E.~Research, ``Usrp n200/210 networked series,'' 1043 North Shoreline Blvd,
+E.~Research, ``{USRP N200/210 Networked Series},'' 1043 North Shoreline Blvd,
   September 2012. [Online]. Available:
   \url{https://www.ettus.com/content/files/07495_Ettus_N200-210_DS_Flyer_HR_1.pdf}
 \BIBentrySTDinterwordspacing
@@ -337,13 +337,14 @@ E.~Research, ``Usrp n200/210 networked series,'' 1043 North Shoreline Blvd,
 
 \bibitem{sdr_blog}
 \BIBentryALTinterwordspacing
-March 2013. [Online]. Available:
+D.~Symeonidis, ``{The SDR Blog: A blog about Software Defined Radio},'' March
+  2013. [Online]. Available:
   \url{http://sdrblog.wordpress.com/2009/03/16/timestamp-data-from-the-usrp/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{mimo_cable}
 \BIBentryALTinterwordspacing
-March 2013. [Online]. Available:
+``{MultiUsrp or Mimo use of the USRP},'' March 2013. [Online]. Available:
   \url{http://gnuradio.org/redmine/projects/gnuradio/wiki/MultiUsrp}
 \BIBentrySTDinterwordspacing
 
